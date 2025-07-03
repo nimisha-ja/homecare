@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family List</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f2f2f2; }
+        img { max-width: 100px; }
+    </style>
+</head>
+<body>
+    <h2>Family Details List</h2>
+    <a href="<?= site_url('family/create') ?>">Add New Family</a><br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Family Code</th>
+                <th>Family Name</th>
+                <th>Head of Family</th>
+                <th>Members Count</th>
+                <th>Address</th>
+                <th>Contact Number</th>
+                <th>Registered On</th>
+                <th>Photo</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php if (!empty($families) && is_array($families)): ?>
+                <?php foreach ($families as $family): ?>
+                    <tr>
+                        <td><?= esc($family['family_code']) ?></td>
+                        <td><?= esc($family['family_name']) ?></td>
+                        <td><?= esc($family['head_of_family']) ?></td>
+                        <td><?= esc($family['members_count']) ?></td>
+                        <td><?= esc($family['address']) ?></td>
+                        <td><?= esc($family['contact_number']) ?></td>
+                        <td><?= esc($family['registered_on']) ?></td>
+                        <td>
+                            <?php if (!empty($family['photo_url'])): ?>
+                                <img src="<?= esc($family['photo_url']) ?>" alt="Family Photo">
+                            <?php else: ?>
+                                No Photo
+                            <?php endif; ?>
+                        </td>
+                        <td>
+                            <a href="<?= site_url('family/' . $family['family_id']) ?>">View</a>
+                            <!-- Add edit/delete if needed -->
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <tr><td colspan="9">No families found.</td></tr>
+            <?php endif; ?>
+        </tbody>
+    </table>
+</body>
+</html>

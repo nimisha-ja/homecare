@@ -1,0 +1,1397 @@
+CRITICAL - 2025-03-12 04:41:21 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: auth/forgot_password/sendResetLink]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\ForgotPassword.php(33): CodeIgniter\Model->update('54', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ForgotPassword->sendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 04:42:37 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: auth/forgot_password/sendResetLink]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\ForgotPassword.php(33): CodeIgniter\Model->update('54', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ForgotPassword->sendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 04:42:44 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: auth/forgot_password/sendResetLink]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\ForgotPassword.php(33): CodeIgniter\Model->update('54', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ForgotPassword->sendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 04:47:30 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: auth/forgot_password/sendResetLink]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\ForgotPassword.php(32): CodeIgniter\Model->update('54', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ForgotPassword->sendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 04:47:46 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: auth/forgot_password/sendResetLink]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\ForgotPassword.php(32): CodeIgniter\Model->update('54', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ForgotPassword->sendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 04:48:29 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: auth/forgot_password/sendResetLink]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\ForgotPassword.php(32): CodeIgniter\Model->update('54', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ForgotPassword->sendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 04:50:17 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: POST, Route: auth/forgot_password/sendResetLink]
+in SYSTEMPATH\BaseModel.php on line 1010.
+ 1 SYSTEMPATH\BaseModel.php(1010): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\ForgotPassword.php(34): CodeIgniter\Model->update('54', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ForgotPassword->sendResetLink()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ForgotPassword))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 06:54:40 --> mysqli_sql_exception: Duplicate entry 'nimisha' for key 'username' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(80): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->create()
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-12 06:54:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'nimisha' for key 'username'
+[Method: POST, Route: admin/user/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (:username:, :email:, :password:, :role_id:, :is_active:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(80): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 06:54:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'nimisha' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'23\', \'4\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'23\', \'4\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (:username:, :email:, :password:, :role_id:, :is_active:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Admin.php(80): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->create()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 06:54:40 --> [Caused by] mysqli_sql_exception: Duplicate entry 'nimisha' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'23\', \'4\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'23\', \'4\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'23\', \'4\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (:username:, :email:, :password:, :role_id:, :is_active:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(80): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->create()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 06:57:07 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 22.
+ 1 APPPATH\Views\layouts\userlist.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(33): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 07:01:19 --> mysqli_sql_exception: Duplicate entry 'nimisha' for key 'username' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(94): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->create()
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-12 07:01:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'nimisha' for key 'username'
+[Method: POST, Route: admin/user/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (:username:, :email:, :password:, :role_id:, :is_active:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(94): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:01:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'nimisha' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'1234\', \'2\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'1234\', \'2\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (:username:, :email:, :password:, :role_id:, :is_active:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Admin.php(94): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->create()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:01:19 --> [Caused by] mysqli_sql_exception: Duplicate entry 'nimisha' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'1234\', \'2\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'1234\', \'2\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'1234\', \'2\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (:username:, :email:, :password:, :role_id:, :is_active:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(94): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->create()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 07:02:15 --> mysqli_sql_exception: Duplicate entry 'nimisha' for key 'username' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(94): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->create()
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-12 07:02:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'nimisha' for key 'username'
+[Method: POST, Route: admin/user/create]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (:username:, :email:, :password:, :role_id:, :is_active:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Admin.php(94): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->create()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:02:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'nimisha' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'1234\', \'3\', 1)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'1234\', \'3\', 1)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (:username:, :email:, :password:, :role_id:, :is_active:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Admin.php(94): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->create()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:02:15 --> [Caused by] mysqli_sql_exception: Duplicate entry 'nimisha' for key 'username'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'1234\', \'3\', 1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'1234\', \'3\', 1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (\'nimisha\', \'nimisha@trusttech.in\', \'1234\', \'3\', 1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`username`, `email`, `password`, `role_id`, `is_active`) VALUES (:username:, :email:, :password:, :role_id:, :is_active:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Admin.php(94): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->create()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:24:47 --> ParseError: syntax error, unexpected token "/"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Controllers\Admin.php on line 44.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\meesho\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:25:00 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:26:10 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:26:11 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:26:42 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:26:43 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:27:45 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:04 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:05 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:05 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:06 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:06 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:06 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:06 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:06 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:06 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:07 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:07 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:07 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:07 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:08 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:08 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:08 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:28:08 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(47): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:29:21 --> ErrorException: Undefined array key "role_name"
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 59.
+ 1 APPPATH\Views\layouts\userlist.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\userlist.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+10 APPPATH\Controllers\Admin.php(36): view('users_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 07:29:53 --> Error: Call to a member function paginate() on array
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Controllers\Admin.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:05:34 --> Error: Call to a member function links() on null
+[Method: GET, Route: admin/staffmanagement]
+in APPPATH\Views\layouts\staff_list.php on line 67.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_list', null, true)
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 5 APPPATH\Views\staff_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(206): view('staff_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->liststaff()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 08:12:50 --> mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` ...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` ...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` ...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` ...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(349): CodeIgniter\Model->update('22', Array)
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('22')
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-12 08:12:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+[Method: POST, Route: admin/staff/update/22]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Admin.php(349): CodeIgniter\Model->update('22', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('22')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:12:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'Geetha\', `email` = \'geth@gmail.com\', `phone` = \'9989887878\', `role_id` = \'1\', `image` = \'uploads/staff/default.jpg\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'22\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'Geetha\', `email` = \'geth@gmail.com\', `phone` = \'9989887878\', `role_id` = \'1\', `image` = \'uploads/staff/default.jpg\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'22\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Admin.php(349): CodeIgniter\Model->update('22', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('22')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:12:50 --> [Caused by] mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` SET `name` = \'Geetha\', `email` = \'geth@gmail.com\', `phone` = \'9989887878\', `role_id` = \'1\', `image` = \'uploads/staff/default.jpg\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'22\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'Geetha\', `email` = \'geth@gmail.com\', `phone` = \'9989887878\', `role_id` = \'1\', `image` = \'uploads/staff/default.jpg\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'22\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'Geetha\', `email` = \'geth@gmail.com\', `phone` = \'9989887878\', `role_id` = \'1\', `image` = \'uploads/staff/default.jpg\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'22\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Admin.php(349): CodeIgniter\Model->update('22', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('22')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 08:32:03 --> mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` ...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` ...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` ...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` ...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(362): CodeIgniter\Model->update('23', Array)
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-12 08:32:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+[Method: POST, Route: admin/staff/update/23]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Admin.php(362): CodeIgniter\Model->update('23', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:32:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Admin.php(362): CodeIgniter\Model->update('23', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:32:03 --> [Caused by] mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Admin.php(362): CodeIgniter\Model->update('23', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 08:33:18 --> mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` ...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` ...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` ...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` ...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(362): CodeIgniter\Model->update('23', Array)
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-12 08:33:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+[Method: POST, Route: admin/staff/update/23]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Admin.php(362): CodeIgniter\Model->update('23', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:33:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Admin.php(362): CodeIgniter\Model->update('23', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:33:18 --> [Caused by] mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Admin.php(362): CodeIgniter\Model->update('23', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 08:34:40 --> mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` ...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` ...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` ...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` ...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(386): CodeIgniter\Model->update('23', Array)
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-12 08:34:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+[Method: POST, Route: admin/staff/update/23]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Admin.php(386): CodeIgniter\Model->update('23', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:34:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Admin.php(386): CodeIgniter\Model->update('23', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:34:40 --> [Caused by] mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Admin.php(386): CodeIgniter\Model->update('23', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 08:38:38 --> mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` ...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` ...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` ...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` ...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(377): CodeIgniter\Model->update('23', Array)
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-12 08:38:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+[Method: POST, Route: admin/staff/update/23]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Admin.php(377): CodeIgniter\Model->update('23', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:38:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Admin.php(377): CodeIgniter\Model->update('23', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:38:38 --> [Caused by] mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Admin.php(377): CodeIgniter\Model->update('23', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 08:38:41 --> mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` ...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` ...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` ...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` ...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(377): CodeIgniter\Model->update('23', Array)
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-12 08:38:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+[Method: POST, Route: admin/staff/update/23]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Admin.php(377): CodeIgniter\Model->update('23', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:38:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Admin.php(377): CodeIgniter\Model->update('23', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:38:41 --> [Caused by] mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'active\'
+WHERE `staff`.`id` IN (\'23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Admin.php(377): CodeIgniter\Model->update('23', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-12 08:39:00 --> mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` ...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` ...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` ...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` ...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(377): CodeIgniter\Model->update('23', Array)
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-12 08:39:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+[Method: POST, Route: admin/staff/update/23]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Admin.php(377): CodeIgniter\Model->update('23', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:39:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'inactive\'
+WHERE `staff`.`id` IN (\'23\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'inactive\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Admin.php(377): CodeIgniter\Model->update('23', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:39:00 --> [Caused by] mysqli_sql_exception: Duplicate entry 'geth@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'inactive\'
+WHERE `staff`.`id` IN (\'23\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'inactive\'
+WHERE `staff`.`id` IN (\'23\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `name` = \'nimish\', `email` = \'geth@gmail.com\', `phone` = \'0983938939\', `role_id` = \'1\', `image` = \'uploads/staff/1741768222_d42013c7d455fb6b1694.webp\', `status` = \'inactive\'
+WHERE `staff`.`id` IN (\'23\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `name` = :name:, `email` = :email:, `phone` = :phone:, `role_id` = :role_id:, `image` = :image:, `status` = :status:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Admin.php(377): CodeIgniter\Model->update('23', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff('23')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:39:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: POST, Route: admin/staff/update/23]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Admin.php(378): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:40:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: POST, Route: admin/staff/update/23]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Admin.php(378): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 08:40:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Updates are not allowed unless they contain a "where" or "like" clause.
+[Method: POST, Route: admin/staff/update/23]
+in SYSTEMPATH\Model.php on line 456.
+ 1 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Admin.php(378): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateStaff(null)
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 09:17:21 --> ErrorException: Undefined array key "staff_name"
+[Method: GET, Route: admin/deliveryoperationsreport]
+in APPPATH\Views\layouts\delivery_report.php on line 58.
+ 1 APPPATH\Views\layouts\delivery_report.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "staff_name"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_report.php', 58)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_report', [], true)
+10 APPPATH\Controllers\Admin.php(606): view('delivery_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReportfiter()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 09:19:50 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: admin/deliveryoperationsreport]
+in APPPATH\Views\layouts\delivery_report.php on line 74.
+ 1 APPPATH\Views\layouts\delivery_report.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_report.php', 74)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_report', [], true)
+10 APPPATH\Controllers\Admin.php(590): view('delivery_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReportfiter()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 11:29:00 --> ErrorException: Undefined array key "image"
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\layouts\dashboard.php on line 180.
+ 1 APPPATH\Views\layouts\dashboard.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\dashboard.php', 180)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/dashboard', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\admin_layout.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\admin_layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin_layout', [], true)
+10 APPPATH\Controllers\LoginController.php(72): view('admin_layout', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 11:29:37 --> TypeError: CodeIgniter\Database\BaseBuilder::select(): Argument #2 ($escape) must be of type ?bool, string given, called in C:\xampp\htdocs\meesho\system\Model.php on line 928
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseBuilder.php on line 403.
+ 1 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->select('deliveries.*, staff.name AS staff_name', 'staff.image')
+ 2 APPPATH\Controllers\LoginController.php(67): CodeIgniter\Model->__call('select', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-12 11:30:39 --> ErrorException: Undefined array key "image"
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\layouts\dashboard.php on line 180.
+ 1 APPPATH\Views\layouts\dashboard.php(180): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "image"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\dashboard.php', 180)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/dashboard', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\admin_layout.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\admin_layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin_layout', [], true)
+10 APPPATH\Controllers\LoginController.php(72): view('admin_layout', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

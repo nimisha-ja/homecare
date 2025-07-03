@@ -1,0 +1,1585 @@
+CRITICAL - 2025-04-09 05:23:33 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: admin/inventory/edit/8]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\edit_inventory.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_inventory.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_inventory', [], true)
+ 9 APPPATH\Controllers\Admin.php(2501): view('edit_inventory', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->InventoryEdit('8')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:23:36 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: admin/inventory/edit/8]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\edit_inventory.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_inventory.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_inventory', [], true)
+ 9 APPPATH\Controllers\Admin.php(2501): view('edit_inventory', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->InventoryEdit('8')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:33:16 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2297): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:33:43 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 206.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 206)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2297): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:35:18 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 206.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 206)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2297): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:35:34 --> ErrorException: Undefined array key "successful_deliveries"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 208.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "successful_deliveries"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 208)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2297): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:36:05 --> ErrorException: Undefined array key "successful_deliveries"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 208.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "successful_deliveries"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 208)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2297): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:37:01 --> ErrorException: Undefined array key "successful_deliveries"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 208.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "successful_deliveries"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 208)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2302): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:37:02 --> ErrorException: Undefined array key "successful_deliveries"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 208.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "successful_deliveries"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 208)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2302): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:38:16 --> ErrorException: Undefined array key "salary"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 210.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "salary"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 210)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2312): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:38:47 --> ErrorException: Undefined array key "advance_amount"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 211.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "advance_amount"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 211)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2312): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:40:09 --> ErrorException: Undefined array key "advance_amount"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 211.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "advance_amount"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 211)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2312): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 05:40:11 --> ErrorException: Undefined array key "advance_amount"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 211.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(211): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "advance_amount"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 211)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2312): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-09 06:12:54 --> mysqli_sql_exception: Unknown column 'delivery.service_date' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(2295): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-09 06:12:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.service_date' in 'where clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2295): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:12:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.service_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2295): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:12:54 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery.service_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2295): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-09 06:13:34 --> mysqli_sql_exception: Unknown column 'delivery.updated_at' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-09 06:13:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.updated_at' in 'where clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= :delivery.updated_at:
+AND `delivery`.`updated_at` <= :delivery.updated_at.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:13:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.updated_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= \'2025-04-01\'
+AND `delivery`.`updated_at` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= \'2025-04-01\'
+AND `delivery`.`updated_at` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= :delivery.updated_at:
+AND `delivery`.`updated_at` <= :delivery.updated_at.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:13:34 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery.updated_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= \'2025-04-01\'
+AND `delivery`.`updated_at` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= \'2025-04-01\'
+AND `delivery`.`updated_at` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= \'2025-04-01\'
+AND `delivery`.`updated_at` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= :delivery.updated_at:
+AND `delivery`.`updated_at` <= :delivery.updated_at.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-09 06:13:35 --> mysqli_sql_exception: Unknown column 'delivery.updated_at' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-09 06:13:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.updated_at' in 'where clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= :delivery.updated_at:
+AND `delivery`.`updated_at` <= :delivery.updated_at.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:13:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.updated_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= \'2025-04-01\'
+AND `delivery`.`updated_at` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= \'2025-04-01\'
+AND `delivery`.`updated_at` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= :delivery.updated_at:
+AND `delivery`.`updated_at` <= :delivery.updated_at.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:13:35 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery.updated_at' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= \'2025-04-01\'
+AND `delivery`.`updated_at` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= \'2025-04-01\'
+AND `delivery`.`updated_at` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= \'2025-04-01\'
+AND `delivery`.`updated_at` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`updated_at` >= :delivery.updated_at:
+AND `delivery`.`updated_at` <= :delivery.updated_at.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-09 06:14:04 --> mysqli_sql_exception: Unknown column 'delivery.service_date' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-09 06:14:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.service_date' in 'where clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:14:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.service_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:14:04 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery.service_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-09 06:14:36 --> mysqli_sql_exception: Unknown column 'delivery.staff_id' in 'on clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-09 06:14:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.staff_id' in 'on clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:14:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.staff_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:14:36 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery.staff_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-09 06:14:52 --> mysqli_sql_exception: Unknown column 'delivery.staff_id' in 'on clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-09 06:14:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.staff_id' in 'on clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:14:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.staff_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:14:52 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery.staff_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-09 06:15:20 --> mysqli_sql_exception: Unknown column 'delivery.staff_id' in 'on clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-09 06:15:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.staff_id' in 'on clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:15:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.staff_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:15:20 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery.staff_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-10\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2296): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-09 06:16:31 --> mysqli_sql_exception: Unknown column 'delivery.service_date' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(2297): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-09 06:16:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.service_date' in 'where clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2297): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:16:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.service_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2297): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:16:31 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery.service_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2297): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:17:34 --> ErrorException: Undefined array key "staff_name"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 207.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "staff_name"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 207)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2314): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:17:52 --> ErrorException: Undefined array key "amount"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 210.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "amount"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 210)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2314): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:18:47 --> ErrorException: Undefined array key "amount"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 210.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(210): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "amount"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 210)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2319): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:19:03 --> ErrorException: Undefined array key "amount"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 212.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(212): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "amount"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php', 212)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2319): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:19:13 --> Error: Call to a member function links() on null
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 223.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 4 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\staff_salaries_list.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 8 APPPATH\Controllers\Admin.php(2319): view('staff_salaries_list', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-09 06:20:06 --> mysqli_sql_exception: Unknown column 'delivery.service_date' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(2295): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-09 06:20:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.service_date' in 'where clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2295): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:20:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery.service_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2295): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:20:06 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery.service_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= \'2025-04-01\'
+AND `delivery`.`service_date` <= \'2025-04-10\'
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `delivery`.`staff_id`
+WHERE `delivery`.`service_date` >= :delivery.service_date:
+AND `delivery`.`service_date` <= :delivery.service_date.1:
+GROUP BY `delivery`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2295): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:22:38 --> ErrorException: Undefined array key "amount"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Controllers\Admin.php on line 2303.
+ 1 APPPATH\Controllers\Admin.php(2303): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "amount"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Controllers\\Admin.php', 2303)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:23:05 --> ErrorException: Undefined array key "wages"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Controllers\Admin.php on line 2303.
+ 1 APPPATH\Controllers\Admin.php(2303): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "wages"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Controllers\\Admin.php', 2303)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 06:23:18 --> ErrorException: Undefined array key "wage"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Controllers\Admin.php on line 2303.
+ 1 APPPATH\Controllers\Admin.php(2303): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "wage"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Controllers\\Admin.php', 2303)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 07:14:42 --> ErrorException: Undefined variable $staff
+[Method: GET, Route: admin/delivery/edit/6]
+in APPPATH\Views\layouts\edit_delivery.php on line 59.
+ 1 APPPATH\Views\layouts\edit_delivery.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_delivery.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 APPPATH\Views\edit_delivery.php(6): CodeIgniter\View\View->include('layouts/edit_delivery')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_delivery.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+ 9 APPPATH\Controllers\Admin.php(2029): view('edit_delivery', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('6')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 07:15:08 --> ErrorException: Undefined variable $staff
+[Method: GET, Route: admin/delivery/edit/6]
+in APPPATH\Views\layouts\edit_delivery.php on line 59.
+ 1 APPPATH\Views\layouts\edit_delivery.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_delivery.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 APPPATH\Views\edit_delivery.php(6): CodeIgniter\View\View->include('layouts/edit_delivery')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_delivery.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+ 9 APPPATH\Controllers\Admin.php(2029): view('edit_delivery', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('6')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 07:15:14 --> ErrorException: Undefined variable $staff
+[Method: GET, Route: admin/delivery/edit/6]
+in APPPATH\Views\layouts\edit_delivery.php on line 59.
+ 1 APPPATH\Views\layouts\edit_delivery.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_delivery.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 APPPATH\Views\edit_delivery.php(6): CodeIgniter\View\View->include('layouts/edit_delivery')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_delivery.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+ 9 APPPATH\Controllers\Admin.php(2029): view('edit_delivery', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('6')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 07:16:14 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: admin/delivery/edit/6]
+in APPPATH\Views\layouts\edit_delivery.php on line 252.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 3 APPPATH\Views\edit_delivery.php(6): CodeIgniter\View\View->include('layouts/edit_delivery')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_delivery.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+ 7 APPPATH\Controllers\Admin.php(2029): view('edit_delivery', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('6')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 11:49:50 --> ErrorException: Undefined array key "amount"
+[Method: POST, Route: admin/basepay/create]
+in APPPATH\Controllers\Admin.php on line 2203.
+ 1 APPPATH\Controllers\Admin.php(2203): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "amount"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Controllers\\Admin.php', 2203)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->createBasepay()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 14:06:06 --> ErrorException: Undefined property: stdClass::$date
+[Method: GET, Route: admin/inventory-pending]
+in APPPATH\Views\layouts\inventory_pending.php on line 164.
+ 1 APPPATH\Views\layouts\inventory_pending.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$date', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\inventory_pending.php', 164)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\inventory_pending.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/inventory_pending', null, true)
+ 5 APPPATH\Views\inventory_pending.php(6): CodeIgniter\View\View->include('layouts/inventory_pending')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\inventory_pending.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('inventory_pending', [], true)
+ 9 APPPATH\Controllers\Admin.php(2767): view('inventory_pending', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->inventoryPending()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 14:10:21 --> ErrorException: Undefined property: stdClass::$inventory_pending
+[Method: GET, Route: admin/inventory-pending]
+in APPPATH\Views\layouts\inventory_pending.php on line 165.
+ 1 APPPATH\Views\layouts\inventory_pending.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$inventory_pending', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\inventory_pending.php', 165)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\inventory_pending.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/inventory_pending', null, true)
+ 5 APPPATH\Views\inventory_pending.php(6): CodeIgniter\View\View->include('layouts/inventory_pending')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\inventory_pending.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('inventory_pending', [], true)
+ 9 APPPATH\Controllers\Admin.php(2767): view('inventory_pending', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->inventoryPending()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-09 14:20:11 --> ErrorException: Undefined array key "date"
+[Method: GET, Route: admin/rto-pickup-pending]
+in APPPATH\Views\layouts\rto_pending.php on line 164.
+ 1 APPPATH\Views\layouts\rto_pending.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\rto_pending.php', 164)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\rto_pending.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/rto_pending', null, true)
+ 5 APPPATH\Views\rto_pending.php(6): CodeIgniter\View\View->include('layouts/rto_pending')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\rto_pending.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('rto_pending', [], true)
+ 9 APPPATH\Controllers\Admin.php(2816): view('rto_pending', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->rtopickupPending()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

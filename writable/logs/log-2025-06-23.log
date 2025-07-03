@@ -1,0 +1,803 @@
+CRITICAL - 2025-06-23 08:02:12 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(756): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:03:30 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(756): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:03:31 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(756): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:03:53 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(756): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:04:15 --> ErrorException: Undefined variable $typedata
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $typedata', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(756): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:04:34 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(756): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:05:40 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(758): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:05:42 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(758): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:09:03 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(757): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:09:31 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(757): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:09:32 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(757): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:10:21 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(757): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:10:22 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 33.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(757): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:12:07 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 36.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(757): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:13:51 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 36.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(757): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:14:03 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 36.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(757): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:14:18 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 36.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(757): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:14:47 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 36.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(756): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:14:48 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 36.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(756): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:15:02 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 36.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(756): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 08:15:04 --> ErrorException: foreach() argument must be of type array|object, string given
+[Method: GET, Route: addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 36.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(756): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-23 12:09:02 --> mysqli_sql_exception: Unknown column 'expenses.category_type' in 'on clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expense...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expense...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expense...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expense...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+#5 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+#6 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-23 12:09:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expenses.category_type' in 'on clause'
+[Method: GET, Route: expensecategorylist]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', [], false)
+ 2 APPPATH\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 12:09:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expenses.category_type' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', [], false)
+ 4 APPPATH\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 12:09:02 --> [Caused by] mysqli_sql_exception: Unknown column 'expenses.category_type' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', [], false)
+ 5 APPPATH\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-23 12:09:35 --> mysqli_sql_exception: Unknown column 'expenses.category_type' in 'on clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expense...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expense...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expense...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expense...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+#5 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+#6 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-23 12:09:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expenses.category_type' in 'on clause'
+[Method: GET, Route: expensecategorylist]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', [], false)
+ 2 APPPATH\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 12:09:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expenses.category_type' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', [], false)
+ 4 APPPATH\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 12:09:35 --> [Caused by] mysqli_sql_exception: Unknown column 'expenses.category_type' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', [], false)
+ 5 APPPATH\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-23 12:09:36 --> mysqli_sql_exception: Unknown column 'expenses.category_type' in 'on clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expense...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expense...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expense...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expense...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+#5 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+#6 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+CRITICAL - 2025-06-23 12:09:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expenses.category_type' in 'on clause'
+[Method: GET, Route: expensecategorylist]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', [], false)
+ 2 APPPATH\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 12:09:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expenses.category_type' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', [], false)
+ 4 APPPATH\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 12:09:36 --> [Caused by] mysqli_sql_exception: Unknown column 'expenses.category_type' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `daybook_category_types`.`type_name`
+FROM `expenses`
+LEFT JOIN `daybook_category_types` ON `expenses`.`category_type` = `daybook_category_types`.`type_id`
+ORDER BY `expenses`.`created_at` DESC
+ LIMIT 10', [], false)
+ 5 APPPATH\Controllers\Admin.php(844): CodeIgniter\Database\BaseBuilder->get(10, 0)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 12:32:19 --> ParseError: syntax error, unexpected single-quoted string "menus", expecting "]"
+[Method: GET, Route: addincomecategories]
+in APPPATH\Controllers\Admin.php on line 674.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\gloriaadmin\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 13:09:45 --> CodeIgniter\Pager\Exceptions\PagerException: "default" is not a valid Pager template.
+[Method: GET, Route: incomecategorylist]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('default')
+ 2 SYSTEMPATH\Pager\Pager.php(114): CodeIgniter\Pager\Pager->displayLinks('default', 'default')
+ 3 APPPATH\Controllers\Admin.php(725): CodeIgniter\Pager\Pager->makeLinks(1, 10, 4, 'default')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->IncomeCatgeoryList()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 13:11:08 --> CodeIgniter\Pager\Exceptions\PagerException: "default" is not a valid Pager template.
+[Method: GET, Route: incomecategorylist]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('default')
+ 2 SYSTEMPATH\Pager\Pager.php(114): CodeIgniter\Pager\Pager->displayLinks('default', 'default')
+ 3 APPPATH\Controllers\Admin.php(724): CodeIgniter\Pager\Pager->makeLinks(1, 10, 4, 'default')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->IncomeCatgeoryList()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 13:12:03 --> Error: Call to a member function links() on string
+[Method: GET, Route: incomecategorylist]
+in APPPATH\Views\layouts\incomecategory_list.php on line 184.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/incomecategory_list', null, true)
+ 4 APPPATH\Views\incomecategory_list.php(6): CodeIgniter\View\View->include('layouts/incomecategory_list')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\incomecategory_list.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('incomecategory_list', [], true)
+ 8 APPPATH\Controllers\Admin.php(727): view('incomecategory_list', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->IncomeCatgeoryList()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 13:18:57 --> ErrorException: Undefined array key "category_type"
+[Method: GET, Route: incomecategory/edit/6]
+in APPPATH\Views\layouts\edit_income_category.php on line 35.
+ 1 APPPATH\Views\layouts\edit_income_category.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_type"', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\edit_income_category.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(730): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('6')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 13:19:39 --> ErrorException: Undefined array key "category_type"
+[Method: GET, Route: incomecategory/edit/6]
+in APPPATH\Views\layouts\edit_income_category.php on line 35.
+ 1 APPPATH\Views\layouts\edit_income_category.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_type"', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\edit_income_category.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(730): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('6')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 13:37:48 --> ErrorException: Undefined variable $categoryTypes
+[Method: GET, Route: expense/filter]
+in APPPATH\Views\layouts\expenses_list.php on line 155.
+ 1 APPPATH\Views\layouts\expenses_list.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoryTypes', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\expenses_list.php', 155)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\expenses_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/expenses_list', null, true)
+ 5 APPPATH\Views\expenses_list.php(6): CodeIgniter\View\View->include('layouts/expenses_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\expenses_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expenses_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(987): view('expenses_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterexpenses()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 13:47:05 --> ErrorException: Undefined variable $expense_categorytype
+[Method: GET, Route: expense/filter]
+in APPPATH\Views\layouts\expenses_list.php on line 156.
+ 1 APPPATH\Views\layouts\expenses_list.php(156): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $expense_categorytype', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\expenses_list.php', 156)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\expenses_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/expenses_list', null, true)
+ 5 APPPATH\Views\expenses_list.php(6): CodeIgniter\View\View->include('layouts/expenses_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\expenses_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expenses_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(995): view('expenses_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterexpenses()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 14:02:42 --> ErrorException: Undefined array key "type_name"
+[Method: GET, Route: expenseslist]
+in APPPATH\Views\layouts\expenses_list.php on line 231.
+ 1 APPPATH\Views\layouts\expenses_list.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "type_name"', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\expenses_list.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\expenses_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/expenses_list', null, true)
+ 5 APPPATH\Views\expenses_list.php(6): CodeIgniter\View\View->include('layouts/expenses_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\expenses_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expenses_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(945): view('expenses_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 14:03:16 --> ErrorException: Undefined array key "type_name"
+[Method: GET, Route: expenseslist]
+in APPPATH\Views\layouts\expenses_list.php on line 231.
+ 1 APPPATH\Views\layouts\expenses_list.php(231): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "type_name"', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\expenses_list.php', 231)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\expenses_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/expenses_list', null, true)
+ 5 APPPATH\Views\expenses_list.php(6): CodeIgniter\View\View->include('layouts/expenses_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\expenses_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expenses_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(945): view('expenses_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-23 14:17:57 --> ErrorException: Undefined variable $categoryTypes
+[Method: GET, Route: income/filter]
+in APPPATH\Views\layouts\income_list.php on line 154.
+ 1 APPPATH\Views\layouts\income_list.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $categoryTypes', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\income_list.php', 154)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\income_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/income_list', null, true)
+ 5 APPPATH\Views\income_list.php(6): CodeIgniter\View\View->include('layouts/income_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\income_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('income_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(1241): view('income_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filter()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

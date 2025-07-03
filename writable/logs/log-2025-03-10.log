@@ -1,0 +1,999 @@
+CRITICAL - 2025-03-10 05:46:19 --> ErrorException: Undefined variable $expense
+[Method: GET, Route: admin/delivery/edit/7]
+in APPPATH\Views\layouts\edit_delivery.php on line 21.
+ 1 APPPATH\Views\layouts\edit_delivery.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $expense', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('layouts/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(571): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('7')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 05:46:21 --> ErrorException: Undefined variable $expense
+[Method: GET, Route: admin/delivery/edit/7]
+in APPPATH\Views\layouts\edit_delivery.php on line 21.
+ 1 APPPATH\Views\layouts\edit_delivery.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $expense', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('layouts/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(571): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('7')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 06:20:01 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 74.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/footer', null, true)
+ 4 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('layouts/footer')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+ 8 APPPATH\Controllers\Admin.php(495): view('delivery_operations_report', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 07:53:15 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 25.
+ 1 APPPATH\Views\layouts\delivery_operations_report.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+10 APPPATH\Controllers\Admin.php(515): view('delivery_operations_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 07:53:23 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 25.
+ 1 APPPATH\Views\layouts\delivery_operations_report.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+10 APPPATH\Controllers\Admin.php(515): view('delivery_operations_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 07:53:31 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 25.
+ 1 APPPATH\Views\layouts\delivery_operations_report.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+10 APPPATH\Controllers\Admin.php(515): view('delivery_operations_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 07:53:50 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 25.
+ 1 APPPATH\Views\layouts\delivery_operations_report.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+10 APPPATH\Controllers\Admin.php(515): view('delivery_operations_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 07:53:59 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 25.
+ 1 APPPATH\Views\layouts\delivery_operations_report.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+10 APPPATH\Controllers\Admin.php(515): view('delivery_operations_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 07:55:43 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 25.
+ 1 APPPATH\Views\layouts\delivery_operations_report.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+10 APPPATH\Controllers\Admin.php(515): view('delivery_operations_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 07:55:48 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 25.
+ 1 APPPATH\Views\layouts\delivery_operations_report.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+10 APPPATH\Controllers\Admin.php(515): view('delivery_operations_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 07:56:02 --> ErrorException: Array to string conversion
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 25.
+ 1 APPPATH\Views\layouts\delivery_operations_report.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+10 APPPATH\Controllers\Admin.php(515): view('delivery_operations_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:12:02 --> ErrorException: Undefined array key "status"
+[Method: GET, Route: admin/staffmanagement]
+in APPPATH\Views\layouts\staff_list.php on line 53.
+ 1 APPPATH\Views\layouts\staff_list.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_list.php', 53)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_list', [], true)
+10 APPPATH\Controllers\Admin.php(166): view('staff_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->liststaff()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:31:23 --> ErrorException: Undefined variable $month
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 37.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:33:47 --> ErrorException: Undefined variable $month
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 35.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:35:32 --> ErrorException: Undefined variable $month
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 35.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:36:51 --> ErrorException: Undefined variable $month
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 35.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:36:58 --> ErrorException: Undefined variable $month
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 35.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:37:31 --> ErrorException: Undefined variable $month
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 35.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:38:24 --> ErrorException: Undefined variable $month
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 35.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:38:37 --> ErrorException: Undefined variable $month
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 35.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $month', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:40:47 --> ErrorException: Undefined variable $startDate
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 26.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:41:57 --> ErrorException: Undefined variable $startDate
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 26.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:41:58 --> ErrorException: Undefined variable $startDate
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 26.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:41:58 --> ErrorException: Undefined variable $startDate
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 26.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:41:58 --> ErrorException: Undefined variable $startDate
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 26.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:41:58 --> ErrorException: Undefined variable $startDate
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 26.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:42:05 --> ErrorException: Undefined variable $startDate
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 26.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:43:02 --> ErrorException: Undefined variable $startDate
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 26.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 08:43:32 --> ErrorException: Undefined variable $startDate
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 26.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $startDate', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+10 APPPATH\Controllers\Admin.php(651): view('staff_salaries_list', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:24:31 --> CodeIgniter\Pager\Exceptions\PagerException: "bootstrap_pagination" is not a valid Pager template.
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('bootstrap_pagination')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap_pagination')
+ 3 APPPATH\Views\layouts\staff_salaries_list.php(67): CodeIgniter\Pager\Pager->links('default', 'bootstrap_pagination')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 7 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 8 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+12 APPPATH\Controllers\Admin.php(706): view('staff_salaries_list', [...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:26:21 --> TypeError: CodeIgniter\View\View::render(): Argument #1 ($view) must be of type string, array given, called in C:\xampp\htdocs\meesho\system\Pager\Pager.php on line 130
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\View\View.php on line 166.
+ 1 SYSTEMPATH\Pager\Pager.php(130): CodeIgniter\View\View->render([...])
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap')
+ 3 APPPATH\Views\layouts\staff_salaries_list.php(67): CodeIgniter\Pager\Pager->links('default', 'bootstrap')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 7 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 8 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+12 APPPATH\Controllers\Admin.php(706): view('staff_salaries_list', [...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:27:40 --> TypeError: CodeIgniter\View\View::render(): Argument #1 ($view) must be of type string, array given, called in C:\xampp\htdocs\meesho\system\Pager\Pager.php on line 130
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\View\View.php on line 166.
+ 1 SYSTEMPATH\Pager\Pager.php(130): CodeIgniter\View\View->render([...])
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap')
+ 3 APPPATH\Views\layouts\staff_salaries_list.php(67): CodeIgniter\Pager\Pager->links('default', 'bootstrap')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 7 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 8 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+12 APPPATH\Controllers\Admin.php(707): view('staff_salaries_list', [...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:29:08 --> ErrorException: Undefined variable $salaryData
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Controllers\Admin.php on line 672.
+ 1 APPPATH\Controllers\Admin.php(672): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $salaryData', 'C:\\xampp\\htdocs\\meesho\\app\\Controllers\\Admin.php', 672)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:29:50 --> TypeError: CodeIgniter\View\View::render(): Argument #1 ($view) must be of type string, array given, called in C:\xampp\htdocs\meesho\system\Pager\Pager.php on line 130
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\View\View.php on line 166.
+ 1 SYSTEMPATH\Pager\Pager.php(130): CodeIgniter\View\View->render([...])
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap')
+ 3 APPPATH\Views\layouts\staff_salaries_list.php(67): CodeIgniter\Pager\Pager->links('default', 'bootstrap')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 7 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 8 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+12 APPPATH\Controllers\Admin.php(706): view('staff_salaries_list', [...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:30:14 --> TypeError: CodeIgniter\View\View::render(): Argument #1 ($view) must be of type string, array given, called in C:\xampp\htdocs\meesho\system\Pager\Pager.php on line 130
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\View\View.php on line 166.
+ 1 SYSTEMPATH\Pager\Pager.php(130): CodeIgniter\View\View->render([...])
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap')
+ 3 APPPATH\Views\layouts\staff_salaries_list.php(67): CodeIgniter\Pager\Pager->links('default', 'bootstrap')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\staff_salaries_list.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 7 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 8 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+12 APPPATH\Controllers\Admin.php(706): view('staff_salaries_list', [...])
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:46:39 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::paginate()
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Controllers\Admin.php on line 524.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:48:29 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::paginate()
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Controllers\Admin.php on line 518.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-10 10:49:02 --> mysqli_sql_exception: Not unique table/alias: 'staff' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(523): CodeIgniter\BaseModel->paginate(5)
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-03-10 10:49:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'staff'
+[Method: GET, Route: admin/deliverylist]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`', [], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(523): CodeIgniter\BaseModel->paginate(5)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:49:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'staff'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`', [], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(523): CodeIgniter\BaseModel->paginate(5)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:49:02 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'staff'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`', [], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(523): CodeIgniter\BaseModel->paginate(5)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-10 10:49:40 --> mysqli_sql_exception: Not unique table/alias: 'staff' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(522): CodeIgniter\BaseModel->paginate(5)
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-03-10 10:49:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'staff'
+[Method: GET, Route: admin/deliverylist]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`', [], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(522): CodeIgniter\BaseModel->paginate(5)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:49:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'staff'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`', [], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(522): CodeIgniter\BaseModel->paginate(5)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:49:40 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'staff'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`', [], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(522): CodeIgniter\BaseModel->paginate(5)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:50:19 --> Error: Call to undefined method CodeIgniter\Database\MySQLi\Builder::paginate()
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Controllers\Admin.php on line 519.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:50:49 --> Error: Call to a member function links() on string
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 70.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 5 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(522): view('delivery_operations_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:51:14 --> Error: Call to a member function links() on string
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 70.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 5 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(522): view('delivery_operations_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:51:16 --> Error: Call to a member function links() on string
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 70.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 5 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(522): view('delivery_operations_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 10:53:02 --> Error: Call to a member function links() on string
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 70.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 5 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(522): view('delivery_operations_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 11:02:10 --> Error: Object of class CodeIgniter\Pager\Pager could not be converted to string
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 71.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(692): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 11:07:21 --> Error: Call to a member function links() on string
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 67.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 5 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(519): view('delivery_operations_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 11:07:37 --> Error: Call to a member function links() on string
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 67.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 5 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(519): view('delivery_operations_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-10 11:07:38 --> Error: Call to a member function links() on string
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 67.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 5 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(519): view('delivery_operations_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

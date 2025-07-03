@@ -1,0 +1,1934 @@
+CRITICAL - 2025-03-14 11:59:14 --> ParseError: syntax error, unexpected token ";"
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\layouts\dashboard.php on line 139.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/dashboard', null, true)
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 4 APPPATH\Views\admin_layout.php(10): CodeIgniter\View\View->include('common/footer')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\admin_layout.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin_layout', [], true)
+ 8 APPPATH\Controllers\LoginController.php(72): view('admin_layout', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 14:47:08 --> mysqli_sql_exception: Column 'delivery_type' cannot be null in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\meesho\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(539): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-03-14 14:47:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'delivery_type' cannot be null
+[Method: POST, Route: admin/savedeliveries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (:staff_id:, :delivery_date:, :delivery_type:, :package_details:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Admin.php(539): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 14:47:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'delivery_type' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:08\', \'2025-03-14 14:47:08\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:08\', \'2025-03-14 14:47:08\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (:staff_id:, :delivery_date:, :delivery_type:, :package_details:, :status:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Admin.php(539): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 14:47:08 --> [Caused by] mysqli_sql_exception: Column 'delivery_type' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:08\', \'2025-03-14 14:47:08\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:08\', \'2025-03-14 14:47:08\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:08\', \'2025-03-14 14:47:08\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (:staff_id:, :delivery_date:, :delivery_type:, :package_details:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin.php(539): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 14:47:39 --> mysqli_sql_exception: Column 'package_details' cannot be null in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\meesho\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(539): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-03-14 14:47:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'package_details' cannot be null
+[Method: POST, Route: admin/savedeliveries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (:staff_id:, :delivery_date:, :delivery_type:, :package_details:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Admin.php(539): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 14:47:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'package_details' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:39\', \'2025-03-14 14:47:39\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:39\', \'2025-03-14 14:47:39\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (:staff_id:, :delivery_date:, :delivery_type:, :package_details:, :status:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Admin.php(539): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 14:47:39 --> [Caused by] mysqli_sql_exception: Column 'package_details' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:39\', \'2025-03-14 14:47:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:39\', \'2025-03-14 14:47:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:39\', \'2025-03-14 14:47:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (:staff_id:, :delivery_date:, :delivery_type:, :package_details:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin.php(539): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 14:47:42 --> mysqli_sql_exception: Column 'package_details' cannot be null in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `de...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `de...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `de...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `de...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\meesho\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\meesho\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(539): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-03-14 14:47:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'package_details' cannot be null
+[Method: POST, Route: admin/savedeliveries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (:staff_id:, :delivery_date:, :delivery_type:, :package_details:, :status:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\Admin.php(539): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 14:47:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'package_details' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:42\', \'2025-03-14 14:47:42\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:42\', \'2025-03-14 14:47:42\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (:staff_id:, :delivery_date:, :delivery_type:, :package_details:, :status:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\Admin.php(539): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 14:47:42 --> [Caused by] mysqli_sql_exception: Column 'package_details' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:42\', \'2025-03-14 14:47:42\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:42\', \'2025-03-14 14:47:42\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (\'17\', \'2025-03-15\', NULL, NULL, NULL, \'2025-03-14 14:47:42\', \'2025-03-14 14:47:42\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `deliveries` (`staff_id`, `delivery_date`, `delivery_type`, `package_details`, `status`, `created_at`, `updated_at`) VALUES (:staff_id:, :delivery_date:, :delivery_type:, :package_details:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Admin.php(539): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->submitDelivery()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 14:58:57 --> ErrorException: Undefined array key "delivery_date"
+[Method: GET, Route: admin/delivery/edit/18]
+in APPPATH\Views\layouts\edit_delivery.php on line 36.
+ 1 APPPATH\Views\layouts\edit_delivery.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_date"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(668): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('18')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 15:04:18 --> mysqli_sql_exception: Unknown column 'deliveries.date' in 'order clause' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliver...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliver...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliver...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliver...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(9, 0)
+#6 C:\xampp\htdocs\meesho\system\BaseModel.php(1287): CodeIgniter\BaseModel->findAll(9, 0)
+#7 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(584): CodeIgniter\BaseModel->paginate(9)
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-14 15:04:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.date' in 'order clause'
+[Method: GET, Route: admin/deliverylist]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`date` ASC
+ LIMIT 9', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(9, 0)
+ 4 SYSTEMPATH\BaseModel.php(1287): CodeIgniter\BaseModel->findAll(9, 0)
+ 5 APPPATH\Controllers\Admin.php(584): CodeIgniter\BaseModel->paginate(9)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:04:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`date` ASC
+ LIMIT 9')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`date` ASC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`date` ASC
+ LIMIT 9', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(9, 0)
+ 6 SYSTEMPATH\BaseModel.php(1287): CodeIgniter\BaseModel->findAll(9, 0)
+ 7 APPPATH\Controllers\Admin.php(584): CodeIgniter\BaseModel->paginate(9)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:04:18 --> [Caused by] mysqli_sql_exception: Unknown column 'deliveries.date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`date` ASC
+ LIMIT 9', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`date` ASC
+ LIMIT 9')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`date` ASC
+ LIMIT 9')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`date` ASC
+ LIMIT 9', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(9, 0)
+ 7 SYSTEMPATH\BaseModel.php(1287): CodeIgniter\BaseModel->findAll(9, 0)
+ 8 APPPATH\Controllers\Admin.php(584): CodeIgniter\BaseModel->paginate(9)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:21:37 --> ErrorException: Undefined array key "delivery_date"
+[Method: GET, Route: admin/deliveryoperationsreport]
+in APPPATH\Views\layouts\delivery_report.php on line 59.
+ 1 APPPATH\Views\layouts\delivery_report.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_date"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_report.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_report', [], true)
+10 APPPATH\Controllers\Admin.php(601): view('delivery_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReportfiter()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 15:22:15 --> mysqli_sql_exception: Unknown column 'delivery_date' in 'where clause' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(735): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-14 15:22:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery_date' in 'where clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Admin.php(735): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:22:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Admin.php(735): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:22:15 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin.php(735): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:22:43 --> ErrorException: Undefined array key "delivery_date"
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 36.
+ 1 APPPATH\Views\layouts\edit_delivery.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_date"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(650): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:25:15 --> ErrorException: Undefined array key "delivery_date"
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 36.
+ 1 APPPATH\Views\layouts\edit_delivery.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_date"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(650): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:25:16 --> ErrorException: Undefined array key "delivery_date"
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 36.
+ 1 APPPATH\Views\layouts\edit_delivery.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_date"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(650): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:25:16 --> ErrorException: Undefined array key "delivery_date"
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 36.
+ 1 APPPATH\Views\layouts\edit_delivery.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_date"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(650): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:25:16 --> ErrorException: Undefined array key "delivery_date"
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 36.
+ 1 APPPATH\Views\layouts\edit_delivery.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_date"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(650): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:26:23 --> ErrorException: Undefined array key 1
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Controllers\Admin.php on line 646.
+ 1 APPPATH\Controllers\Admin.php(646): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'C:\\xampp\\htdocs\\meesho\\app\\Controllers\\Admin.php', 646)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:29:51 --> ErrorException: Undefined array key "delivery_date"
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 36.
+ 1 APPPATH\Views\layouts\edit_delivery.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_date"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:30:37 --> ErrorException: Undefined variable $deliveryData
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 23.
+ 1 APPPATH\Views\layouts\edit_delivery.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:31:15 --> ErrorException: Undefined variable $deliveryData
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 29.
+ 1 APPPATH\Views\layouts\edit_delivery.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:31:39 --> ErrorException: Undefined variable $deliveryData
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 29.
+ 1 APPPATH\Views\layouts\edit_delivery.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:32:40 --> ErrorException: Undefined variable $deliveryData
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 29.
+ 1 APPPATH\Views\layouts\edit_delivery.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:32:41 --> ErrorException: Undefined variable $deliveryData
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 29.
+ 1 APPPATH\Views\layouts\edit_delivery.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:32:41 --> ErrorException: Undefined variable $deliveryData
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 29.
+ 1 APPPATH\Views\layouts\edit_delivery.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:32:41 --> ErrorException: Undefined variable $deliveryData
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 29.
+ 1 APPPATH\Views\layouts\edit_delivery.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:32:41 --> ErrorException: Undefined variable $deliveryData
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 29.
+ 1 APPPATH\Views\layouts\edit_delivery.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:32:41 --> ErrorException: Undefined variable $deliveryData
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 29.
+ 1 APPPATH\Views\layouts\edit_delivery.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:32:42 --> ErrorException: Undefined variable $deliveryData
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 29.
+ 1 APPPATH\Views\layouts\edit_delivery.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:32:42 --> ErrorException: Undefined variable $deliveryData
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 29.
+ 1 APPPATH\Views\layouts\edit_delivery.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 29)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:32:55 --> ErrorException: Undefined variable $delivery
+[Method: GET, Route: admin/delivery/edit/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 22.
+ 1 APPPATH\Views\layouts\edit_delivery.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $delivery', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(646): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:35:38 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<form action="
+[Method: POST, Route: admin/delivery/edit/%3Cform%20action=]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('admin/delivery/edit/<form action=')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('admin/delivery/edit/<form action=')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:36:01 --> ErrorException: Undefined variable $deliveryData
+[Method: POST, Route: admin/updateDelivery/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 22.
+ 1 APPPATH\Views\layouts\edit_delivery.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 22)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(708): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:37:57 --> ErrorException: Undefined variable $deliveryData
+[Method: POST, Route: admin/updateDelivery/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 21.
+ 1 APPPATH\Views\layouts\edit_delivery.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(708): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:38:00 --> ErrorException: Undefined variable $deliveryData
+[Method: POST, Route: admin/updateDelivery/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 21.
+ 1 APPPATH\Views\layouts\edit_delivery.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(708): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:39:09 --> ErrorException: Undefined variable $deliveryData
+[Method: POST, Route: admin/updateDelivery/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 21.
+ 1 APPPATH\Views\layouts\edit_delivery.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(709): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:41:10 --> ErrorException: Undefined variable $deliveryData
+[Method: POST, Route: admin/updateDelivery/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 21.
+ 1 APPPATH\Views\layouts\edit_delivery.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(707): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:41:53 --> ErrorException: Undefined variable $deliveryData
+[Method: POST, Route: admin/updateDelivery/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 21.
+ 1 APPPATH\Views\layouts\edit_delivery.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 21)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(705): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:42:18 --> ErrorException: Undefined variable $deliveryData
+[Method: POST, Route: admin/updateDelivery/25]
+in APPPATH\Views\layouts\edit_delivery.php on line 27.
+ 1 APPPATH\Views\layouts\edit_delivery.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $deliveryData', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\edit_delivery.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/edit_delivery', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\edit_delivery.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\edit_delivery.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_delivery', [], true)
+10 APPPATH\Controllers\Admin.php(705): view('edit_delivery', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateDelivery('25')
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 15:50:00 --> mysqli_sql_exception: Unknown column 'delivery_date' in 'where clause' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-14 15:50:00 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery_date' in 'where clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:50:00 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:50:00 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 15:50:14 --> mysqli_sql_exception: Unknown column 'delivery_date' in 'where clause' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-14 15:50:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery_date' in 'where clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:50:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:50:14 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 15:52:46 --> mysqli_sql_exception: Unknown column 'delivery_date' in 'where clause' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\xampp\htdocs\meesho\app\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+#6 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-03-14 15:52:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery_date' in 'where clause'
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 3 APPPATH\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:52:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'delivery_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 5 APPPATH\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 15:52:46 --> [Caused by] mysqli_sql_exception: Unknown column 'delivery_date' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = \'15\'
+AND `delivery_type` = \'pickup\'
+AND `status` = \'completed\'
+AND MONTH(delivery_date) = \'03\'
+AND YEAR(delivery_date) = \'2025\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `deliveries`
+WHERE `staff_id` = :staff_id:
+AND `delivery_type` = :delivery_type:
+AND `status` = :status:
+AND MONTH(delivery_date) = :MONTH(delivery_date):
+AND YEAR(delivery_date) = :YEAR(delivery_date):', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 6 APPPATH\Controllers\Admin.php(728): CodeIgniter\Model->countAllResults()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:09:01 --> TypeError: Unsupported operand types: array * int
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Controllers\Admin.php on line 784.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:09:52 --> TypeError: Unsupported operand types: array * int
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Controllers\Admin.php on line 784.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:16:12 --> ErrorException: Undefined array key "delivery_date"
+[Method: GET, Route: admin/deliveryoperationsreport]
+in APPPATH\Views\layouts\delivery_report.php on line 59.
+ 1 APPPATH\Views\layouts\delivery_report.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_date"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_report.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_report', [], true)
+10 APPPATH\Controllers\Admin.php(601): view('delivery_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReportfiter()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:16:28 --> ErrorException: Undefined array key "delivery_date"
+[Method: GET, Route: admin/deliveryoperationsreport]
+in APPPATH\Views\layouts\delivery_report.php on line 59.
+ 1 APPPATH\Views\layouts\delivery_report.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_date"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_report.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_report', [], true)
+10 APPPATH\Controllers\Admin.php(601): view('delivery_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReportfiter()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 16:22:46 --> mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliver...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliver...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliver...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliver...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\meesho\app\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-03-14 16:22:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:22:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:22:46 --> [Caused by] mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 16:22:49 --> mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliver...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliver...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliver...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliver...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\meesho\app\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-03-14 16:22:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:22:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:22:49 --> [Caused by] mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 16:23:13 --> mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliver...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliver...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliver...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliver...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\meesho\app\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-03-14 16:23:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:23:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:23:14 --> [Caused by] mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 16:23:14 --> mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliver...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliver...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliver...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliver...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\meesho\app\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-03-14 16:23:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:23:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:23:14 --> [Caused by] mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 16:23:15 --> mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliver...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliver...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliver...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliver...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\meesho\app\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-03-14 16:23:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:23:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:23:15 --> [Caused by] mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-14 16:23:15 --> mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause' in C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meesho\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliver...', 0)
+#1 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliver...')
+#2 C:\xampp\htdocs\meesho\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliver...')
+#3 C:\xampp\htdocs\meesho\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliver...', Array, false)
+#4 C:\xampp\htdocs\meesho\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meesho\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\meesho\app\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\meesho\system\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+#8 C:\xampp\htdocs\meesho\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+#9 C:\xampp\htdocs\meesho\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meesho\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meesho\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meesho\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-03-14 16:23:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:23:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:23:15 --> [Caused by] mysqli_sql_exception: Unknown column 'deliveries.delivery_date' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `deliveries`.*, `staff`.`name` AS `staff_name`, `staff`.`image` AS `staff_image`
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+ORDER BY `deliveries`.`delivery_date` DESC
+ LIMIT 3', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\LoginController.php(71): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:27:20 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\DeliveryModel::sum
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\LoginController.php(65): CodeIgniter\Model->__call('sum', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:27:46 --> ErrorException: Undefined variable $totalDeliveries
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Controllers\LoginController.php on line 75.
+ 1 APPPATH\Controllers\LoginController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalDeliveries', 'C:\\xampp\\htdocs\\meesho\\app\\Controllers\\LoginController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:27:47 --> ErrorException: Undefined variable $totalDeliveries
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Controllers\LoginController.php on line 75.
+ 1 APPPATH\Controllers\LoginController.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalDeliveries', 'C:\\xampp\\htdocs\\meesho\\app\\Controllers\\LoginController.php', 75)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:28:46 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\DeliveryModel::sum
+[Method: GET, Route: admin/dashboard]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\LoginController.php(62): CodeIgniter\Model->__call('sum', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:32:16 --> ErrorException: Undefined array key "delivery_type"
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 56.
+ 1 APPPATH\Views\layouts\delivery_operations_report.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_type"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\delivery_operations_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+10 APPPATH\Controllers\Admin.php(565): view('delivery_operations_report', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:32:56 --> ErrorException: Undefined array key "delivery_type"
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\layouts\dashboard.php on line 139.
+ 1 APPPATH\Views\layouts\dashboard.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "delivery_type"', 'C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\dashboard.php', 139)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\layouts\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/dashboard', null, true)
+ 5 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 6 APPPATH\Views\admin_layout.php(10): CodeIgniter\View\View->include('common/footer')
+ 7 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\admin_layout.php')
+ 8 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin_layout', [], true)
+10 APPPATH\Controllers\LoginController.php(72): view('admin_layout', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-14 16:33:37 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: admin/adddeliveries]
+in APPPATH\Controllers\Admin.php on line 517.
+ 1 APPPATH\Controllers\Admin.php(517): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\meesho\\app\\Controllers\\Admin.php', 517)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->adddeliveryInput()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

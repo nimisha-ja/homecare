@@ -1,0 +1,56 @@
+CRITICAL - 2025-03-15 05:30:06 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\DeliveryModel::sum
+[Method: GET, Route: admin/staff/salaries]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(732): CodeIgniter\Model->__call('sum', [...])
+ 2 APPPATH\Controllers\Admin.php(693): App\Controllers\Admin->getSuccessfulPickupsAndDeliveries(Object(App\Models\DeliveryModel), '15', '2025-03-01', '2025-03-15')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-15 05:36:54 --> ErrorException: Undefined array key "successful_delout_for_pickupiveries"
+[Method: GET, Route: admin/staff/salaries]
+in APPPATH\Controllers\Admin.php on line 697.
+ 1 APPPATH\Controllers\Admin.php(697): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "successful_delout_for_pickupiveries"', 'C:\\xampp\\htdocs\\meesho\\app\\Controllers\\Admin.php', 697)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-15 10:43:04 --> ParseError: syntax error, unexpected end of file, expecting "elseif" or "else" or "endif"
+[Method: GET, Route: admin/deliverylist]
+in APPPATH\Views\layouts\delivery_operations_report.php on line 70.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/delivery_operations_report', null, true)
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 4 APPPATH\Views\delivery_operations_report.php(10): CodeIgniter\View\View->include('common/footer')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\delivery_operations_report.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_operations_report', [], true)
+ 8 APPPATH\Controllers\Admin.php(560): view('delivery_operations_report', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReport()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-15 10:48:28 --> Error: Object of class CodeIgniter\Pager\Pager could not be converted to string
+[Method: GET, Route: admin/useraccounts]
+in APPPATH\Views\layouts\userlist.php on line 86.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/userlist', null, true)
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/footer', null, true)
+ 5 APPPATH\Views\users_list.php(10): CodeIgniter\View\View->include('common/footer')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meesho\\app\\Views\\users_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('users_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(35): view('users_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

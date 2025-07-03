@@ -1,0 +1,22 @@
+to change foldername--------------------------
+
+App.php--http://localhost/meeshodelivery
+
+.htaceess --on  top write
+RewriteEngine on
+RewriteBase /meeshodelivery/
+-------------------------
+to makeit live-------------------------------------changes only in App.php and Database.php in config folder
+
+gloria Live--------------
+Site----https://gloria3p.com/
+ ->App.php  give baseurl-
+ public $baseURL = 'https://gloria3p.com/gloria/';
+ ->Database.php
+ gave database details
+ ->also change ,htaccess foldername to gloria
+Database-------
+password- x3NuAH)gV%7$
+Username - gloridks_deliveryuser
+You saved “gloridks_deliveryuser”’s privileges on the database “gloridks_delivery”.
+

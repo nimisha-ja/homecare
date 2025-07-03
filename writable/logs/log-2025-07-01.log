@@ -1,0 +1,86 @@
+CRITICAL - 2025-07-01 11:18:21 --> ErrorException: Undefined array key "family_email "
+[Method: POST, Route: family/update/15]
+in APPPATH\Controllers\FamilyController.php on line 189.
+ 1 APPPATH\Controllers\FamilyController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "family_email "', 'C:\\xampp\\htdocs\\churchapp\\app\\Controllers\\FamilyController.php', 189)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->update('15')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-01 11:19:42 --> ErrorException: Undefined array key "family_email "
+[Method: POST, Route: family/update/15]
+in APPPATH\Controllers\FamilyController.php on line 189.
+ 1 APPPATH\Controllers\FamilyController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "family_email "', 'C:\\xampp\\htdocs\\churchapp\\app\\Controllers\\FamilyController.php', 189)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->update('15')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-01 11:20:34 --> ErrorException: Undefined array key "family_code "
+[Method: POST, Route: family/update/15]
+in APPPATH\Controllers\FamilyController.php on line 189.
+ 1 APPPATH\Controllers\FamilyController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "family_code "', 'C:\\xampp\\htdocs\\churchapp\\app\\Controllers\\FamilyController.php', 189)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->update('15')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-01 11:35:22 --> ErrorException: Undefined array key "photo"
+[Method: POST, Route: family/update/23]
+in APPPATH\Controllers\FamilyController.php on line 187.
+ 1 APPPATH\Controllers\FamilyController.php(187): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "photo"', 'C:\\xampp\\htdocs\\churchapp\\app\\Controllers\\FamilyController.php', 187)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->update('23')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-01 11:43:18 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "1751370102_0008ec0a3b56918acc68.jpg style="
+[Method: GET, Route: uploads/family/1751370102_0008ec0a3b56918acc68.jpg%20style=]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('uploads/family/1751370102_0008ec0a3b56918acc68.jpg style=')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('uploads/family/1751370102_0008ec0a3b56918acc68.jpg style=')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-01 11:43:18 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "1751369913_d4c9b8dc511f4911e143.jpg style="
+[Method: GET, Route: uploads/family/1751369913_d4c9b8dc511f4911e143.jpg%20style=]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('uploads/family/1751369913_d4c9b8dc511f4911e143.jpg style=')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('uploads/family/1751369913_d4c9b8dc511f4911e143.jpg style=')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-01 11:43:18 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "1751370026_3004df4c2e62fafe5a44.jpg style="
+[Method: GET, Route: uploads/family/1751370026_3004df4c2e62fafe5a44.jpg%20style=]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('uploads/family/1751370026_3004df4c2e62fafe5a44.jpg style=')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('uploads/family/1751370026_3004df4c2e62fafe5a44.jpg style=')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-07-01 11:48:02 --> ParseError: syntax error, unexpected token "else"
+[Method: GET, Route: dashboard]
+in APPPATH\Views\layouts\dashboard.php on line 56.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/dashboard', null, true)
+ 3 APPPATH\Views\admin_layout.php(8): CodeIgniter\View\View->include('layouts/dashboard')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\admin_layout.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin_layout', [], true)
+ 7 APPPATH\Controllers\LoginController.php(86): view('admin_layout', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

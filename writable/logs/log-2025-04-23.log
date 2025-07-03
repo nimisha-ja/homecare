@@ -1,0 +1,2226 @@
+CRITICAL - 2025-04-23 12:29:12 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 164.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\staff_salaries_list.php', 164)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2379): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:41:24 --> ErrorException: Undefined variable $selectedHubId
+[Method: GET, Route: staff/salaries]
+in APPPATH\Views\layouts\staff_salaries_list.php on line 160.
+ 1 APPPATH\Views\layouts\staff_salaries_list.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedHubId', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\staff_salaries_list.php', 160)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\layouts\\staff_salaries_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staff_salaries_list', null, true)
+ 5 APPPATH\Views\staff_salaries_list.php(6): CodeIgniter\View\View->include('layouts/staff_salaries_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\gloriaadmin\\app\\Views\\staff_salaries_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staff_salaries_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2386): view('staff_salaries_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:53:08 --> mysqli_sql_exception: Not unique table/alias: 'staff' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2475): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:53:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'staff'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount, SUM(wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `staff`.`hub_id` = :staff.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2475): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:53:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'staff'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount, SUM(wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `staff`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount, SUM(wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `staff`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount, SUM(wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `staff`.`hub_id` = :staff.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2475): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:53:08 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'staff'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount, SUM(wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `staff`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount, SUM(wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `staff`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount, SUM(wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `staff`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `staff_id`, SUM(successful_deliveries) AS successful_deliveries, SUM(successful_pickup) AS successful_pickups, SUM(advance_amount) AS advance_amount, SUM(wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+JOIN `staff` ON `staff`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `staff`.`hub_id` = :staff.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2475): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:54:47 --> mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:54:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:54:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:54:47 --> [Caused by] mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:56:32 --> mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:56:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:32 --> [Caused by] mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:56:33 --> mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:56:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:33 --> [Caused by] mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:56:33 --> mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:56:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:33 --> [Caused by] mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:56:34 --> mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:56:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:34 --> [Caused by] mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:56:34 --> mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:56:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:34 --> [Caused by] mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:56:34 --> mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:56:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:34 --> [Caused by] mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:56:34 --> mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:56:34 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:34 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:56:34 --> [Caused by] mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:57:32 --> mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:57:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:57:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:57:32 --> [Caused by] mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:57:33 --> mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:57:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:57:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:57:33 --> [Caused by] mysqli_sql_exception: Unknown column 's2.hub_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s2`.`hub_id` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+JOIN `staff` AS `s2` ON `s2`.`id` = `deliveries`.`staff_id`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s2`.`hub_id` = :s2.hub_id:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2479): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:58:43 --> mysqli_sql_exception: Table 'gloria.hubs' doesn't exist in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:58:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gloria.hubs' doesn't exist
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:58:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gloria.hubs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:58:43 --> [Caused by] mysqli_sql_exception: Table 'gloria.hubs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 12:58:44 --> mysqli_sql_exception: Table 'gloria.hubs' doesn't exist in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 12:58:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'gloria.hubs' doesn't exist
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:58:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'gloria.hubs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 12:58:44 --> [Caused by] mysqli_sql_exception: Table 'gloria.hubs' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hubs` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 13:00:05 --> mysqli_sql_exception: Unknown column 'h.id' in 'on clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 13:00:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'h.id' in 'on clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 13:00:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'h.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 13:00:05 --> [Caused by] mysqli_sql_exception: Unknown column 'h.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-23 13:00:06 --> mysqli_sql_exception: Unknown column 'h.id' in 'on clause' in C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\gloriaadmin\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\gloriaadmin\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\gloriaadmin\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\gloriaadmin\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\gloriaadmin\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\gloriaadmin\app\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+#8 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\gloriaadmin\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\gloriaadmin\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\gloriaadmin\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\gloriaadmin\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-23 13:00:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'h.id' in 'on clause'
+[Method: GET, Route: staff/salaries]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 13:00:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'h.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-23 13:00:06 --> [Caused by] mysqli_sql_exception: Unknown column 'h.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= \'2025-04-01\'
+AND `deliveries`.`service_date` <= \'2025-04-23\'
+AND `deliveries`.`staff_id` = \'15\'
+AND `s1`.`hub` = \'3\'
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM (
+SELECT `deliveries`.`staff_id`, SUM(deliveries.successful_deliveries) AS successful_deliveries, SUM(deliveries.successful_pickup) AS successful_pickups, SUM(deliveries.advance_amount) AS advance_amount, SUM(deliveries.wage) AS wage
+FROM `deliveries`
+LEFT JOIN `staff` AS `s1` ON `s1`.`id` = `deliveries`.`staff_id`
+LEFT JOIN `hub` AS `h` ON `h`.`id` = `s1`.`hub`
+WHERE `deliveries`.`service_date` >= :deliveries.service_date:
+AND `deliveries`.`service_date` <= :deliveries.service_date.1:
+AND `deliveries`.`staff_id` = :deliveries.staff_id:
+AND `s1`.`hub` = :s1.hub:
+GROUP BY `deliveries`.`staff_id`
+) CI_count_all_results', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(2478): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalaries()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

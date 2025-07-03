@@ -1,0 +1,20 @@
+CRITICAL - 2025-05-27 13:57:55 --> ErrorException: Undefined variable $newAmountPaid
+[Method: GET, Route: staff-salariesoncycle]
+in APPPATH\Controllers\Admin.php on line 4601.
+ 1 APPPATH\Controllers\Admin.php(4601): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $newAmountPaid', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Controllers\\Admin.php', 4601)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalariesOncycle()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-27 14:00:27 --> ErrorException: Undefined variable $previousAdvance
+[Method: GET, Route: staff-salariesoncycle]
+in APPPATH\Controllers\Admin.php on line 4433.
+ 1 APPPATH\Controllers\Admin.php(4433): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $previousAdvance', 'C:\\xampp\\htdocs\\gloriaadmin\\app\\Controllers\\Admin.php', 4433)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listStaffSalariesOncycle()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

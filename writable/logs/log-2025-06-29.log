@@ -1,0 +1,280 @@
+CRITICAL - 2025-06-29 07:39:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "donation_purposes/index.php"
+[Method: GET, Route: donationpurposes]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('donation_purposes/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('donation_purposes/index', [], true)
+ 3 APPPATH\Controllers\FamilyController.php(411): view('donation_purposes/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->donationPurposes()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 07:39:53 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: donationpurposes]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\churchapp\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\family\donation_purposes.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\family\\donation_purposes.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('family/donation_purposes', [], true)
+ 9 APPPATH\Controllers\FamilyController.php(411): view('family/donation_purposes', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->donationPurposes()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 07:42:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "family/layouts/edit_announcement.php"
+[Method: GET, Route: announcements/edit/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('family/layouts/edit_announcement.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('family/layouts/edit_announcement', null, true)
+ 3 APPPATH\Views\edit_announcement.php(6): CodeIgniter\View\View->include('family/layouts/edit_announcement')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\edit_announcement.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_announcement', [], true)
+ 7 APPPATH\Controllers\FamilyController.php(386): view('edit_announcement', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->editAnnouncement('2')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 07:43:11 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: announcements/edit/2]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\churchapp\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\edit_announcement.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\edit_announcement.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_announcement', [], true)
+ 9 APPPATH\Controllers\FamilyController.php(386): view('edit_announcement', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->editAnnouncement('2')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 12:28:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "donation_purposes_edit.php"
+[Method: GET, Route: donationpurposes/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('donation_purposes_edit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('donation_purposes_edit', [], true)
+ 3 APPPATH\Controllers\FamilyController.php(442): view('donation_purposes_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->editdonatnPurposes('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 12:29:41 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: donationpurposes/edit/1]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\churchapp\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\family\donation_purposes_edit.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\family\\donation_purposes_edit.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('family/donation_purposes_edit', [], true)
+ 9 APPPATH\Controllers\FamilyController.php(442): view('family/donation_purposes_edit', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->editdonatnPurposes('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 17:55:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "donations_create.php"
+[Method: GET, Route: donation/add]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('donations_create.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('donations_create', [], true)
+ 3 APPPATH\Controllers\FamilyController.php(471): view('donations_create', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->createDonation()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 17:55:52 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: donation/add]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\churchapp\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\family\donations_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\family\\donations_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('family/donations_create', [], true)
+ 9 APPPATH\Controllers\FamilyController.php(471): view('family/donations_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->createDonation()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-06-29 18:02:05 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\xampp\htdocs\churchapp\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\churchapp\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `do...', 0)
+#1 C:\xampp\htdocs\churchapp\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `do...')
+#2 C:\xampp\htdocs\churchapp\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `do...')
+#3 C:\xampp\htdocs\churchapp\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `do...', Array, false)
+#4 C:\xampp\htdocs\churchapp\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\churchapp\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\churchapp\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\churchapp\system\BaseModel.php(750): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\churchapp\app\Controllers\FamilyController.php(478): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\churchapp\system\CodeIgniter.php(933): App\Controllers\FamilyController->storeDonation()
+#10 C:\xampp\htdocs\churchapp\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+#11 C:\xampp\htdocs\churchapp\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\churchapp\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\churchapp\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\churchapp\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-06-29 18:02:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: donations/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `donations` (`family_id`, `purpose_id`, `amount`, `donation_date`, `notes`, `created_at`, `updated_at`) VALUES (:family_id:, :purpose_id:, :amount:, :donation_date:, :notes:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\FamilyController.php(478): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->storeDonation()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 18:02:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `donations` (`family_id`, `purpose_id`, `amount`, `donation_date`, `notes`, `created_at`, `updated_at`) VALUES (\'15\', \'1\', \'1000000\', \'2025-06-19\', \'\', \'2025-06-29 18:02:04\', \'2025-06-29 18:02:04\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `donations` (`family_id`, `purpose_id`, `amount`, `donation_date`, `notes`, `created_at`, `updated_at`) VALUES (\'15\', \'1\', \'1000000\', \'2025-06-19\', \'\', \'2025-06-29 18:02:04\', \'2025-06-29 18:02:04\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `donations` (`family_id`, `purpose_id`, `amount`, `donation_date`, `notes`, `created_at`, `updated_at`) VALUES (:family_id:, :purpose_id:, :amount:, :donation_date:, :notes:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\FamilyController.php(478): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->storeDonation()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 18:02:05 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `donations` (`family_id`, `purpose_id`, `amount`, `donation_date`, `notes`, `created_at`, `updated_at`) VALUES (\'15\', \'1\', \'1000000\', \'2025-06-19\', \'\', \'2025-06-29 18:02:04\', \'2025-06-29 18:02:04\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `donations` (`family_id`, `purpose_id`, `amount`, `donation_date`, `notes`, `created_at`, `updated_at`) VALUES (\'15\', \'1\', \'1000000\', \'2025-06-19\', \'\', \'2025-06-29 18:02:04\', \'2025-06-29 18:02:04\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `donations` (`family_id`, `purpose_id`, `amount`, `donation_date`, `notes`, `created_at`, `updated_at`) VALUES (\'15\', \'1\', \'1000000\', \'2025-06-19\', \'\', \'2025-06-29 18:02:04\', \'2025-06-29 18:02:04\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `donations` (`family_id`, `purpose_id`, `amount`, `donation_date`, `notes`, `created_at`, `updated_at`) VALUES (:family_id:, :purpose_id:, :amount:, :donation_date:, :notes:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\FamilyController.php(478): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->storeDonation()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 18:08:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "family/donations_list.php"
+[Method: GET, Route: donations]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('family/donations_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('family/donations_list', [], true)
+ 3 APPPATH\Controllers\FamilyController.php(499): view('family/donations_list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->donationList()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 18:09:51 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: donations]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\churchapp\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\family\donations_list.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\churchapp\\app\\Views\\family\\donations_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('family/donations_list', [], true)
+ 9 APPPATH\Controllers\FamilyController.php(499): view('family/donations_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->donationList()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 18:31:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "donations_edit.php"
+[Method: GET, Route: donations/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('donations_edit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('donations_edit', [], true)
+ 3 APPPATH\Controllers\FamilyController.php(514): view('donations_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->editDonation('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 18:32:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "donations_edit.php"
+[Method: GET, Route: donations/edit/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('donations_edit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('donations_edit', [], true)
+ 3 APPPATH\Controllers\FamilyController.php(514): view('donations_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->editDonation('2')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 18:36:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "donations_edit.php"
+[Method: GET, Route: donations/edit/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('donations_edit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('donations_edit', [], true)
+ 3 APPPATH\Controllers\FamilyController.php(514): view('donations_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->editDonation('2')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 18:36:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "donations_edit.php"
+[Method: GET, Route: donations/edit/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('donations_edit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('donations_edit', [], true)
+ 3 APPPATH\Controllers\FamilyController.php(514): view('donations_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->editDonation('2')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-06-29 18:36:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "donations_edit.php"
+[Method: GET, Route: donations/edit/2]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('donations_edit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('donations_edit', [], true)
+ 3 APPPATH\Controllers\FamilyController.php(514): view('donations_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\FamilyController->editDonation('2')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FamilyController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

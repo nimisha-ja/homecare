@@ -1,0 +1,1303 @@
+CRITICAL - 2025-04-03 04:23:53 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: admin/addincomecategories]
+in APPPATH\Config\Routes.php on line 114.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 04:36:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "incomecategory_list.php"
+[Method: GET, Route: admin/incomecategorylist]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('incomecategory_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('incomecategory_list', [], true)
+ 3 APPPATH\Controllers\Admin.php(538): view('incomecategory_list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->IncomeCatgeoryList()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 04:39:21 --> ErrorException: Undefined variable $expense
+[Method: GET, Route: admin/incomecategorylist]
+in APPPATH\Views\layouts\incomecategory_list.php on line 164.
+ 1 APPPATH\Views\layouts\incomecategory_list.php(164): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $expense', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\incomecategory_list.php', 164)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\incomecategory_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/incomecategory_list', null, true)
+ 5 APPPATH\Views\incomecategory_list.php(6): CodeIgniter\View\View->include('layouts/incomecategory_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\incomecategory_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('incomecategory_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(538): view('incomecategory_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->IncomeCatgeoryList()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:01:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/edit_income_category.php"
+[Method: GET, Route: admin/incomecategory/edit/3]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/edit_income_category.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 3 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 7 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:02:55 --> ErrorException: Undefined array key "incomecategory_id "
+[Method: GET, Route: admin/incomecategory/edit/3]
+in APPPATH\Views\layouts\edit_income_category.php on line 24.
+ 1 APPPATH\Views\layouts\edit_income_category.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:03:44 --> ErrorException: Undefined array key "id "
+[Method: GET, Route: admin/incomecategory/edit/3]
+in APPPATH\Views\layouts\edit_income_category.php on line 24.
+ 1 APPPATH\Views\layouts\edit_income_category.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:04:20 --> ErrorException: Undefined array key "incomecategory_id "
+[Method: GET, Route: admin/incomecategory/edit/3]
+in APPPATH\Views\layouts\edit_income_category.php on line 24.
+ 1 APPPATH\Views\layouts\edit_income_category.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:05:25 --> ErrorException: Undefined array key "incomecategory_id "
+[Method: GET, Route: admin/incomecategory/edit/3]
+in APPPATH\Views\layouts\edit_income_category.php on line 25.
+ 1 APPPATH\Views\layouts\edit_income_category.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:06:06 --> ParseError: syntax error, unexpected identifier "print_r", expecting "," or ";"
+[Method: GET, Route: admin/incomecategory/edit/3]
+in APPPATH\Views\layouts\edit_income_category.php on line 24.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 3 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 7 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:06:38 --> ErrorException: Undefined array key "incomecategory_id "
+[Method: GET, Route: admin/incomecategory/edit/3]
+in APPPATH\Views\layouts\edit_income_category.php on line 25.
+ 1 APPPATH\Views\layouts\edit_income_category.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:07:47 --> ErrorException: Undefined array key "incomecategory_id "
+[Method: GET, Route: admin/incomecategory/edit/3]
+in APPPATH\Views\layouts\edit_income_category.php on line 32.
+ 1 APPPATH\Views\layouts\edit_income_category.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:09:51 --> ErrorException: Undefined array key "incomecategory_id "
+[Method: GET, Route: admin/incomecategory/edit/3]
+in APPPATH\Views\layouts\edit_income_category.php on line 24.
+ 1 APPPATH\Views\layouts\edit_income_category.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:10:00 --> ErrorException: Undefined array key "incomecategory_id "
+[Method: GET, Route: admin/incomecategory/edit/3]
+in APPPATH\Views\layouts\edit_income_category.php on line 24.
+ 1 APPPATH\Views\layouts\edit_income_category.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:10:01 --> ErrorException: Undefined array key "incomecategory_id "
+[Method: GET, Route: admin/incomecategory/edit/3]
+in APPPATH\Views\layouts\edit_income_category.php on line 24.
+ 1 APPPATH\Views\layouts\edit_income_category.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:10:10 --> ErrorException: Undefined array key "incomecategory_id "
+[Method: GET, Route: admin/incomecategory/edit/3]
+in APPPATH\Views\layouts\edit_income_category.php on line 24.
+ 1 APPPATH\Views\layouts\edit_income_category.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_income_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_income_category', null, true)
+ 5 APPPATH\Views\edit_income_category.php(6): CodeIgniter\View\View->include('layouts/edit_income_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_income_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_income_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(549): view('edit_income_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeCatgeoryEdit('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-03 05:35:28 --> mysqli_sql_exception: Unknown column 'income.incomecategory_id' in 'on clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(761): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->incomeList()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-03 05:35:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'income.incomecategory_id' in 'on clause'
+[Method: GET, Route: admin/incomelist]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`', [], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(761): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:35:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'income.incomecategory_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`', [], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(761): CodeIgniter\BaseModel->paginate(10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeList()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:35:29 --> [Caused by] mysqli_sql_exception: Unknown column 'income.incomecategory_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`', [], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(761): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeList()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-03 05:48:59 --> mysqli_sql_exception: Unknown column 'income.incomecategory_id' in 'on clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(1013): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->dailyPaymentReport()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-03 05:48:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'income.incomecategory_id' in 'on clause'
+[Method: GET, Route: admin/dailypaymentreport]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= :date_of_income:
+AND `date_of_income` <= :date_of_income.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(1013): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dailyPaymentReport()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:48:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'income.incomecategory_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= \'2025-04-03\'
+AND `date_of_income` <= \'2025-04-03\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= \'2025-04-03\'
+AND `date_of_income` <= \'2025-04-03\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= :date_of_income:
+AND `date_of_income` <= :date_of_income.1:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Admin.php(1013): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dailyPaymentReport()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:48:59 --> [Caused by] mysqli_sql_exception: Unknown column 'income.incomecategory_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= \'2025-04-03\'
+AND `date_of_income` <= \'2025-04-03\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= \'2025-04-03\'
+AND `date_of_income` <= \'2025-04-03\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= \'2025-04-03\'
+AND `date_of_income` <= \'2025-04-03\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`incomecategory_id` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= :date_of_income:
+AND `date_of_income` <= :date_of_income.1:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(1013): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dailyPaymentReport()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:49:55 --> ErrorException: Undefined variable $incomeCategories
+[Method: POST, Route: admin/payment/filterReport]
+in APPPATH\Views\layouts\daily_payment_report.php on line 70.
+ 1 APPPATH\Views\layouts\daily_payment_report.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $incomeCategories', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php', 70)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_payment_report', null, true)
+ 5 APPPATH\Views\daily_payment_report.php(6): CodeIgniter\View\View->include('layouts/daily_payment_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_payment_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_payment_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1121): view('daily_payment_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterDailyReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-03 05:50:58 --> mysqli_sql_exception: Unknown column 'income.income_type' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(1102): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->filterDailyReport()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-03 05:50:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'income.income_type' in 'where clause'
+[Method: POST, Route: admin/payment/filterReport]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= :date_of_income:
+AND `date_of_income` <= :date_of_income.1:
+AND `income`.`income_type` = :income.income_type:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(1102): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterDailyReport()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:50:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'income.income_type' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= \'2025-04-03\'
+AND `date_of_income` <= \'2025-04-03\'
+AND `income`.`income_type` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= \'2025-04-03\'
+AND `date_of_income` <= \'2025-04-03\'
+AND `income`.`income_type` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= :date_of_income:
+AND `date_of_income` <= :date_of_income.1:
+AND `income`.`income_type` = :income.income_type:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Admin.php(1102): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterDailyReport()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:50:58 --> [Caused by] mysqli_sql_exception: Unknown column 'income.income_type' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= \'2025-04-03\'
+AND `date_of_income` <= \'2025-04-03\'
+AND `income`.`income_type` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= \'2025-04-03\'
+AND `date_of_income` <= \'2025-04-03\'
+AND `income`.`income_type` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= \'2025-04-03\'
+AND `date_of_income` <= \'2025-04-03\'
+AND `income`.`income_type` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `income`
+LEFT JOIN `hub` ON `income`.`hub` = `hub`.`hub_id`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` >= :date_of_income:
+AND `date_of_income` <= :date_of_income.1:
+AND `income`.`income_type` = :income.income_type:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(1102): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterDailyReport()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:51:31 --> ErrorException: Undefined array key "incomecategory_name"
+[Method: POST, Route: admin/payment/filterReport]
+in APPPATH\Views\layouts\daily_payment_report.php on line 140.
+ 1 APPPATH\Views\layouts\daily_payment_report.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_name"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php', 140)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_payment_report', null, true)
+ 5 APPPATH\Views\daily_payment_report.php(6): CodeIgniter\View\View->include('layouts/daily_payment_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_payment_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_payment_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1123): view('daily_payment_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterDailyReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:52:44 --> ErrorException: Undefined array key "incomecategory_name"
+[Method: POST, Route: admin/payment/filterReport]
+in APPPATH\Views\layouts\daily_payment_report.php on line 140.
+ 1 APPPATH\Views\layouts\daily_payment_report.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_name"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php', 140)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_payment_report', null, true)
+ 5 APPPATH\Views\daily_payment_report.php(6): CodeIgniter\View\View->include('layouts/daily_payment_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_payment_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_payment_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1116): view('daily_payment_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterDailyReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:52:54 --> ErrorException: Undefined array key "incomecategory_name"
+[Method: POST, Route: admin/payment/filterReport]
+in APPPATH\Views\layouts\daily_payment_report.php on line 140.
+ 1 APPPATH\Views\layouts\daily_payment_report.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_name"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php', 140)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_payment_report', null, true)
+ 5 APPPATH\Views\daily_payment_report.php(6): CodeIgniter\View\View->include('layouts/daily_payment_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_payment_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_payment_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1116): view('daily_payment_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterDailyReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 05:53:03 --> ErrorException: Undefined array key "incomecategory_name"
+[Method: POST, Route: admin/payment/filterReport]
+in APPPATH\Views\layouts\daily_payment_report.php on line 140.
+ 1 APPPATH\Views\layouts\daily_payment_report.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "incomecategory_name"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php', 140)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_payment_report', null, true)
+ 5 APPPATH\Views\daily_payment_report.php(6): CodeIgniter\View\View->include('layouts/daily_payment_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_payment_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_payment_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1116): view('daily_payment_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterDailyReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 06:13:13 --> ErrorException: Undefined variable $start_date
+[Method: GET, Route: admin/dailypaymentreport]
+in APPPATH\Views\layouts\daily_payment_report.php on line 24.
+ 1 APPPATH\Views\layouts\daily_payment_report.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $start_date', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_payment_report', null, true)
+ 5 APPPATH\Views\daily_payment_report.php(6): CodeIgniter\View\View->include('layouts/daily_payment_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_payment_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_payment_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1039): view('daily_payment_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dailyPaymentReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 06:22:07 --> ErrorException: Undefined variable $start_date
+[Method: GET, Route: admin/dailypaymentreport]
+in APPPATH\Views\layouts\daily_payment_report.php on line 24.
+ 1 APPPATH\Views\layouts\daily_payment_report.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $start_date', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_payment_report', null, true)
+ 5 APPPATH\Views\daily_payment_report.php(6): CodeIgniter\View\View->include('layouts/daily_payment_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_payment_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_payment_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1039): view('daily_payment_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dailyPaymentReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 06:30:52 --> ErrorException: Undefined variable $expense_category
+[Method: GET, Route: admin/dailypaymentreport]
+in APPPATH\Views\layouts\daily_payment_report.php on line 26.
+ 1 APPPATH\Views\layouts\daily_payment_report.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $expense_category', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_payment_report', null, true)
+ 5 APPPATH\Views\daily_payment_report.php(6): CodeIgniter\View\View->include('layouts/daily_payment_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_payment_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_payment_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1039): view('daily_payment_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dailyPaymentReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 06:31:30 --> ErrorException: Undefined variable $income_type
+[Method: GET, Route: admin/dailypaymentreport]
+in APPPATH\Views\layouts\daily_payment_report.php on line 27.
+ 1 APPPATH\Views\layouts\daily_payment_report.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $income_type', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php', 27)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_payment_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_payment_report', null, true)
+ 5 APPPATH\Views\daily_payment_report.php(6): CodeIgniter\View\View->include('layouts/daily_payment_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_payment_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_payment_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1039): view('daily_payment_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dailyPaymentReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 06:33:10 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::generatePDFReport(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 8 expected
+[Method: GET, Route: admin/report/generatePDFReport]
+in APPPATH\Controllers\Admin.php on line 1133.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->generatePDFReport()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 06:35:03 --> ErrorException: Undefined array key "source_name"
+[Method: GET, Route: admin/report/generatePDFReport]
+in APPPATH\Controllers\Admin.php on line 1240.
+ 1 APPPATH\Controllers\Admin.php(1240): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "source_name"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Controllers\\Admin.php', 1240)
+ 2 APPPATH\Controllers\Admin.php(1187): App\Controllers\Admin->generatePDF('2025-04-03', '2025-04-03', [...], [...], 10, 10, [...], [...])
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->generatePDFReport()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:18:20 --> Error: Call to a member function links() on string
+[Method: GET, Route: admin/incomelist]
+in APPPATH\Views\layouts\income_list.php on line 224.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/income_list', null, true)
+ 4 APPPATH\Views\income_list.php(6): CodeIgniter\View\View->include('layouts/income_list')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\income_list.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('income_list', [], true)
+ 8 APPPATH\Controllers\Admin.php(800): view('income_list', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeList()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:22:04 --> Error: Object of class CodeIgniter\Pager\Pager could not be converted to string
+[Method: POST, Route: admin/income/filter]
+in APPPATH\Views\layouts\income_list.php on line 225.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/income_list', null, true)
+ 4 APPPATH\Views\income_list.php(6): CodeIgniter\View\View->include('layouts/income_list')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\income_list.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('income_list', [], true)
+ 8 APPPATH\Controllers\Admin.php(825): view('income_list', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filter()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:22:38 --> Error: Call to a member function links() on string
+[Method: GET, Route: admin/incomelist]
+in APPPATH\Views\layouts\income_list.php on line 225.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/income_list', null, true)
+ 4 APPPATH\Views\income_list.php(6): CodeIgniter\View\View->include('layouts/income_list')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\income_list.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('income_list', [], true)
+ 8 APPPATH\Controllers\Admin.php(792): view('income_list', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeList()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-03 07:46:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5 in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(786): CodeIgniter\BaseModel->paginate(10)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->incomeList()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-03 07:46:25 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+[Method: GET, Route: admin/incomelist]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` > IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(786): CodeIgniter\BaseModel->paginate(10)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:46:25 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` > IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` > IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` > IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(786): CodeIgniter\BaseModel->paginate(10)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeList()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:46:25 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'IS NULL' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` > IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` > IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` > IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `income`
+JOIN `hub` ON `hub`.`hub_id` = `income`.`hub`
+LEFT JOIN `income_categories` ON `income`.`source` = `income_categories`.`incomecategory_id`
+WHERE `date_of_income` > IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(786): CodeIgniter\BaseModel->paginate(10)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->incomeList()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:48:38 --> ParseError: syntax error, unexpected token "/"
+[Method: GET, Route: admin/incomelist]
+in APPPATH\Controllers\Admin.php on line 777.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\meeshodelivery\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-03 07:52:14 --> mysqli_sql_exception: Unknown column 'expense_categories.expense_category_id' in 'on clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(734): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-03 07:52:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expense_categories.expense_category_id' in 'on clause'
+[Method: GET, Route: admin/expenseslist]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`expense_category_id`
+WHERE `expenses`.`expense_date` >= :expenses.expense_date:
+AND `expenses`.`expense_date` <= :expenses.expense_date.1:', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Admin.php(734): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:52:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expense_categories.expense_category_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`expense_category_id`
+WHERE `expenses`.`expense_date` >= \'2024-04-03\'
+AND `expenses`.`expense_date` <= \'2025-04-03\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`expense_category_id`
+WHERE `expenses`.`expense_date` >= \'2024-04-03\'
+AND `expenses`.`expense_date` <= \'2025-04-03\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`expense_category_id`
+WHERE `expenses`.`expense_date` >= :expenses.expense_date:
+AND `expenses`.`expense_date` <= :expenses.expense_date.1:', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Admin.php(734): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:52:14 --> [Caused by] mysqli_sql_exception: Unknown column 'expense_categories.expense_category_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`expense_category_id`
+WHERE `expenses`.`expense_date` >= \'2024-04-03\'
+AND `expenses`.`expense_date` <= \'2025-04-03\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`expense_category_id`
+WHERE `expenses`.`expense_date` >= \'2024-04-03\'
+AND `expenses`.`expense_date` <= \'2025-04-03\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`expense_category_id`
+WHERE `expenses`.`expense_date` >= \'2024-04-03\'
+AND `expenses`.`expense_date` <= \'2025-04-03\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`expense_category_id`
+WHERE `expenses`.`expense_date` >= :expenses.expense_date:
+AND `expenses`.`expense_date` <= :expenses.expense_date.1:', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Admin.php(734): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-03 07:52:43 --> mysqli_sql_exception: Unknown column 'expense_categories.expense_category_name' in 'field list' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expense...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expense...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expense...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expense...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(10, 0)
+#6 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1287): CodeIgniter\BaseModel->findAll(10, 0)
+#7 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(734): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-04-03 07:52:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expense_categories.expense_category_name' in 'field list'
+[Method: GET, Route: admin/expenseslist]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `hub`.`hub_name`, `expense_categories`.`expense_category_name`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`category_id`
+WHERE `expenses`.`expense_date` >= :expenses.expense_date:
+AND `expenses`.`expense_date` <= :expenses.expense_date.1:
+ LIMIT 10', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(10, 0)
+ 4 SYSTEMPATH\BaseModel.php(1287): CodeIgniter\BaseModel->findAll(10, 0)
+ 5 APPPATH\Controllers\Admin.php(734): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:52:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expense_categories.expense_category_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expenses`.*, `hub`.`hub_name`, `expense_categories`.`expense_category_name`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`category_id`
+WHERE `expenses`.`expense_date` >= \'2024-04-03\'
+AND `expenses`.`expense_date` <= \'2025-04-03\'
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expenses`.*, `hub`.`hub_name`, `expense_categories`.`expense_category_name`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`category_id`
+WHERE `expenses`.`expense_date` >= \'2024-04-03\'
+AND `expenses`.`expense_date` <= \'2025-04-03\'
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `hub`.`hub_name`, `expense_categories`.`expense_category_name`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`category_id`
+WHERE `expenses`.`expense_date` >= :expenses.expense_date:
+AND `expenses`.`expense_date` <= :expenses.expense_date.1:
+ LIMIT 10', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(10, 0)
+ 6 SYSTEMPATH\BaseModel.php(1287): CodeIgniter\BaseModel->findAll(10, 0)
+ 7 APPPATH\Controllers\Admin.php(734): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:52:43 --> [Caused by] mysqli_sql_exception: Unknown column 'expense_categories.expense_category_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `expenses`.*, `hub`.`hub_name`, `expense_categories`.`expense_category_name`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`category_id`
+WHERE `expenses`.`expense_date` >= \'2024-04-03\'
+AND `expenses`.`expense_date` <= \'2025-04-03\'
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `expenses`.*, `hub`.`hub_name`, `expense_categories`.`expense_category_name`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`category_id`
+WHERE `expenses`.`expense_date` >= \'2024-04-03\'
+AND `expenses`.`expense_date` <= \'2025-04-03\'
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `expenses`.*, `hub`.`hub_name`, `expense_categories`.`expense_category_name`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`category_id`
+WHERE `expenses`.`expense_date` >= \'2024-04-03\'
+AND `expenses`.`expense_date` <= \'2025-04-03\'
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `expenses`.*, `hub`.`hub_name`, `expense_categories`.`expense_category_name`
+FROM `expenses`
+JOIN `hub` ON `hub`.`hub_id` = `expenses`.`hub`
+LEFT JOIN `expense_categories` ON `expenses`.`category` = `expense_categories`.`category_id`
+WHERE `expenses`.`expense_date` >= :expenses.expense_date:
+AND `expenses`.`expense_date` <= :expenses.expense_date.1:
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(10, 0)
+ 7 SYSTEMPATH\BaseModel.php(1287): CodeIgniter\BaseModel->findAll(10, 0)
+ 8 APPPATH\Controllers\Admin.php(734): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:55:31 --> ErrorException: Undefined array key "expense_category_id"
+[Method: GET, Route: admin/expenseslist]
+in APPPATH\Views\layouts\expenses_list.php on line 160.
+ 1 APPPATH\Views\layouts\expenses_list.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "expense_category_id"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php', 160)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/expenses_list', null, true)
+ 5 APPPATH\Views\expenses_list.php(6): CodeIgniter\View\View->include('layouts/expenses_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\expenses_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expenses_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(725): view('expenses_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 07:59:20 --> ErrorException: Undefined variable $expense
+[Method: GET, Route: admin/expenseslist]
+in APPPATH\Views\layouts\expenses_list.php on line 159.
+ 1 APPPATH\Views\layouts\expenses_list.php(159): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $expense', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php', 159)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/expenses_list', null, true)
+ 5 APPPATH\Views\expenses_list.php(6): CodeIgniter\View\View->include('layouts/expenses_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\expenses_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expenses_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(725): view('expenses_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 08:05:14 --> ErrorException: Cannot redeclare App\Controllers\Admin::filter()
+[Method: GET, Route: admin/expenseslist]
+in APPPATH\Controllers\Admin.php on line 840.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-03 08:06:40 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: admin/expense/filter]
+in APPPATH\Views\layouts\expenses_list.php on line 220.
+ 1 APPPATH\Views\layouts\expenses_list.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php', 220)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/expenses_list', null, true)
+ 5 APPPATH\Views\expenses_list.php(6): CodeIgniter\View\View->include('layouts/expenses_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\expenses_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expenses_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(736): view('expenses_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterexpenses()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 08:07:10 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: admin/expense/filter]
+in APPPATH\Views\layouts\expenses_list.php on line 220.
+ 1 APPPATH\Views\layouts\expenses_list.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php', 220)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/expenses_list', null, true)
+ 5 APPPATH\Views\expenses_list.php(6): CodeIgniter\View\View->include('layouts/expenses_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\expenses_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expenses_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(736): view('expenses_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterexpenses()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 08:08:38 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: admin/expense/filter]
+in APPPATH\Views\layouts\expenses_list.php on line 220.
+ 1 APPPATH\Views\layouts\expenses_list.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php', 220)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/expenses_list', null, true)
+ 5 APPPATH\Views\expenses_list.php(6): CodeIgniter\View\View->include('layouts/expenses_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\expenses_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expenses_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(736): view('expenses_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterexpenses()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 08:09:42 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: admin/expense/filter]
+in APPPATH\Views\layouts\expenses_list.php on line 220.
+ 1 APPPATH\Views\layouts\expenses_list.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php', 220)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/expenses_list', null, true)
+ 5 APPPATH\Views\expenses_list.php(6): CodeIgniter\View\View->include('layouts/expenses_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\expenses_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expenses_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(736): view('expenses_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterexpenses()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 08:11:59 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: admin/expense/filter]
+in APPPATH\Views\layouts\expenses_list.php on line 220.
+ 1 APPPATH\Views\layouts\expenses_list.php(220): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php', 220)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\expenses_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/expenses_list', null, true)
+ 5 APPPATH\Views\expenses_list.php(6): CodeIgniter\View\View->include('layouts/expenses_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\expenses_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('expenses_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(736): view('expenses_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterexpenses()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 12:01:11 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/inventorylist]
+in APPPATH\Views\layouts\inventory_list.php on line 178.
+ 1 APPPATH\Views\layouts\inventory_list.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\inventory_list.php', 178)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\inventory_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/inventory_list', null, true)
+ 5 APPPATH\Views\inventory_list.php(6): CodeIgniter\View\View->include('layouts/inventory_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\inventory_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('inventory_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2219): view('inventory_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->inventoryList()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 12:01:54 --> ErrorException: Undefined array key "inventory_id "
+[Method: GET, Route: admin/inventorylist]
+in APPPATH\Views\layouts\inventory_list.php on line 178.
+ 1 APPPATH\Views\layouts\inventory_list.php(178): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "inventory_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\inventory_list.php', 178)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\inventory_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/inventory_list', null, true)
+ 5 APPPATH\Views\inventory_list.php(6): CodeIgniter\View\View->include('layouts/inventory_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\inventory_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('inventory_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(2219): view('inventory_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->inventoryList()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 12:25:23 --> ParseError: syntax error, unexpected end of file
+[Method: GET, Route: admin/inventorylist]
+in APPPATH\Config\Routes.php on line 123.
+ 1 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 12:38:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "edit_inventory.php"
+[Method: GET, Route: admin/inventory/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('edit_inventory.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_inventory', [], true)
+ 3 APPPATH\Controllers\Admin.php(2240): view('edit_inventory', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->InventoryEdit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 12:41:50 --> ErrorException: Undefined array key "pieces"
+[Method: GET, Route: admin/inventory/edit/1]
+in APPPATH\Views\layouts\edit_inventory.php on line 33.
+ 1 APPPATH\Views\layouts\edit_inventory.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pieces"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_inventory.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_inventory', null, true)
+ 5 APPPATH\Views\edit_inventory.php(6): CodeIgniter\View\View->include('layouts/edit_inventory')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_inventory.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_inventory', [], true)
+ 9 APPPATH\Controllers\Admin.php(2240): view('edit_inventory', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->InventoryEdit('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-03 12:42:16 --> ErrorException: Undefined array key "date_of_income"
+[Method: GET, Route: admin/inventory/edit/1]
+in APPPATH\Views\layouts\edit_inventory.php on line 40.
+ 1 APPPATH\Views\layouts\edit_inventory.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "date_of_income"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_inventory.php', 40)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_inventory.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_inventory', null, true)
+ 5 APPPATH\Views\edit_inventory.php(6): CodeIgniter\View\View->include('layouts/edit_inventory')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_inventory.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_inventory', [], true)
+ 9 APPPATH\Controllers\Admin.php(2240): view('edit_inventory', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->InventoryEdit('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,1202 @@
+CRITICAL - 2025-04-02 09:13:01 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\HubModel::getHubs
+[Method: GET, Route: admin/hubslist]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(33): CodeIgniter\Model->__call('getHubs', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getHubs()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:14:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "hubs_list.php"
+[Method: GET, Route: admin/hubslist]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hubs_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('hubs_list', [], true)
+ 3 APPPATH\Controllers\Admin.php(40): view('hubs_list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getHubs()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:17:40 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/hubslist]
+in APPPATH\Views\layouts\hubs_list.php on line 65.
+ 1 APPPATH\Views\layouts\hubs_list.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\hubs_list.php', 65)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\hubs_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/hubs_list', null, true)
+ 5 APPPATH\Views\hubs_list.php(6): CodeIgniter\View\View->include('layouts/hubs_list')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\hubs_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('hubs_list', [], true)
+ 9 APPPATH\Controllers\Admin.php(40): view('hubs_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getHubs()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-02 09:39:01 --> mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-02 09:39:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+[Method: GET, Route: admin/hub/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 4 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 6 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:02 --> [Caused by] mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-02 09:39:10 --> mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-02 09:39:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+[Method: GET, Route: admin/hub/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 4 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:10 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 6 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:10 --> [Caused by] mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-02 09:39:38 --> mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-02 09:39:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+[Method: GET, Route: admin/hub/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 4 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 6 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:38 --> [Caused by] mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-02 09:39:39 --> mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-02 09:39:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+[Method: GET, Route: admin/hub/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 4 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 6 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:39 --> [Caused by] mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-02 09:39:59 --> mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-02 09:39:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+[Method: GET, Route: admin/hub/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 4 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 6 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:59 --> [Caused by] mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-02 09:39:59 --> mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-02 09:39:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+[Method: GET, Route: admin/hub/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 4 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 6 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:59 --> [Caused by] mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-02 09:39:59 --> mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-02 09:39:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+[Method: GET, Route: admin/hub/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 4 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 6 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:59 --> [Caused by] mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-02 09:39:59 --> mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-02 09:39:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+[Method: GET, Route: admin/hub/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 4 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 6 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:39:59 --> [Caused by] mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-02 09:41:23 --> mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+#6 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+#7 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-02 09:41:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+[Method: GET, Route: admin/hub/edit/3]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 4 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:41:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 6 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:41:23 --> [Caused by] mysqli_sql_exception: Unknown column 'hub.hib_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = \'3\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `hub`
+WHERE `hub`.`hib_id` = :hub.hib_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '3')
+ 7 APPPATH\Controllers\Admin.php(69): CodeIgniter\BaseModel->find('3')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:43:21 --> ErrorException: Undefined variable $hub
+[Method: GET, Route: admin/hub/edit/3]
+in APPPATH\Views\layouts\edit_hub.php on line 26.
+ 1 APPPATH\Views\layouts\edit_hub.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hub', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_hub', null, true)
+ 5 APPPATH\Views\edit_hub.php(6): CodeIgniter\View\View->include('layouts/edit_hub')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_hub.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_hub', [], true)
+ 9 APPPATH\Controllers\Admin.php(73): view('edit_hub', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:43:37 --> ErrorException: Undefined variable $hubs
+[Method: GET, Route: admin/hub/edit/3]
+in APPPATH\Views\layouts\edit_hub.php on line 35.
+ 1 APPPATH\Views\layouts\edit_hub.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hubs', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_hub', null, true)
+ 5 APPPATH\Views\edit_hub.php(6): CodeIgniter\View\View->include('layouts/edit_hub')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_hub.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_hub', [], true)
+ 9 APPPATH\Controllers\Admin.php(73): view('edit_hub', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:43:56 --> ErrorException: Undefined variable $hub
+[Method: GET, Route: admin/hub/edit/3]
+in APPPATH\Views\layouts\edit_hub.php on line 26.
+ 1 APPPATH\Views\layouts\edit_hub.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hub', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_hub', null, true)
+ 5 APPPATH\Views\edit_hub.php(6): CodeIgniter\View\View->include('layouts/edit_hub')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_hub.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_hub', [], true)
+ 9 APPPATH\Controllers\Admin.php(73): view('edit_hub', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:44:12 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: admin/hub/edit/3]
+in APPPATH\Views\layouts\edit_hub.php on line 36.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_hub', null, true)
+ 4 APPPATH\Views\edit_hub.php(6): CodeIgniter\View\View->include('layouts/edit_hub')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_hub.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_hub', [], true)
+ 8 APPPATH\Controllers\Admin.php(73): view('edit_hub', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:44:52 --> TypeError: Cannot access offset of type string on string
+[Method: GET, Route: admin/hub/edit/3]
+in APPPATH\Views\layouts\edit_hub.php on line 36.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_hub', null, true)
+ 4 APPPATH\Views\edit_hub.php(6): CodeIgniter\View\View->include('layouts/edit_hub')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_hub.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_hub', [], true)
+ 8 APPPATH\Controllers\Admin.php(73): view('edit_hub', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:46:29 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/hub/edit/3]
+in APPPATH\Views\layouts\edit_hub.php on line 26.
+ 1 APPPATH\Views\layouts\edit_hub.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_hub', null, true)
+ 5 APPPATH\Views\edit_hub.php(6): CodeIgniter\View\View->include('layouts/edit_hub')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_hub.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_hub', [], true)
+ 9 APPPATH\Controllers\Admin.php(74): view('edit_hub', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:46:38 --> ErrorException: Undefined variable $user
+[Method: GET, Route: admin/hub/edit/3]
+in APPPATH\Views\layouts\edit_hub.php on line 36.
+ 1 APPPATH\Views\layouts\edit_hub.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_hub', null, true)
+ 5 APPPATH\Views\edit_hub.php(6): CodeIgniter\View\View->include('layouts/edit_hub')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_hub.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_hub', [], true)
+ 9 APPPATH\Controllers\Admin.php(74): view('edit_hub', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:46:47 --> ErrorException: Undefined array key "hub"
+[Method: GET, Route: admin/hub/edit/3]
+in APPPATH\Views\layouts\edit_hub.php on line 36.
+ 1 APPPATH\Views\layouts\edit_hub.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "hub"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_hub', null, true)
+ 5 APPPATH\Views\edit_hub.php(6): CodeIgniter\View\View->include('layouts/edit_hub')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_hub.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_hub', [], true)
+ 9 APPPATH\Controllers\Admin.php(74): view('edit_hub', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('3')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:47:23 --> ErrorException: Undefined variable $hub
+[Method: GET, Route: admin/hub/edit/1]
+in APPPATH\Views\layouts\edit_hub.php on line 26.
+ 1 APPPATH\Views\layouts\edit_hub.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hub', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php', 26)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_hub', null, true)
+ 5 APPPATH\Views\edit_hub.php(6): CodeIgniter\View\View->include('layouts/edit_hub')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_hub.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_hub', [], true)
+ 9 APPPATH\Controllers\Admin.php(74): view('edit_hub', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:47:36 --> ErrorException: Undefined array key "chub_id"
+[Method: GET, Route: admin/hub/edit/1]
+in APPPATH\Views\layouts\edit_hub.php on line 36.
+ 1 APPPATH\Views\layouts\edit_hub.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "chub_id"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php', 36)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_hub', null, true)
+ 5 APPPATH\Views\edit_hub.php(6): CodeIgniter\View\View->include('layouts/edit_hub')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_hub.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_hub', [], true)
+ 9 APPPATH\Controllers\Admin.php(74): view('edit_hub', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:55:04 --> ErrorException: Undefined variable $hub
+[Method: GET, Route: admin/hub/edit/1]
+in APPPATH\Views\layouts\edit_hub.php on line 33.
+ 1 APPPATH\Views\layouts\edit_hub.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hub', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_hub.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_hub', null, true)
+ 5 APPPATH\Views\edit_hub.php(6): CodeIgniter\View\View->include('layouts/edit_hub')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_hub.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_hub', [], true)
+ 9 APPPATH\Controllers\Admin.php(74): view('edit_hub', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editHub('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:55:45 --> Error: Call to a member function update() on array
+[Method: POST, Route: admin/hub/update/1]
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateHub('1')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 09:56:06 --> Error: Call to a member function update() on array
+[Method: POST, Route: admin/hub/update/2]
+in APPPATH\Controllers\Admin.php on line 92.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateHub('2')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 11:00:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "add_basicpay.php"
+[Method: GET, Route: admin/addbasicpay]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('add_basicpay.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_basicpay', [], true)
+ 3 APPPATH\Controllers\Admin.php(1413): view('add_basicpay')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addBasicpay()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 11:00:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "add_basicpay.php"
+[Method: GET, Route: admin/addbasicpay]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('add_basicpay.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_basicpay', [], true)
+ 3 APPPATH\Controllers\Admin.php(1413): view('add_basicpay')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addBasicpay()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 11:02:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/add_basicpay.php"
+[Method: GET, Route: admin/addbasicpay]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/add_basicpay.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_basicpay', null, true)
+ 3 APPPATH\Views\add_basicpay.php(6): CodeIgniter\View\View->include('layouts/add_basicpay')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_basicpay.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_basicpay', [], true)
+ 7 APPPATH\Controllers\Admin.php(1413): view('add_basicpay')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addBasicpay()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 11:02:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/add_basicpay.php"
+[Method: GET, Route: admin/addbasicpay]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/add_basicpay.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_basicpay', null, true)
+ 3 APPPATH\Views\add_basicpay.php(6): CodeIgniter\View\View->include('layouts/add_basicpay')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_basicpay.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_basicpay', [], true)
+ 7 APPPATH\Controllers\Admin.php(1413): view('add_basicpay')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addBasicpay()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 11:14:55 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\BasicPayModel::getHubslist
+[Method: GET, Route: admin/listbasicpay]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(1424): CodeIgniter\Model->__call('getHubslist', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getBasicpay()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 11:15:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "basicpay_list.php"
+[Method: GET, Route: admin/listbasicpay]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('basicpay_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('basicpay_list', [], true)
+ 3 APPPATH\Controllers\Admin.php(1425): view('basicpay_list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getBasicpay()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 11:53:33 --> ErrorException: Undefined variable $basepays
+[Method: GET, Route: admin/basicpay/edit/1]
+in APPPATH\Views\layouts\edit_basepay.php on line 32.
+ 1 APPPATH\Views\layouts\edit_basepay.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $basepays', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_basepay.php', 32)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_basepay.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_basepay', null, true)
+ 5 APPPATH\Views\edit_basepay.php(6): CodeIgniter\View\View->include('layouts/edit_basepay')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_basepay.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_basepay', [], true)
+ 9 APPPATH\Controllers\Admin.php(1442): view('edit_basepay', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editBasicpay('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 11:55:12 --> Error: Call to a member function update() on array
+[Method: POST, Route: admin/basicpay/update/1]
+in APPPATH\Controllers\Admin.php on line 1458.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->updateBasicpay('1')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 12:45:30 --> ErrorException: Undefined variable $start_date
+[Method: GET, Route: admin/deliveryoperationsreport]
+in APPPATH\Views\layouts\delivery_report.php on line 37.
+ 1 APPPATH\Views\layouts\delivery_report.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $start_date', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\delivery_report.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\delivery_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/delivery_report', null, true)
+ 5 APPPATH\Views\delivery_report.php(6): CodeIgniter\View\View->include('layouts/delivery_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\delivery_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1308): view('delivery_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReportfiter()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 12:48:27 --> ErrorException: Undefined variable $start_date
+[Method: GET, Route: admin/deliveryoperationsreport]
+in APPPATH\Views\layouts\delivery_report.php on line 23.
+ 1 APPPATH\Views\layouts\delivery_report.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $start_date', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\delivery_report.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\delivery_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/delivery_report', null, true)
+ 5 APPPATH\Views\delivery_report.php(6): CodeIgniter\View\View->include('layouts/delivery_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\delivery_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1308): view('delivery_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReportfiter()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 12:48:49 --> ErrorException: Undefined variable $start_date
+[Method: GET, Route: admin/deliveryoperationsreport]
+in APPPATH\Views\layouts\delivery_report.php on line 23.
+ 1 APPPATH\Views\layouts\delivery_report.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $start_date', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\delivery_report.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\delivery_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/delivery_report', null, true)
+ 5 APPPATH\Views\delivery_report.php(6): CodeIgniter\View\View->include('layouts/delivery_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\delivery_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1308): view('delivery_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReportfiter()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 12:58:33 --> ErrorException: Undefined variable $staff_id
+[Method: GET, Route: admin/deliveryoperationsreport]
+in APPPATH\Views\layouts\delivery_report.php on line 23.
+ 1 APPPATH\Views\layouts\delivery_report.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff_id', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\delivery_report.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\delivery_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/delivery_report', null, true)
+ 5 APPPATH\Views\delivery_report.php(6): CodeIgniter\View\View->include('layouts/delivery_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\delivery_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1308): view('delivery_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReportfiter()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 12:59:15 --> Error: Class "App\Controllers\TCPDF" not found
+[Method: GET, Route: admin/delivery/download_pdf]
+in APPPATH\Controllers\Admin.php on line 1355.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->download_pdf()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 13:16:07 --> ErrorException: fopen(file://C:\xampp\htdocs\meeshodelivery\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/delivery/download_pdf]
+in FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1839.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\meeshodelivery\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1839)
+ 2 FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1839): fopen('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 3 FCPATH\vendor\tecnickcom\tcpdf\tcpdf.php(7777): TCPDF_STATIC::fopenLocal('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 4 APPPATH\Controllers\Admin.php(1425): TCPDF->Output('C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->download_pdf()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 13:18:22 --> ErrorException: fopen(file://C:\xampp\htdocs\meeshodelivery\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/delivery/download_pdf]
+in FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1839.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\meeshodelivery\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1839)
+ 2 FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1839): fopen('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 3 FCPATH\vendor\tecnickcom\tcpdf\tcpdf.php(7777): TCPDF_STATIC::fopenLocal('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 4 APPPATH\Controllers\Admin.php(1425): TCPDF->Output('C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->download_pdf()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 13:18:38 --> ErrorException: fopen(file://C:\xampp\htdocs\meeshodelivery\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/delivery/download_pdf]
+in FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1839.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\meeshodelivery\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1839)
+ 2 FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1839): fopen('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 3 FCPATH\vendor\tecnickcom\tcpdf\tcpdf.php(7777): TCPDF_STATIC::fopenLocal('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 4 APPPATH\Controllers\Admin.php(1425): TCPDF->Output('C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->download_pdf()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 13:19:17 --> ErrorException: fopen(file://C:\xampp\htdocs\meeshodelivery\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/delivery/download_pdf]
+in FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1839.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\meeshodelivery\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1839)
+ 2 FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1839): fopen('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 3 FCPATH\vendor\tecnickcom\tcpdf\tcpdf.php(7777): TCPDF_STATIC::fopenLocal('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 4 APPPATH\Controllers\Admin.php(1425): TCPDF->Output('C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->download_pdf()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 13:19:39 --> ErrorException: fopen(file://C:\xampp\htdocs\meeshodelivery\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/delivery/download_pdf]
+in FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1839.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\meeshodelivery\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1839)
+ 2 FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1839): fopen('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 3 FCPATH\vendor\tecnickcom\tcpdf\tcpdf.php(7777): TCPDF_STATIC::fopenLocal('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 4 APPPATH\Controllers\Admin.php(1425): TCPDF->Output('C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->download_pdf()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 13:21:03 --> ErrorException: fopen(file://C:\xampp\htdocs\meeshodelivery\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory
+[Method: GET, Route: admin/delivery/download_pdf]
+in FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1839.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\meeshodelivery\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1839)
+ 2 FCPATH\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1839): fopen('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 3 FCPATH\vendor\tecnickcom\tcpdf\tcpdf.php(7777): TCPDF_STATIC::fopenLocal('file://C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'wb')
+ 4 APPPATH\Controllers\Admin.php(1426): TCPDF->Output('C:\\xampp\\htdocs\\meeshodelivery\\public/uploads/delivery_report.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->download_pdf()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-02 14:40:08 --> ErrorException: Undefined variable $staff_id
+[Method: GET, Route: admin/deliveryoperationsreport]
+in APPPATH\Views\layouts\delivery_report.php on line 23.
+ 1 APPPATH\Views\layouts\delivery_report.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $staff_id', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\delivery_report.php', 23)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\delivery_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/delivery_report', null, true)
+ 5 APPPATH\Views\delivery_report.php(6): CodeIgniter\View\View->include('layouts/delivery_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\delivery_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('delivery_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(1312): view('delivery_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->deliveryOperationsReportfiter()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

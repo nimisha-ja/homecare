@@ -1,0 +1,75 @@
+CRITICAL - 2025-04-30 12:33:25 --> ErrorException: Cannot redeclare App\Controllers\Admin::generatePDF()
+[Method: POST, Route: payment/filterReport]
+in APPPATH\Controllers\Admin.php on line 1600.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-30 12:33:25 --> ErrorException: Cannot redeclare App\Controllers\Admin::generatePDF()
+[Method: GET, Route: report/generatePDFReport]
+in APPPATH\Controllers\Admin.php on line 1600.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-30 12:33:28 --> ErrorException: Cannot redeclare App\Controllers\Admin::generatePDF()
+[Method: POST, Route: payment/filterReport]
+in APPPATH\Controllers\Admin.php on line 1600.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-04-30 13:02:30 --> Error: Class "App\Controllers\CustomPDF" not found
+[Method: GET, Route: report/generatePDFReport]
+in APPPATH\Controllers\Admin.php on line 1646.
+ 1 APPPATH\Controllers\Admin.php(1563): App\Controllers\Admin->generatePDF('2025-04-01', '2025-04-30', [...], [...], 84, 114.0, [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->generatePDFReport()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:02:46 --> Error: Call to undefined method App\Controllers\Admin::generatePDF()
+[Method: GET, Route: report/generatePDFReport]
+in APPPATH\Controllers\Admin.php on line 1563.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->generatePDFReport()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:04:19 --> Error: Class "App\Controllers\CustomPDF" not found
+[Method: GET, Route: report/generatePDFReport]
+in APPPATH\Controllers\Admin.php on line 1647.
+ 1 APPPATH\Controllers\Admin.php(1563): App\Controllers\Admin->generatePDF('2025-04-01', '2025-04-30', [...], [...], 84, 114.0, [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->generatePDFReport()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:04:45 --> Error: Class "App\Controllers\CustomPDF" not found
+[Method: GET, Route: report/generatePDFReport]
+in APPPATH\Controllers\Admin.php on line 1648.
+ 1 APPPATH\Controllers\Admin.php(1564): App\Controllers\Admin->generatePDF('2025-04-01', '2025-04-30', [...], [...], 84, 114.0, [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->generatePDFReport()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:04:47 --> Error: Class "App\Controllers\CustomPDF" not found
+[Method: GET, Route: report/generatePDFReport]
+in APPPATH\Controllers\Admin.php on line 1648.
+ 1 APPPATH\Controllers\Admin.php(1564): App\Controllers\Admin->generatePDF('2025-04-01', '2025-04-30', [...], [...], 84, 114.0, [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->generatePDFReport()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:04:52 --> Error: Class "App\Controllers\CustomPDF" not found
+[Method: GET, Route: report/generatePDFReport]
+in APPPATH\Controllers\Admin.php on line 1648.
+ 1 APPPATH\Controllers\Admin.php(1564): App\Controllers\Admin->generatePDF('2025-04-01', '2025-04-30', [...], [...], 84, 114.0, [...], [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->generatePDFReport()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-30 13:09:47 --> ErrorException: Declaration of App\Controllers\CustomPDF::Footer($expenseTotal, $incomeTotal, $netTotal) must be compatible with TCPDF::Footer()
+[Method: GET, Route: report/generatePDFReport]
+in APPPATH\Controllers\CustomPDF.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

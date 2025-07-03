@@ -1,0 +1,615 @@
+CRITICAL - 2025-03-26 05:42:10 --> TypeError: CodeIgniter\Database\BaseBuilder::select(): Argument #2 ($escape) must be of type ?bool, string given, called in C:\xampp\htdocs\meeshodelivery\system\Model.php on line 928
+[Method: GET, Route: admin/useraccounts]
+in SYSTEMPATH\Database\BaseBuilder.php on line 403.
+ 1 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->select('users.id, users.username, users.email, users.is_active, users.created_at, users.updated_at, roles.role_name, roles.description', 'hub.hub_name')
+ 2 APPPATH\Models\UserModel.php(26): CodeIgniter\Model->__call('select', [...])
+ 3 APPPATH\Controllers\Admin.php(35): App\Models\UserModel->getUsersWithRolesnHubs(10, 1)
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 05:45:04 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UserModel::leftJoin
+[Method: GET, Route: admin/useraccounts]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Models\UserModel.php(28): CodeIgniter\Model->__call('leftJoin', [...])
+ 2 APPPATH\Controllers\Admin.php(35): App\Models\UserModel->getUsersWithRolesnHubs(10, 1)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 05:45:29 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UserModel::leftJoin
+[Method: GET, Route: admin/useraccounts]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Models\UserModel.php(28): CodeIgniter\Model->__call('leftJoin', [...])
+ 2 APPPATH\Controllers\Admin.php(35): App\Models\UserModel->getUsersWithRolesnHubs(10, 1)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 05:45:30 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\UserModel::leftJoin
+[Method: GET, Route: admin/useraccounts]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Models\UserModel.php(28): CodeIgniter\Model->__call('leftJoin', [...])
+ 2 APPPATH\Controllers\Admin.php(35): App\Models\UserModel->getUsersWithRolesnHubs(10, 1)
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getUsersWithRoles()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 06:12:08 --> ErrorException: Undefined variable $roles
+[Method: GET, Route: admin/newstaff]
+in APPPATH\Views\layouts\staffform.php on line 57.
+ 1 APPPATH\Views\layouts\staffform.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $roles', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staffform.php', 57)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\staffform.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/staffform', null, true)
+ 5 APPPATH\Views\addstaff.php(6): CodeIgniter\View\View->include('layouts/staffform')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\addstaff.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('addstaff', [], true)
+ 9 APPPATH\Controllers\Admin.php(223): view('addstaff', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addstaff()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 06:21:18 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\StaffModel::getStaffWithRoles
+[Method: GET, Route: admin/staffmanagement]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(200): CodeIgniter\Model->__call('getStaffWithRoles', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->liststaff()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-26 06:21:33 --> mysqli_sql_exception: Unknown column 'users.hub' in 'on clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Models\StaffModel.php(25): CodeIgniter\BaseModel->paginate(5, 'default', 5)
+#7 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(200): App\Models\StaffModel->getStaffWithHub(5, 5)
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->liststaff()
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-26 06:21:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.hub' in 'on clause'
+[Method: GET, Route: admin/staffmanagement]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `staff`
+LEFT JOIN `hub` ON `users`.`hub` = `hub`.`hub_id`', [], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\StaffModel.php(25): CodeIgniter\BaseModel->paginate(5, 'default', 5)
+ 5 APPPATH\Controllers\Admin.php(200): App\Models\StaffModel->getStaffWithHub(5, 5)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->liststaff()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 06:21:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.hub' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `staff`
+LEFT JOIN `hub` ON `users`.`hub` = `hub`.`hub_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `staff`
+LEFT JOIN `hub` ON `users`.`hub` = `hub`.`hub_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `staff`
+LEFT JOIN `hub` ON `users`.`hub` = `hub`.`hub_id`', [], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\StaffModel.php(25): CodeIgniter\BaseModel->paginate(5, 'default', 5)
+ 7 APPPATH\Controllers\Admin.php(200): App\Models\StaffModel->getStaffWithHub(5, 5)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->liststaff()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 06:21:33 --> [Caused by] mysqli_sql_exception: Unknown column 'users.hub' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `staff`
+LEFT JOIN `hub` ON `users`.`hub` = `hub`.`hub_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `staff`
+LEFT JOIN `hub` ON `users`.`hub` = `hub`.`hub_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `staff`
+LEFT JOIN `hub` ON `users`.`hub` = `hub`.`hub_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `staff`
+LEFT JOIN `hub` ON `users`.`hub` = `hub`.`hub_id`', [], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\StaffModel.php(25): CodeIgniter\BaseModel->paginate(5, 'default', 5)
+ 8 APPPATH\Controllers\Admin.php(200): App\Models\StaffModel->getStaffWithHub(5, 5)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->liststaff()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 06:28:52 --> ErrorException: Undefined variable $user
+[Method: GET, Route: admin/staff/edit/19]
+in APPPATH\Views\layouts\edit_staff.php on line 69.
+ 1 APPPATH\Views\layouts\edit_staff.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_staff.php', 69)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_staff.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_staff', null, true)
+ 5 APPPATH\Views\edit_staff.php(6): CodeIgniter\View\View->include('layouts/edit_staff')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_staff.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_staff', [], true)
+ 9 APPPATH\Controllers\Admin.php(318): view('edit_staff', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editStaff('19')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 09:40:19 --> ErrorException: Undefined variable $hubs
+[Method: GET, Route: admin/addexpenses]
+in APPPATH\Views\layouts\add_expense.php on line 65.
+ 1 APPPATH\Views\layouts\add_expense.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hubs', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\add_expense.php', 65)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\add_expense.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expense', null, true)
+ 5 APPPATH\Views\add_expense.php(6): CodeIgniter\View\View->include('layouts/add_expense')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_expense.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expense', [], true)
+ 9 APPPATH\Controllers\Admin.php(411): view('add_expense', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpenses()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 09:46:57 --> ErrorException: Undefined variable $hubs
+[Method: GET, Route: admin/expenses/edit/15]
+in APPPATH\Views\layouts\edit_expense.php on line 75.
+ 1 APPPATH\Views\layouts\edit_expense.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hubs', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense.php', 75)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_expense', null, true)
+ 5 APPPATH\Views\edit_expense.php(7): CodeIgniter\View\View->include('layouts/edit_expense')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_expense.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_expense', [], true)
+ 9 APPPATH\Controllers\Admin.php(468): view('edit_expense', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editexpense('15')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 10:56:17 --> ErrorException: Undefined variable $hubs
+[Method: GET, Route: admin/addexpensecategories]
+in APPPATH\Views\layouts\add_expensecategories.php on line 66.
+ 1 APPPATH\Views\layouts\add_expensecategories.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $hubs', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\add_expensecategories.php', 66)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\add_expensecategories.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_expensecategories', null, true)
+ 5 APPPATH\Views\add_expensecategories.php(6): CodeIgniter\View\View->include('layouts/add_expensecategories')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_expensecategories.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_expensecategories', [], true)
+ 9 APPPATH\Controllers\Admin.php(408): view('add_expensecategories', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addExpensesCategories()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:04:28 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 430.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:07:28 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:09:14 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:09:30 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:10:15 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:10:22 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:11:33 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:12:41 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:12:43 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:14:35 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:17:14 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:19:43 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:20:03 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 431.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:21:03 --> Error: Class "App\Models\ExpenseCategoryModel" not found
+[Method: POST, Route: admin/expensescategory/save]
+in APPPATH\Controllers\Admin.php on line 432.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->saveExpenseCategory()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:56:49 --> ErrorException: Undefined variable $expense
+[Method: GET, Route: admin/expensecategory/edit/1]
+in APPPATH\Views\layouts\edit_expense_category.php on line 24.
+ 1 APPPATH\Views\layouts\edit_expense_category.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $expense', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense_category.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_expense_category', null, true)
+ 5 APPPATH\Views\edit_expense_category.php(6): CodeIgniter\View\View->include('layouts/edit_expense_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_expense_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_expense_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(432): view('edit_expense_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryEdit('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:58:17 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: admin/expensecategory/edit/1]
+in APPPATH\Views\layouts\edit_expense_category.php on line 24.
+ 1 APPPATH\Views\layouts\edit_expense_category.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense_category.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_expense_category', null, true)
+ 5 APPPATH\Views\edit_expense_category.php(6): CodeIgniter\View\View->include('layouts/edit_expense_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_expense_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_expense_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(432): view('edit_expense_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryEdit('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:58:31 --> ErrorException: Undefined array key "category_id "
+[Method: GET, Route: admin/expensecategory/edit/1]
+in APPPATH\Views\layouts\edit_expense_category.php on line 24.
+ 1 APPPATH\Views\layouts\edit_expense_category.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense_category.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_expense_category', null, true)
+ 5 APPPATH\Views\edit_expense_category.php(6): CodeIgniter\View\View->include('layouts/edit_expense_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_expense_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_expense_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(432): view('edit_expense_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryEdit('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 11:58:31 --> ErrorException: Undefined array key "category_id "
+[Method: GET, Route: admin/expensecategory/edit/1]
+in APPPATH\Views\layouts\edit_expense_category.php on line 24.
+ 1 APPPATH\Views\layouts\edit_expense_category.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id "', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense_category.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense_category.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_expense_category', null, true)
+ 5 APPPATH\Views\edit_expense_category.php(6): CodeIgniter\View\View->include('layouts/edit_expense_category')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_expense_category.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_expense_category', [], true)
+ 9 APPPATH\Controllers\Admin.php(432): view('edit_expense_category', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseCatgeoryEdit('1')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 12:27:25 --> ErrorException: Undefined array key "category_id"
+[Method: GET, Route: admin/expenses/edit/17]
+in APPPATH\Views\layouts\edit_expense.php on line 56.
+ 1 APPPATH\Views\layouts\edit_expense.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_id"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\edit_expense.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/edit_expense', null, true)
+ 5 APPPATH\Views\edit_expense.php(7): CodeIgniter\View\View->include('layouts/edit_expense')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\edit_expense.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('edit_expense', [], true)
+ 9 APPPATH\Controllers\Admin.php(559): view('edit_expense', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->editexpense('17')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-03-26 12:34:41 --> mysqli_sql_exception: Unknown column 'expenses.category_id' in 'on clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Models\ExpenseModel.php(30): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(478): App\Models\ExpenseModel->getExpenses(10, 1)
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-03-26 12:34:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expenses.category_id' in 'on clause'
+[Method: GET, Route: admin/expenseslist]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+LEFT JOIN `hub` ON `expenses`.`hub` = `hub`.`hub_id`
+LEFT JOIN `expense_categories` ON `expenses`.`category_id` = `expense_categories`.`category_id`', [], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\ExpenseModel.php(30): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 APPPATH\Controllers\Admin.php(478): App\Models\ExpenseModel->getExpenses(10, 1)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 12:34:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'expenses.category_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+LEFT JOIN `hub` ON `expenses`.`hub` = `hub`.`hub_id`
+LEFT JOIN `expense_categories` ON `expenses`.`category_id` = `expense_categories`.`category_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+LEFT JOIN `hub` ON `expenses`.`hub` = `hub`.`hub_id`
+LEFT JOIN `expense_categories` ON `expenses`.`category_id` = `expense_categories`.`category_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+LEFT JOIN `hub` ON `expenses`.`hub` = `hub`.`hub_id`
+LEFT JOIN `expense_categories` ON `expenses`.`category_id` = `expense_categories`.`category_id`', [], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\ExpenseModel.php(30): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 APPPATH\Controllers\Admin.php(478): App\Models\ExpenseModel->getExpenses(10, 1)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 12:34:41 --> [Caused by] mysqli_sql_exception: Unknown column 'expenses.category_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+LEFT JOIN `hub` ON `expenses`.`hub` = `hub`.`hub_id`
+LEFT JOIN `expense_categories` ON `expenses`.`category_id` = `expense_categories`.`category_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+LEFT JOIN `hub` ON `expenses`.`hub` = `hub`.`hub_id`
+LEFT JOIN `expense_categories` ON `expenses`.`category_id` = `expense_categories`.`category_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+LEFT JOIN `hub` ON `expenses`.`hub` = `hub`.`hub_id`
+LEFT JOIN `expense_categories` ON `expenses`.`category_id` = `expense_categories`.`category_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `expenses`
+LEFT JOIN `hub` ON `expenses`.`hub` = `hub`.`hub_id`
+LEFT JOIN `expense_categories` ON `expenses`.`category_id` = `expense_categories`.`category_id`', [], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\ExpenseModel.php(30): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 APPPATH\Controllers\Admin.php(478): App\Models\ExpenseModel->getExpenses(10, 1)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->expenseList()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 12:40:55 --> ErrorException: Undefined variable $expenseCategories
+[Method: POST, Route: admin/expenses/filterexpenseReport]
+in APPPATH\Views\layouts\daily_expense_report.php on line 49.
+ 1 APPPATH\Views\layouts\daily_expense_report.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $expenseCategories', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_expense_report.php', 49)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_expense_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_expense_report', null, true)
+ 5 APPPATH\Views\daily_expense_report.php(6): CodeIgniter\View\View->include('layouts/daily_expense_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_expense_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_expense_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(654): view('daily_expense_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterexpenseReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 12:41:26 --> ErrorException: Undefined array key "category_name"
+[Method: POST, Route: admin/expenses/filterexpenseReport]
+in APPPATH\Views\layouts\daily_expense_report.php on line 94.
+ 1 APPPATH\Views\layouts\daily_expense_report.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "category_name"', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_expense_report.php', 94)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_expense_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_expense_report', null, true)
+ 5 APPPATH\Views\daily_expense_report.php(6): CodeIgniter\View\View->include('layouts/daily_expense_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_expense_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_expense_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(656): view('daily_expense_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->filterexpenseReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 12:53:36 --> ErrorException: Undefined variable $category
+[Method: GET, Route: admin/expenses/dailyexpenseReport]
+in APPPATH\Views\layouts\daily_expense_report.php on line 51.
+ 1 APPPATH\Views\layouts\daily_expense_report.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_expense_report.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_expense_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_expense_report', null, true)
+ 5 APPPATH\Views\daily_expense_report.php(6): CodeIgniter\View\View->include('layouts/daily_expense_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_expense_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_expense_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(622): view('daily_expense_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dailyexpenseReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 12:54:10 --> ErrorException: Undefined variable $category
+[Method: GET, Route: admin/expenses/dailyexpenseReport]
+in APPPATH\Views\layouts\daily_expense_report.php on line 51.
+ 1 APPPATH\Views\layouts\daily_expense_report.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_expense_report.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_expense_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_expense_report', null, true)
+ 5 APPPATH\Views\daily_expense_report.php(6): CodeIgniter\View\View->include('layouts/daily_expense_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_expense_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_expense_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(623): view('daily_expense_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dailyexpenseReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-03-26 12:54:11 --> ErrorException: Undefined variable $category
+[Method: GET, Route: admin/expenses/dailyexpenseReport]
+in APPPATH\Views\layouts\daily_expense_report.php on line 51.
+ 1 APPPATH\Views\layouts\daily_expense_report.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $category', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_expense_report.php', 51)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\daily_expense_report.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/daily_expense_report', null, true)
+ 5 APPPATH\Views\daily_expense_report.php(6): CodeIgniter\View\View->include('layouts/daily_expense_report')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\daily_expense_report.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('daily_expense_report', [], true)
+ 9 APPPATH\Controllers\Admin.php(623): view('daily_expense_report', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->dailyexpenseReport()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,142 @@
+ERROR - 2025-04-12 05:07:10 --> mysqli_sql_exception: Unknown column 'roles.is_active' in 'where clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+#6 C:\xampp\htdocs\meeshodelivery\app\Models\MenuRoleModel.php(38): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+#7 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(125): App\Models\MenuRoleModel->getAllPrivileges(10, 0)
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-04-12 05:07:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'roles.is_active' in 'where clause'
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `menu_role`
+JOIN `menus` ON `menus`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `roles`.`id` = `menu_role`.`role_id`
+WHERE `menus`.`is_active` = :menus.is_active:
+AND `roles`.`is_active` = :roles.is_active:', [...], false)
+ 2 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Models\MenuRoleModel.php(38): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 5 APPPATH\Controllers\Admin.php(125): App\Models\MenuRoleModel->getAllPrivileges(10, 0)
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-12 05:07:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'roles.is_active' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `menu_role`
+JOIN `menus` ON `menus`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `roles`.`id` = `menu_role`.`role_id`
+WHERE `menus`.`is_active` = 1
+AND `roles`.`is_active` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `menu_role`
+JOIN `menus` ON `menus`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `roles`.`id` = `menu_role`.`role_id`
+WHERE `menus`.`is_active` = 1
+AND `roles`.`is_active` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `menu_role`
+JOIN `menus` ON `menus`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `roles`.`id` = `menu_role`.`role_id`
+WHERE `menus`.`is_active` = :menus.is_active:
+AND `roles`.`is_active` = :roles.is_active:', [...], false)
+ 4 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Models\MenuRoleModel.php(38): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 7 APPPATH\Controllers\Admin.php(125): App\Models\MenuRoleModel->getAllPrivileges(10, 0)
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-12 05:07:11 --> [Caused by] mysqli_sql_exception: Unknown column 'roles.is_active' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `menu_role`
+JOIN `menus` ON `menus`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `roles`.`id` = `menu_role`.`role_id`
+WHERE `menus`.`is_active` = 1
+AND `roles`.`is_active` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `menu_role`
+JOIN `menus` ON `menus`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `roles`.`id` = `menu_role`.`role_id`
+WHERE `menus`.`is_active` = 1
+AND `roles`.`is_active` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `menu_role`
+JOIN `menus` ON `menus`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `roles`.`id` = `menu_role`.`role_id`
+WHERE `menus`.`is_active` = 1
+AND `roles`.`is_active` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `menu_role`
+JOIN `menus` ON `menus`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `roles`.`id` = `menu_role`.`role_id`
+WHERE `menus`.`is_active` = :menus.is_active:
+AND `roles`.`is_active` = :roles.is_active:', [...], false)
+ 5 SYSTEMPATH\Model.php(676): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1283): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Models\MenuRoleModel.php(38): CodeIgniter\BaseModel->paginate(10, 'default', 1)
+ 8 APPPATH\Controllers\Admin.php(125): App\Models\MenuRoleModel->getAllPrivileges(10, 0)
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-12 05:23:14 --> CodeIgniter\Pager\Exceptions\PagerException: "full" is not a valid Pager template.
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('full')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'full')
+ 3 APPPATH\Views\layouts\list_privileges.php(167): CodeIgniter\Pager\Pager->links('default', 'full')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\list_privileges.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/list_privileges', null, true)
+ 7 APPPATH\Views\list_privileges.php(6): CodeIgniter\View\View->include('layouts/list_privileges')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\list_privileges.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('list_privileges', [], true)
+11 APPPATH\Controllers\Admin.php(129): view('list_privileges', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-12 05:23:44 --> CodeIgniter\Pager\Exceptions\PagerException: "default" is not a valid Pager template.
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Pager\Pager.php on line 124.
+ 1 SYSTEMPATH\Pager\Pager.php(124): CodeIgniter\Pager\Exceptions\PagerException::forInvalidTemplate('default')
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'default')
+ 3 APPPATH\Views\layouts\list_privileges.php(167): CodeIgniter\Pager\Pager->links('default', 'default')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\list_privileges.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/list_privileges', null, true)
+ 7 APPPATH\Views\list_privileges.php(6): CodeIgniter\View\View->include('layouts/list_privileges')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\list_privileges.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('list_privileges', [], true)
+11 APPPATH\Controllers\Admin.php(129): view('list_privileges', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -1,0 +1,978 @@
+CRITICAL - 2025-04-08 04:49:27 --> ParseError: syntax error, unexpected token "/"
+[Method: GET, Route: admin/hubslist]
+in APPPATH\Models\MenuModel.php on line 68.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\meeshodelivery\\app\\Models\\MenuModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\MenuModel')
+ 3 APPPATH\Controllers\Admin.php(52): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\MenuModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->getHubs()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:19:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "add_privlages.php"
+[Method: GET, Route: admin/addprivilages]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('add_privlages.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privlages', [], true)
+ 3 APPPATH\Controllers\Admin.php(56): view('add_privlages', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:19:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "add_privilages.php"
+[Method: GET, Route: admin/addprivilages]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('add_privilages.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 3 APPPATH\Controllers\Admin.php(53): view('add_privilages', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:25:42 --> ArgumentCountError: Too few arguments to function App\Models\UserModel::getUsersWithRoles(), 0 passed in C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php on line 53 and exactly 2 expected
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Models\UserModel.php on line 18.
+ 1 APPPATH\Controllers\Admin.php(53): App\Models\UserModel->getUsersWithRoles()
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:32:03 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Views\common\menu_view.php on line 13.
+ 1 APPPATH\Views\common\menu_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\add_privilages.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_privilages.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 9 APPPATH\Controllers\Admin.php(50): view('add_privilages', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:33:05 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Views\common\menu_view.php on line 13.
+ 1 APPPATH\Views\common\menu_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\add_privilages.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_privilages.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 9 APPPATH\Controllers\Admin.php(50): view('add_privilages', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:33:06 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Views\common\menu_view.php on line 13.
+ 1 APPPATH\Views\common\menu_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\add_privilages.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_privilages.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 9 APPPATH\Controllers\Admin.php(50): view('add_privilages', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:33:06 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Views\common\menu_view.php on line 13.
+ 1 APPPATH\Views\common\menu_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\add_privilages.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_privilages.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 9 APPPATH\Controllers\Admin.php(50): view('add_privilages', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:33:06 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Views\common\menu_view.php on line 13.
+ 1 APPPATH\Views\common\menu_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\add_privilages.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_privilages.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 9 APPPATH\Controllers\Admin.php(50): view('add_privilages', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:33:06 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Views\common\menu_view.php on line 13.
+ 1 APPPATH\Views\common\menu_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\add_privilages.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_privilages.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 9 APPPATH\Controllers\Admin.php(50): view('add_privilages', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:33:07 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Views\common\menu_view.php on line 13.
+ 1 APPPATH\Views\common\menu_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\add_privilages.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_privilages.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 9 APPPATH\Controllers\Admin.php(50): view('add_privilages', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:33:07 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Views\common\menu_view.php on line 13.
+ 1 APPPATH\Views\common\menu_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\add_privilages.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_privilages.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 9 APPPATH\Controllers\Admin.php(50): view('add_privilages', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:33:19 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Views\common\menu_view.php on line 13.
+ 1 APPPATH\Views\common\menu_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\add_privilages.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_privilages.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 9 APPPATH\Controllers\Admin.php(50): view('add_privilages', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 05:33:20 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Views\common\menu_view.php on line 13.
+ 1 APPPATH\Views\common\menu_view.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 13)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\add_privilages.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_privilages.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 9 APPPATH\Controllers\Admin.php(50): view('add_privilages', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:03:29 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MenuRoleModel::deleteUserPrivileges
+[Method: POST, Route: admin/inventory/save_privileges]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(74): CodeIgniter\Model->__call('deleteUserPrivileges', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->savePrivileges()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-08 06:03:59 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`meesho`.`menu_role`, CONSTRAINT `menu_role_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`)) in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `menu_ro...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `menu_ro...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `menu_ro...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `menu_ro...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\meeshodelivery\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(748): CodeIgniter\Model->update('1', Array)
+#8 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(77): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->savePrivileges()
+#10 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2025-04-08 06:03:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`meesho`.`menu_role`, CONSTRAINT `menu_role_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`))
+[Method: POST, Route: admin/inventory/save_privileges]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `menu_role` SET `role_id` = :role_id.1:, `menu_id` = :menu_id:
+WHERE `menu_role`.`menu_id` IN :menu_role.menu_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->update('1', [...])
+ 6 APPPATH\Controllers\Admin.php(77): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->savePrivileges()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:03:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`meesho`.`menu_role`, CONSTRAINT `menu_role_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `menu_role` SET `role_id` = \'63\', `menu_id` = \'1\'
+WHERE `menu_role`.`menu_id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `menu_role` SET `role_id` = \'63\', `menu_id` = \'1\'
+WHERE `menu_role`.`menu_id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `menu_role` SET `role_id` = :role_id.1:, `menu_id` = :menu_id:
+WHERE `menu_role`.`menu_id` IN :menu_role.menu_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->update('1', [...])
+ 8 APPPATH\Controllers\Admin.php(77): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->savePrivileges()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:03:59 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`meesho`.`menu_role`, CONSTRAINT `menu_role_ibfk_2` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `menu_role` SET `role_id` = \'63\', `menu_id` = \'1\'
+WHERE `menu_role`.`menu_id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `menu_role` SET `role_id` = \'63\', `menu_id` = \'1\'
+WHERE `menu_role`.`menu_id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `menu_role` SET `role_id` = \'63\', `menu_id` = \'1\'
+WHERE `menu_role`.`menu_id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `menu_role` SET `role_id` = :role_id.1:, `menu_id` = :menu_id:
+WHERE `menu_role`.`menu_id` IN :menu_role.menu_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(748): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Admin.php(77): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->savePrivileges()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:22:11 --> ParseError: syntax error, unexpected token "public"
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Controllers\Admin.php on line 140.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\meeshodelivery\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:33:54 --> ParseError: syntax error, unexpected token "public", expecting end of file
+[Method: POST, Route: admin/inventory/save_privileges]
+in APPPATH\Controllers\Admin.php on line 104.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\meeshodelivery\\app\\Controllers\\Admin.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Admin')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Admin')
+ 4 SYSTEMPATH\CodeIgniter.php(885): class_exists('\\App\\Controllers\\Admin', true)
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:42:43 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:43:12 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:43:13 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:43:13 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:43:14 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:43:14 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:43:14 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:43:14 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:43:14 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:43:15 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:43:15 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:43:15 --> ArgumentCountError: Too few arguments to function App\Controllers\Admin::listPrivileges(), 0 passed in C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Controllers\Admin.php on line 99.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:44:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/list_privileges.php"
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/list_privileges.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/list_privileges', [], true)
+ 3 APPPATH\Controllers\Admin.php(109): view('admin/list_privileges', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:44:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/list_privileges.php"
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/list_privileges.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/list_privileges', [], true)
+ 3 APPPATH\Controllers\Admin.php(109): view('admin/list_privileges', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:44:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/list_privileges.php"
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/list_privileges.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/list_privileges', [], true)
+ 3 APPPATH\Controllers\Admin.php(109): view('admin/list_privileges', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:44:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/list_privileges.php"
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/list_privileges.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/list_privileges', [], true)
+ 3 APPPATH\Controllers\Admin.php(109): view('admin/list_privileges', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:44:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/list_privileges.php"
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/list_privileges.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/list_privileges', [], true)
+ 3 APPPATH\Controllers\Admin.php(109): view('admin/list_privileges', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:44:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/list_privileges.php"
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/list_privileges.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/list_privileges', [], true)
+ 3 APPPATH\Controllers\Admin.php(109): view('admin/list_privileges', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:45:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/list_privileges.php"
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/list_privileges.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/list_privileges', [], true)
+ 3 APPPATH\Controllers\Admin.php(111): view('admin/list_privileges', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:45:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "admin/list_privileges.php"
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/list_privileges.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin/list_privileges', [], true)
+ 3 APPPATH\Controllers\Admin.php(111): view('admin/list_privileges', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 06:46:42 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Views\layouts\list_privileges.php on line 189.
+ 1 APPPATH\Views\layouts\list_privileges.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\list_privileges.php', 189)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\list_privileges.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/list_privileges', null, true)
+ 5 APPPATH\Views\list_privileges.php(6): CodeIgniter\View\View->include('layouts/list_privileges')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\list_privileges.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('list_privileges', [], true)
+ 9 APPPATH\Controllers\Admin.php(105): view('list_privileges', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:34:23 --> ErrorException: Undefined variable $privilege
+[Method: GET, Route: admin/listPrivileges]
+in APPPATH\Views\layouts\list_privileges.php on line 170.
+ 1 APPPATH\Views\layouts\list_privileges.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $privilege', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\list_privileges.php', 170)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\list_privileges.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/list_privileges', null, true)
+ 5 APPPATH\Views\list_privileges.php(6): CodeIgniter\View\View->include('layouts/list_privileges')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\list_privileges.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('list_privileges', [], true)
+ 9 APPPATH\Controllers\Admin.php(105): view('list_privileges', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-08 07:35:20 --> mysqli_sql_exception: Table 'meesho.menu' doesn't exist in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `menu_ro...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_ro...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_ro...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_ro...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\meeshodelivery\app\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-04-08 07:35:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'meesho.menu' doesn't exist
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menu` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `role` ON `role`.`id` = `menu_role`.`role_id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:35:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'meesho.menu' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menu` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `role` ON `role`.`id` = `menu_role`.`role_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menu` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `role` ON `role`.`id` = `menu_role`.`role_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menu` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `role` ON `role`.`id` = `menu_role`.`role_id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:35:20 --> [Caused by] mysqli_sql_exception: Table 'meesho.menu' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menu` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `role` ON `role`.`id` = `menu_role`.`role_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menu` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `role` ON `role`.`id` = `menu_role`.`role_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menu` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `role` ON `role`.`id` = `menu_role`.`role_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menu` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `role` ON `role`.`id` = `menu_role`.`role_id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-08 07:35:36 --> mysqli_sql_exception: Unknown column 'menu.menu_name' in 'field list' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `menu_ro...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_ro...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_ro...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_ro...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\meeshodelivery\app\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-04-08 07:35:36 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'menu.menu_name' in 'field list'
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:35:36 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'menu.menu_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:35:36 --> [Caused by] mysqli_sql_exception: Unknown column 'menu.menu_name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menu`.`menu_name`, `role`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-08 07:36:02 --> mysqli_sql_exception: Unknown column 'menu.id' in 'on clause' in C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\meeshodelivery\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `menu_ro...', 0)
+#1 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_ro...')
+#2 C:\xampp\htdocs\meeshodelivery\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_ro...')
+#3 C:\xampp\htdocs\meeshodelivery\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_ro...', Array, false)
+#4 C:\xampp\htdocs\meeshodelivery\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\meeshodelivery\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\meeshodelivery\app\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\meeshodelivery\app\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+#8 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+#9 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\meeshodelivery\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\meeshodelivery\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\meeshodelivery\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\meeshodelivery\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-04-08 07:36:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'menu.id' in 'on clause'
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menus`.`name`, `roles`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:36:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'menu.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menus`.`name`, `roles`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menus`.`name`, `roles`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menus`.`name`, `roles`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:36:02 --> [Caused by] mysqli_sql_exception: Unknown column 'menu.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menus`.`name`, `roles`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menus`.`name`, `roles`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menus`.`name`, `roles`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `menu_role`.`menu_id`, `menu_role`.`role_id`, `menus`.`name`, `roles`.`role_name`
+FROM `menu_role`
+JOIN `menus` ON `menu`.`id` = `menu_role`.`menu_id`
+JOIN `roles` ON `role`.`id` = `menu_role`.`role_id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuRoleModel.php(27): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Admin.php(104): App\Models\MenuRoleModel->getAllPrivileges()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:47:31 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MenuRoleModel::getAllPrivilegesPaginated
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(120): CodeIgniter\Model->__call('getAllPrivilegesPaginated', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:47:59 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MenuRoleModel::getAllPrivilegesPaginated
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(120): CodeIgniter\Model->__call('getAllPrivilegesPaginated', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:48:00 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MenuRoleModel::getAllPrivilegesPaginated
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(120): CodeIgniter\Model->__call('getAllPrivilegesPaginated', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:48:00 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MenuRoleModel::getAllPrivilegesPaginated
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(120): CodeIgniter\Model->__call('getAllPrivilegesPaginated', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:48:01 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MenuRoleModel::getAllPrivilegesPaginated
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(120): CodeIgniter\Model->__call('getAllPrivilegesPaginated', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:48:01 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MenuRoleModel::getAllPrivilegesPaginated
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(120): CodeIgniter\Model->__call('getAllPrivilegesPaginated', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:48:17 --> TypeError: CodeIgniter\View\View::render(): Argument #1 ($view) must be of type string, array given, called in C:\xampp\htdocs\meeshodelivery\system\Pager\Pager.php on line 130
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\View\View.php on line 166.
+ 1 SYSTEMPATH\Pager\Pager.php(130): CodeIgniter\View\View->render([...])
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap')
+ 3 APPPATH\Views\layouts\list_privileges.php(169): CodeIgniter\Pager\Pager->links('default', 'bootstrap')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\list_privileges.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/list_privileges', null, true)
+ 7 APPPATH\Views\list_privileges.php(6): CodeIgniter\View\View->include('layouts/list_privileges')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\list_privileges.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('list_privileges', [], true)
+11 APPPATH\Controllers\Admin.php(129): view('list_privileges', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:49:02 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\MenuRoleModel::getAllPrivilegesPaginated
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\Admin.php(120): CodeIgniter\Model->__call('getAllPrivilegesPaginated', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:49:14 --> TypeError: CodeIgniter\View\View::render(): Argument #1 ($view) must be of type string, array given, called in C:\xampp\htdocs\meeshodelivery\system\Pager\Pager.php on line 130
+[Method: GET, Route: admin/listPrivileges]
+in SYSTEMPATH\View\View.php on line 166.
+ 1 SYSTEMPATH\Pager\Pager.php(130): CodeIgniter\View\View->render([...])
+ 2 SYSTEMPATH\Pager\Pager.php(87): CodeIgniter\Pager\Pager->displayLinks('default', 'bootstrap')
+ 3 APPPATH\Views\layouts\list_privileges.php(169): CodeIgniter\Pager\Pager->links('default', 'bootstrap')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\list_privileges.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/list_privileges', null, true)
+ 7 APPPATH\Views\list_privileges.php(6): CodeIgniter\View\View->include('layouts/list_privileges')
+ 8 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\list_privileges.php')
+ 9 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('list_privileges', [], true)
+11 APPPATH\Controllers\Admin.php(129): view('list_privileges', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->listPrivileges()
+13 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 08:04:14 --> ErrorException: Undefined variable $user
+[Method: GET, Route: admin/addprivilages]
+in APPPATH\Views\layouts\add_privilages.php on line 33.
+ 1 APPPATH\Views\layouts\add_privilages.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\add_privilages.php', 33)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\layouts\\add_privilages.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('layouts/add_privilages', null, true)
+ 5 APPPATH\Views\add_privilages.php(6): CodeIgniter\View\View->include('layouts/add_privilages')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\add_privilages.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('add_privilages', [], true)
+ 9 APPPATH\Controllers\Admin.php(56): view('add_privilages', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->addPrivilages()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 09:08:56 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: admin/dashboard]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\admin_layout.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meeshodelivery\\app\\Views\\admin_layout.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('admin_layout', [], true)
+ 9 APPPATH\Controllers\LoginController.php(212): view('admin_layout', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\LoginController->dashboard()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LoginController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
