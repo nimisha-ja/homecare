@@ -1,0 +1,114 @@
+CRITICAL - 2025-08-26 07:37:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "create/layouts/create.php"
+[Method: GET, Route: clients/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('create/layouts/create.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('create/layouts/create', null, true)
+ 3 APPPATH\Views\homecare\create.php(6): CodeIgniter\View\View->include('create/layouts/create')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\create.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/create', [], true)
+ 7 APPPATH\Controllers\HomeCareController.php(42): view('homecare/create', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->create()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-26 07:56:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homecare/layouts/list.php"
+[Method: GET, Route: clients]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homecare/layouts/list.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('homecare/layouts/list', null, true)
+ 3 APPPATH\Views\homecare\index.php(6): CodeIgniter\View\View->include('homecare/layouts/list')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\index.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/index', [], true)
+ 7 APPPATH\Controllers\HomeCareController.php(43): view('homecare/index', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-26 07:56:12 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: clients]
+in APPPATH\Views\homecare\layouts\index.php on line 150.
+ 1 APPPATH\Views\homecare\layouts\index.php(150): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\layouts\\index.php', 150)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\layouts\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('homecare/layouts/index', null, true)
+ 5 APPPATH\Views\homecare\index.php(6): CodeIgniter\View\View->include('homecare/layouts/index')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\index.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/index', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(43): view('homecare/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-26 07:58:21 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: clients]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\index.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\index.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/index', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(47): view('homecare/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-26 12:42:17 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "'staffs"
+[Method: GET, Route: %27staffs/create]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('\'staffs/create')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('\'staffs/create')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-26 12:42:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "staffs/create.php"
+[Method: GET, Route: staffs/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('staffs/create.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staffs/create', [], true)
+ 3 APPPATH\Controllers\HomeCareController.php(232): view('staffs/create')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->createStaff()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-26 15:40:10 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "staffs/list.php"
+[Method: GET, Route: staffs]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('staffs/list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('staffs/list', [], true)
+ 3 APPPATH\Controllers\HomeCareController.php(310): view('staffs/list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->stafflist()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-26 15:45:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homecare/staffedit.php"
+[Method: GET, Route: staffs/edit/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homecare/staffedit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/staffedit', [], true)
+ 3 APPPATH\Controllers\HomeCareController.php(323): view('homecare/staffedit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->editStaff('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

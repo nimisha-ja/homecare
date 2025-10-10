@@ -1,5 +1,5 @@
 RewriteEngine on
-RewriteBase /churchapp/
+RewriteBase /homecare/
 
 # Remove index.php from the URL
 RewriteCond %{REQUEST_URI} ^(.*)/index\.php$

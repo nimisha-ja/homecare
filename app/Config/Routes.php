@@ -87,3 +87,23 @@ $routes->post('payment/proceed', 'FamilyController::paymentProceed');
 
 
 
+$routes->get('clients', 'HomeCareController::index');
+$routes->get('clients/create', 'HomeCareController::create');
+$routes->post('clients/store', 'HomeCareController::store');
+
+$routes->get('clients/edit/(:num)', 'HomeCareController::edit/$1');
+$routes->post('clients/update/(:num)', 'HomeCareController::update/$1');
+$routes->post('clients/delete/(:num)', 'HomeCareController::delete/$1');
+
+
+
+$routes->get('staffs', 'HomeCareController::stafflist');
+$routes->get('staffs/create', 'HomeCareController::createStaff');
+$routes->post('staffs/store', 'HomeCareController::storeStaff');
+
+$routes->get('staffs/edit/(:num)', 'HomeCareController::editStaff/$1');
+$routes->post('staffs/update/(:num)', 'HomeCareController::updateStaff/$1');
+$routes->get('staffs/delete/(:num)', 'HomeCareController::deleteStaff/$1');
+
+
+
