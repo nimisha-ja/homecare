@@ -46,46 +46,6 @@ $routes->get('auth/reset_password/(:segment)', 'ForgotPassword::resetPassword/$1
 $routes->post('auth/updatePassword', 'ForgotPassword::updatePassword');
 
 
-$routes->get('families', 'FamilyController::index');
-$routes->get('family/create', 'FamilyController::create');
-$routes->post('family/store', 'FamilyController::store');
-$routes->get('family/(:num)', 'FamilyController::details/$1');
-$routes->post('family/delete/(:num)', 'FamilyController::delete/$1');
-$routes->get('family/edit/(:num)', 'FamilyController::edit/$1');
-$routes->post('family/update/(:num)', 'FamilyController::update/$1');
-$routes->get('family/request-certificate', 'FamilyController::requestCertificate');
-$routes->post('family/save-certificate', 'FamilyController::saveCertificate');
-$routes->get('family/requests', 'FamilyController::certificateList');
-$routes->get('family/approve-certificate/(:num)', 'FamilyController::approveCertificate/$1');
-$routes->post('family/approve-certificate-action/(:num)', 'FamilyController::certificateAction/$1');
-$routes->get('family/certificates', 'FamilyController::myCertificates');
-$routes->get('announcements', 'FamilyController::announcements');
-$routes->get('add-announcements', 'FamilyController::addAnnouncement');
-$routes->post('save-announcement', 'FamilyController::saveAnnouncement');
-
-$routes->get('announcements/edit/(:num)', 'FamilyController::editAnnouncement/$1');
-$routes->post('announcements/update/(:num)', 'FamilyController::updateAnnouncement/$1');
-$routes->post('announcements/delete/(:num)', 'FamilyController::deleteAnnouncement/$1');
-
-$routes->get('donationpurposes', 'FamilyController::donationPurposes');
-$routes->get('donationpurposes/create', 'FamilyController::createdonatnPurposes');
-$routes->post('donationpurposes/store', 'FamilyController::storedonatnPurposes');
-$routes->get('donationpurposes/edit/(:num)', 'FamilyController::editdonatnPurposes/$1');
-$routes->post('donationpurposes/update/(:num)', 'FamilyController::updatedonatnPurposes/$1');
-$routes->get('donationpurposes/delete/(:num)', 'FamilyController::deletedonatnPurposes/$1');
-
-$routes->get('donation/add', 'FamilyController::createDonation');
-$routes->post('donations/store', 'FamilyController::storeDonation');
-$routes->get('donations', 'FamilyController::donationList');
-$routes->get('donations/edit/(:num)', 'FamilyController::editDonation/$1');
-$routes->post('donations/update/(:num)', 'FamilyController::updateDonation/$1');
-$routes->post('donations/delete/(:num)', 'FamilyController::deleteDonation/$1');
-
-
-$routes->get('payment', 'FamilyController::payment');
-$routes->post('payment/proceed', 'FamilyController::paymentProceed');
-
-
 
 $routes->get('clients', 'HomeCareController::index');
 $routes->get('clients/create', 'HomeCareController::create');
@@ -104,6 +64,16 @@ $routes->post('staffs/store', 'HomeCareController::storeStaff');
 $routes->get('staffs/edit/(:num)', 'HomeCareController::editStaff/$1');
 $routes->post('staffs/update/(:num)', 'HomeCareController::updateStaff/$1');
 $routes->get('staffs/delete/(:num)', 'HomeCareController::deleteStaff/$1');
+
+// Routes for staff-client assignments
+$routes->get('assignments', 'HomeCareController::assign');             // Show assignment form
+$routes->post('assignments/saveAssignment', 'HomeCareController::saveAssignment');  // Save assignment
+$routes->get('listassignments', 'HomeCareController::listAssignments');
+$routes->get('assignments/edit/(:num)', 'HomeCareController::editAssignments/$1');
+$routes->post('assignments/update/(:num)', 'HomeCareController::updateAssignments/$1');
+$routes->post('assignments/delete/(:num)', 'HomeCareController::deleteAssignments/$1');
+
+
 
 
 

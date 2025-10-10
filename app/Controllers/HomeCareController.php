@@ -17,6 +17,7 @@ use App\Models\DonationPurposeModel;
 use App\Models\DonationModel;
 use App\Models\ClientModel;
 use App\Models\StaffModel;
+use App\Models\ClientStaffAssignmentModel;
 
 class HomeCareController extends Controller
 {
@@ -432,5 +433,92 @@ class HomeCareController extends Controller
         $staffModel->delete($id);
 
         return redirect()->to('/staffs')->with('success', 'Staff deleted successfully!');
+    }
+
+    public function assign()
+    {
+        $clientModel = new ClientModel();
+        $staffModel = new StaffModel();
+        $data['clients'] = $clientModel->findAll();
+        $data['staff'] = $staffModel->findAll();        // Get menus properly
+        $data['menus'] = $this->getMenus();
+        return view('homecare/assignments_create', $data);
+    }
+
+
+    public function saveAssignment()
+    {
+        $assignmentModel = new ClientStaffAssignmentModel();
+        $assignmentModel->save([
+            'client_id' => $this->request->getPost('client_id'),
+            'staff_id' => $this->request->getPost('staff_id'),
+            'shift_date' => $this->request->getPost('shift_date'),
+            'shift_type' => $this->request->getPost('shift_type'),
+            'start_time' => $this->request->getPost('start_time'),
+            'end_time' => $this->request->getPost('end_time'),
+        ]);
+        return redirect()->to('/listassignments')->with('success', 'Assignment added successfully.');
+    }
+    public function listAssignments()
+    {
+        $assignmentModel = new ClientStaffAssignmentModel();
+
+        $perPage = 10;
+        $data['assignments'] = $assignmentModel->getAssignmentsWithDetailsPaginated($perPage);
+        $data['pager'] = $assignmentModel->pager;
+        $data['menus'] = $this->getMenus();
+
+        return view('homecare/assignments_list', $data);
+    }
+    public function deleteAssignments($id)
+    {
+        $assignmentModel = new ClientStaffAssignmentModel();
+
+        if ($assignmentModel->delete($id)) {
+            return redirect()->to(site_url('listassignments'))->with('success', 'Assignment deleted successfully.');
+        } else {
+            return redirect()->to(site_url('listassignments'))->with('error', 'Failed to delete assignment.');
+        }
+    }
+    public function editAssignments($id)
+    {
+        $assignmentModel = new ClientStaffAssignmentModel();
+        $clientModel = new ClientModel();
+        $staffModel = new StaffModel();
+
+        $assignment = $assignmentModel->find($id);
+
+        if (!$assignment) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("Assignment not found: ID $id");
+        }
+
+        $data = [
+            'assignment' => $assignment,
+            'clients'    => $clientModel->findAll(),
+            'staff'      => $staffModel->findAll(),
+            'menus'      => $this->getMenus(),
+        ];
+
+        return view('homecare/assignments_edit', $data);
+    }
+
+    public function updateAssignments($id)
+    {
+        $assignmentModel = new ClientStaffAssignmentModel();
+
+        $data = [
+            'client_id'  => $this->request->getPost('client_id'),
+            'staff_id'   => $this->request->getPost('staff_id'),
+            'shift_date' => $this->request->getPost('shift_date'),
+            'shift_type' => $this->request->getPost('shift_type'),
+            'start_time' => $this->request->getPost('start_time'),
+            'end_time'   => $this->request->getPost('end_time'),
+        ];
+
+        if ($assignmentModel->update($id, $data)) {
+            return redirect()->to(site_url('listassignments'))->with('success', 'Assignment updated successfully.');
+        } else {
+            return redirect()->back()->with('error', 'Failed to update assignment.')->withInput();
+        }
     }
 }

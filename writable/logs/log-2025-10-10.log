@@ -1,0 +1,792 @@
+CRITICAL - 2025-10-10 11:05:42 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(446): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:06:25 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:07:09 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:07:13 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:07:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homecare/layouts/assignments_create.php"
+[Method: GET, Route: assignments/]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homecare/layouts/assignments_create.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('homecare/layouts/assignments_create', null, true)
+ 3 APPPATH\Views\homecare\assignments_create.php(6): CodeIgniter\View\View->include('homecare/layouts/assignments_create')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 7 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:07:35 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:08:36 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:08:37 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:08:38 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:09:20 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:09:29 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:09:30 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:09:31 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:09:39 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:10:14 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:10:15 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:10:46 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:13:49 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:14:01 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:14:03 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:14:07 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:14:11 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:14:12 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:14:13 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:14:14 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:14:15 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments/]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:14:18 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:16:08 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:16:10 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:16:17 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:18:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homecare/layouts/assignments_create.php"
+[Method: GET, Route: assignments]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homecare/layouts/assignments_create.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('homecare/layouts/assignments_create', null, true)
+ 3 APPPATH\Views\homecare\assignments_create.php(6): CodeIgniter\View\View->include('homecare/layouts/assignments_create')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 7 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:20:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homecare/layouts/assignments_create.php"
+[Method: GET, Route: assignments]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homecare/layouts/assignments_create.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('homecare/layouts/assignments_create', null, true)
+ 3 APPPATH\Views\homecare\assignments_create.php(6): CodeIgniter\View\View->include('homecare/layouts/assignments_create')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 7 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:20:20 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homecare/layouts/assignments_create.php"
+[Method: GET, Route: assignments]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homecare/layouts/assignments_create.php')
+ 2 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('homecare/layouts/assignments_create', null, true)
+ 3 APPPATH\Views\homecare\assignments_create.php(6): CodeIgniter\View\View->include('homecare/layouts/assignments_create')
+ 4 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 7 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:23:23 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:23:37 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:23:38 --> ErrorException: Undefined array key "url"
+[Method: GET, Route: assignments]
+in APPPATH\Views\common\menu_view.php on line 39.
+ 1 APPPATH\Views\common\menu_view.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "url"', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_create.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_create.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_create', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(447): view('homecare/assignments_create', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->assign()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:32:56 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ClientStaffAssignmentModel::getAssignmentsWithDetails
+[Method: GET, Route: listassignments]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\HomeCareController.php(466): CodeIgniter\Model->__call('getAssignmentsWithDetails', [])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->listAssignments()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-10-10 11:33:53 --> mysqli_sql_exception: Unknown table 'homecare.assignments' in C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `assignm...', 0)
+#1 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `assignm...')
+#2 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `assignm...')
+#3 C:\xampp\htdocs\homecare\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `assignm...', Array, false)
+#4 C:\xampp\htdocs\homecare\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\homecare\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\homecare\app\Models\ClientStaffAssignmentModel.php(27): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\homecare\app\Controllers\HomeCareController.php(466): App\Models\ClientStaffAssignmentModel->getAssignmentsWithDetails()
+#8 C:\xampp\htdocs\homecare\system\CodeIgniter.php(933): App\Controllers\HomeCareController->listAssignments()
+#9 C:\xampp\htdocs\homecare\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+#10 C:\xampp\htdocs\homecare\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\homecare\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\homecare\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\homecare\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-10-10 11:33:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'homecare.assignments'
+[Method: GET, Route: listassignments]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `assignments`.*, `clients`.`care_home_name`, `staff`.`full_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`
+ORDER BY `shift_date` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\ClientStaffAssignmentModel.php(27): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\HomeCareController.php(466): App\Models\ClientStaffAssignmentModel->getAssignmentsWithDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->listAssignments()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:33:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'homecare.assignments'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `assignments`.*, `clients`.`care_home_name`, `staff`.`full_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`
+ORDER BY `shift_date` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `assignments`.*, `clients`.`care_home_name`, `staff`.`full_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`
+ORDER BY `shift_date` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `assignments`.*, `clients`.`care_home_name`, `staff`.`full_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`
+ORDER BY `shift_date` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\ClientStaffAssignmentModel.php(27): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\HomeCareController.php(466): App\Models\ClientStaffAssignmentModel->getAssignmentsWithDetails()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->listAssignments()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:33:53 --> [Caused by] mysqli_sql_exception: Unknown table 'homecare.assignments'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `assignments`.*, `clients`.`care_home_name`, `staff`.`full_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`
+ORDER BY `shift_date` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `assignments`.*, `clients`.`care_home_name`, `staff`.`full_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`
+ORDER BY `shift_date` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `assignments`.*, `clients`.`care_home_name`, `staff`.`full_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`
+ORDER BY `shift_date` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `assignments`.*, `clients`.`care_home_name`, `staff`.`full_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`
+ORDER BY `shift_date` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ClientStaffAssignmentModel.php(27): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\HomeCareController.php(466): App\Models\ClientStaffAssignmentModel->getAssignmentsWithDetails()
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->listAssignments()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:34:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "homecare/assignments_list.php"
+[Method: GET, Route: listassignments]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('homecare/assignments_list.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_list', [], true)
+ 3 APPPATH\Controllers\HomeCareController.php(468): view('homecare/assignments_list', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->listAssignments()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:37:15 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: listassignments]
+in APPPATH\Views\homecare\layouts\assignments_list.php on line 126.
+ 1 APPPATH\Views\homecare\layouts\assignments_list.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\layouts\\assignments_list.php', 126)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\layouts\\assignments_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('homecare/layouts/assignments_list.php', null, true)
+ 5 APPPATH\Views\homecare\assignments_list.php(6): CodeIgniter\View\View->include('homecare/layouts/assignments_list.php')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_list', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(468): view('homecare/assignments_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->listAssignments()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-10 11:38:04 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: listassignments]
+in APPPATH\Views\homecare\layouts\assignments_list.php on line 126.
+ 1 APPPATH\Views\homecare\layouts\assignments_list.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\layouts\\assignments_list.php', 126)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\layouts\\assignments_list.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('homecare/layouts/assignments_list.php', null, true)
+ 5 APPPATH\Views\homecare\assignments_list.php(6): CodeIgniter\View\View->include('homecare/layouts/assignments_list.php')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_list.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_list', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(468): view('homecare/assignments_list', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->listAssignments()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
