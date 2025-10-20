@@ -72,6 +72,8 @@ $routes->get('listassignments', 'HomeCareController::listAssignments');
 $routes->get('assignments/edit/(:num)', 'HomeCareController::editAssignments/$1');
 $routes->post('assignments/update/(:num)', 'HomeCareController::updateAssignments/$1');
 $routes->post('assignments/delete/(:num)', 'HomeCareController::deleteAssignments/$1');
+$routes->get('getassignments', 'HomeCareController::getAssignments');
+
 
 
 

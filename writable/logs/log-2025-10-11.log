@@ -1,0 +1,261 @@
+ERROR - 2025-10-11 05:41:19 --> mysqli_sql_exception: Unknown table 'homecare.assignments' in C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `assignm...', 0)
+#1 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `assignm...')
+#2 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `assignm...')
+#3 C:\xampp\htdocs\homecare\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `assignm...', Array, false)
+#4 C:\xampp\htdocs\homecare\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\homecare\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\homecare\app\Controllers\HomeCareController.php(622): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\homecare\system\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+#8 C:\xampp\htdocs\homecare\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+#9 C:\xampp\htdocs\homecare\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\homecare\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\homecare\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\homecare\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-10-11 05:41:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'homecare.assignments'
+[Method: GET, Route: getassignments]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\HomeCareController.php(622): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-11 05:41:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'homecare.assignments'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\HomeCareController.php(622): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-11 05:41:20 --> [Caused by] mysqli_sql_exception: Unknown table 'homecare.assignments'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `assignments`.`staff_id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\HomeCareController.php(622): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-10-11 05:41:51 --> mysqli_sql_exception: Unknown column 'clients.name' in 'field list' in C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `client_...', 0)
+#1 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `client_...')
+#2 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `client_...')
+#3 C:\xampp\htdocs\homecare\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `client_...', Array, false)
+#4 C:\xampp\htdocs\homecare\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\homecare\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\homecare\app\Controllers\HomeCareController.php(622): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\homecare\system\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+#8 C:\xampp\htdocs\homecare\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+#9 C:\xampp\htdocs\homecare\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\homecare\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\homecare\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\homecare\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-10-11 05:41:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'clients.name' in 'field list'
+[Method: GET, Route: getassignments]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `client_staff_assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `client_staff_assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `client_staff_assignments`.`staff_id`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\HomeCareController.php(622): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-11 05:41:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'clients.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `client_staff_assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `client_staff_assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `client_staff_assignments`.`staff_id`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `client_staff_assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `client_staff_assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `client_staff_assignments`.`staff_id`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `client_staff_assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `client_staff_assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `client_staff_assignments`.`staff_id`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\HomeCareController.php(622): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-11 05:41:51 --> [Caused by] mysqli_sql_exception: Unknown column 'clients.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `client_staff_assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `client_staff_assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `client_staff_assignments`.`staff_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `client_staff_assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `client_staff_assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `client_staff_assignments`.`staff_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `client_staff_assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `client_staff_assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `client_staff_assignments`.`staff_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `client_staff_assignments`.*, `clients`.`name` as `client_name`, `staff`.`name` as `staff_name`
+FROM `client_staff_assignments`
+JOIN `clients` ON `clients`.`id` = `client_staff_assignments`.`client_id`
+JOIN `staff` ON `staff`.`id` = `client_staff_assignments`.`staff_id`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\HomeCareController.php(622): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-11 05:44:55 --> ErrorException: Undefined variable $menus
+[Method: GET, Route: getassignments]
+in APPPATH\Views\common\menu_view.php on line 37.
+ 1 APPPATH\Views\common\menu_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menus', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\common\\menu_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('common/menu_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_list_view.php(4): CodeIgniter\View\View->include('common/menu_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_list_view.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_list_view', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(628): view('homecare/assignments_list_view', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-11 05:47:39 --> ErrorException: Undefined variable $pager
+[Method: GET, Route: getassignments]
+in APPPATH\Views\homecare\layouts\assignments_list_view.php on line 163.
+ 1 APPPATH\Views\homecare\layouts\assignments_list_view.php(163): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pager', 'C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\layouts\\assignments_list_view.php', 163)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\layouts\\assignments_list_view.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('homecare/layouts/assignments_list_view', null, true)
+ 5 APPPATH\Views\homecare\assignments_list_view.php(6): CodeIgniter\View\View->include('homecare/layouts/assignments_list_view')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_list_view.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_list_view', [], true)
+ 9 APPPATH\Controllers\HomeCareController.php(628): view('homecare/assignments_list_view', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-11 05:47:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/main.php"
+[Method: GET, Route: getassignments]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layouts/main', null, true)
+ 3 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('homecare/layouts/assignments_list_view', null, true)
+ 4 APPPATH\Views\homecare\assignments_list_view.php(6): CodeIgniter\View\View->include('homecare/layouts/assignments_list_view')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\homecare\\app\\Views\\homecare\\assignments_list_view.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('homecare/assignments_list_view', [], true)
+ 8 APPPATH\Controllers\HomeCareController.php(628): view('homecare/assignments_list_view', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-11 07:15:29 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ClientStaffAssignmentModel::getFilteredAssignments
+[Method: GET, Route: getassignments]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\HomeCareController.php(655): CodeIgniter\Model->__call('getFilteredAssignments', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-11 07:22:24 --> TypeError: CodeIgniter\Database\BaseBuilder::hasOperator(): Argument #1 ($str) must be of type string, Closure given, called in C:\xampp\htdocs\homecare\system\Database\BaseBuilder.php on line 664
+[Method: GET, Route: getassignments]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3442.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(664): CodeIgniter\Database\BaseBuilder->hasOperator(Object(Closure))
+ 2 APPPATH\Models\StaffModel.php(45): CodeIgniter\Database\BaseBuilder->join('`client_staff_assignments` `csa`', Object(Closure), 'LEFT ')
+ 3 APPPATH\Controllers\HomeCareController.php(660): App\Models\StaffModel->getAvailableStaffForShift('2025-10-11', 'day')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-11 07:23:00 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\ClientStaffAssignmentModel::getFilteredAssignments
+[Method: GET, Route: getassignments]
+in SYSTEMPATH\Model.php on line 930.
+ 1 APPPATH\Controllers\HomeCareController.php(655): CodeIgniter\Model->__call('getFilteredAssignments', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-11 07:23:28 --> TypeError: CodeIgniter\Database\BaseBuilder::hasOperator(): Argument #1 ($str) must be of type string, Closure given, called in C:\xampp\htdocs\homecare\system\Database\BaseBuilder.php on line 664
+[Method: GET, Route: getassignments]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3442.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(664): CodeIgniter\Database\BaseBuilder->hasOperator(Object(Closure))
+ 2 APPPATH\Models\StaffModel.php(45): CodeIgniter\Database\BaseBuilder->join('`client_staff_assignments` `csa`', Object(Closure), 'LEFT ')
+ 3 APPPATH\Controllers\HomeCareController.php(660): App\Models\StaffModel->getAvailableStaffForShift('2025-10-11', 'day')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->getAssignments()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

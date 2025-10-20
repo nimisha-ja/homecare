@@ -294,6 +294,7 @@ class HomeCareController extends Controller
             'phone_number'              => $this->request->getPost('phone_number'),
             'email'                     => $this->request->getPost('email'),
             'salary'                    => $this->request->getPost('salary'),
+            'visa_type'                 => $this->request->getPost('visa_type'),
             'passport_file'             => $passportFile,
             'dbs_file'                  => $dbsFile,
             'brp_file'                  => $brpFile,
@@ -400,7 +401,8 @@ class HomeCareController extends Controller
             'permanent_address'         => $this->request->getPost('permanent_address'),
             'phone_number'              => $this->request->getPost('phone_number'),
             'email'                     => $this->request->getPost('email'),
-            'salary'                    => $this->request->getPost('salary'),
+            'salary'                    => $this->request->getPost('salary'),            
+            'visa_type'                 => $this->request->getPost('visa_type'),
             'passport_file'             => $passportFile,
             'dbs_file'                  => $dbsFile,
             'brp_file'                  => $brpFile,
@@ -445,20 +447,47 @@ class HomeCareController extends Controller
         return view('homecare/assignments_create', $data);
     }
 
-
     public function saveAssignment()
     {
         $assignmentModel = new ClientStaffAssignmentModel();
+
+        $staffId = $this->request->getPost('staff_id');
+        $clientId = $this->request->getPost('client_id');
+        $shiftDate = $this->request->getPost('shift_date');
+        $startTime = $this->request->getPost('start_time');
+        $endTime = $this->request->getPost('end_time');
+
+        // Check availability
+        if (!$assignmentModel->isStaffAvailable($staffId, $shiftDate, $startTime, $endTime)) {
+            return redirect()->back()->withInput()->with('error', 'Staff is already assigned to another shift at that time.');
+        }
+
+        // Proceed to save
         $assignmentModel->save([
-            'client_id' => $this->request->getPost('client_id'),
-            'staff_id' => $this->request->getPost('staff_id'),
-            'shift_date' => $this->request->getPost('shift_date'),
+            'client_id' => $clientId,
+            'staff_id' => $staffId,
+            'shift_date' => $shiftDate,
             'shift_type' => $this->request->getPost('shift_type'),
-            'start_time' => $this->request->getPost('start_time'),
-            'end_time' => $this->request->getPost('end_time'),
+            'start_time' => $startTime,
+            'end_time' => $endTime
         ]);
-        return redirect()->to('/listassignments')->with('success', 'Assignment added successfully.');
+
+        return redirect()->to('/listassignments')->with('success', 'Staff assigned successfully.');
     }
+
+    // public function saveAssignment()
+    // {
+    //     $assignmentModel = new ClientStaffAssignmentModel();
+    //     $assignmentModel->save([
+    //         'client_id' => $this->request->getPost('client_id'),
+    //         'staff_id' => $this->request->getPost('staff_id'),
+    //         'shift_date' => $this->request->getPost('shift_date'),
+    //         'shift_type' => $this->request->getPost('shift_type'),
+    //         'start_time' => $this->request->getPost('start_time'),
+    //         'end_time' => $this->request->getPost('end_time'),
+    //     ]);
+    //     return redirect()->to('/listassignments')->with('success', 'Assignment added successfully.');
+    // }
     public function listAssignments()
     {
         $assignmentModel = new ClientStaffAssignmentModel();
@@ -502,17 +531,54 @@ class HomeCareController extends Controller
         return view('homecare/assignments_edit', $data);
     }
 
+    //     public function updateAssignments($id)
+    //     {
+    //         $assignmentModel = new ClientStaffAssignmentModel();
+
+    //         $data = [
+    //             'client_id'  => $this->request->getPost('client_id'),
+    //             'staff_id'   => $this->request->getPost('staff_id'),
+    //             'shift_date' => $this->request->getPost('shift_date'),
+    //             'shift_type' => $this->request->getPost('shift_type'),
+    //             'start_time' => $this->request->getPost('start_time'),
+    //             'end_time'   => $this->request->getPost('end_time'),
+    //         ];
+    // // if (!$assignmentModel->isStaffAvailable($staffId, $shiftDate, $startTime, $endTime, $id)) {
+    // //     return redirect()->back()->withInput()->with('error', 'Staff is already assigned to another shift at that time.');
+    // // }
+
+    //         if ($assignmentModel->update($id, $data)) {
+    //             return redirect()->to(site_url('listassignments'))->with('success', 'Assignment updated successfully.');
+    //         } else {
+    //             return redirect()->back()->with('error', 'Failed to update assignment.')->withInput();
+    //         }
+    //     }
+
     public function updateAssignments($id)
     {
         $assignmentModel = new ClientStaffAssignmentModel();
 
+        $staffId   = $this->request->getPost('staff_id');
+        $clientId  = $this->request->getPost('client_id');
+        $shiftDate = $this->request->getPost('shift_date');
+        $shiftType = $this->request->getPost('shift_type');
+        $startTime = $this->request->getPost('start_time');
+        $endTime   = $this->request->getPost('end_time');
+
+        // Check if the staff is available for new time (excluding this assignment)
+        if (!$assignmentModel->isStaffAvailable($staffId, $shiftDate, $startTime, $endTime, $id)) {
+            return redirect()->back()
+                ->withInput()
+                ->with('error', 'Staff is already assigned to another shift at that time.');
+        }
+
         $data = [
-            'client_id'  => $this->request->getPost('client_id'),
-            'staff_id'   => $this->request->getPost('staff_id'),
-            'shift_date' => $this->request->getPost('shift_date'),
-            'shift_type' => $this->request->getPost('shift_type'),
-            'start_time' => $this->request->getPost('start_time'),
-            'end_time'   => $this->request->getPost('end_time'),
+            'client_id'  => $clientId,
+            'staff_id'   => $staffId,
+            'shift_date' => $shiftDate,
+            'shift_type' => $shiftType,
+            'start_time' => $startTime,
+            'end_time'   => $endTime,
         ];
 
         if ($assignmentModel->update($id, $data)) {
@@ -520,5 +586,61 @@ class HomeCareController extends Controller
         } else {
             return redirect()->back()->with('error', 'Failed to update assignment.')->withInput();
         }
+    }
+    public function getAssignments()
+    {
+        $assignmentModel = new \App\Models\ClientStaffAssignmentModel();
+        $clientModel     = new \App\Models\ClientModel();
+        $staffModel      = new \App\Models\StaffModel();
+        $date       = $this->request->getGet('date');
+        $clientId   = $this->request->getGet('client_id');
+        $shiftType  = $this->request->getGet('shift_type');
+        $staffId    = $this->request->getGet('staff_id');
+        $builder = $assignmentModel
+            ->select('client_staff_assignments.*, clients.care_home_name AS client_name, staff.full_name AS staff_name')
+            ->join('clients', 'clients.id = client_staff_assignments.client_id')
+            ->join('staff', 'staff.id = client_staff_assignments.staff_id');
+        if ($date) {
+            $builder->where('shift_date', $date);
+        }
+
+        if ($clientId) {
+            $builder->where('client_id', $clientId);
+        }
+
+        if ($shiftType) {
+            $builder->where('shift_type', $shiftType);
+        }
+
+        if ($staffId) {
+            $builder->where('staff_id', $staffId);
+        }
+        $assignments = $builder->findAll();
+        $clients = $clientModel->findAll();
+        if ($date && $shiftType) {
+            $availableStaff = $staffModel->getAvailableStaffForShift($date, $shiftType);
+            if ($staffId && !in_array($staffId, array_column($availableStaff, 'id'))) {
+                $selectedStaff = $staffModel->find($staffId);
+                if ($selectedStaff) {
+                    $availableStaff[] = $selectedStaff;
+                }
+            }
+        } else {
+            $availableStaff = $staffModel->findAll();
+        }
+
+        usort($availableStaff, function ($a, $b) {
+            return strcmp($a['full_name'], $b['full_name']);
+        });
+        return view('homecare/assignments_list_view', [
+            'assignments'  => $assignments,
+            'clients'      => $clients,
+            'staff'        => $availableStaff,
+            'date'         => $date,
+            'client_id'    => $clientId,
+            'shift_type'   => $shiftType,
+            'staff_id'     => $staffId,
+            'menus'        => $this->getMenus(),
+        ]);
     }
 }

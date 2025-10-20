@@ -58,6 +58,10 @@
                                     <label class="form-label">Salary</label>
                                     <input type="number" step="0.01" name="salary" class="form-control" value="<?= old('salary') ?>" required>
                                 </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Visa Type</label>
+                                    <input type="text" name="visa_type" class="form-control" value="<?= old('visa_type') ?>" required>
+                                </div>
 
                                 <div class="col-md-12 mb-3">
                                     <label class="form-label">Current Address</label>
