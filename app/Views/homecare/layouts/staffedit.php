@@ -71,7 +71,10 @@
                                     <label class="form-label">Permanent Address</label>
                                     <textarea name="permanent_address" class="form-control" rows="2" required><?= old('permanent_address', $staff['permanent_address']) ?></textarea>
                                 </div>
-
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Passport Number</label>
+                                    <input type="text" name="passport_no" class="form-control" value="<?= old('passport_no', $staff['passport_no']) ?>" required>
+                                </div>
                                 <!-- File Uploads -->
                                 <?php
                                 $fileFields = [
@@ -121,6 +124,26 @@
                                         <?php endif; ?>
                                     </div>
                                 <?php endforeach; ?>
+                                <!-- Passport Expiry Date -->
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Passport Expiry Date</label>
+                                    <input type="date" name="passport_expiry" class="form-control"
+                                        value="<?= old('passport_expiry', $staff['passport_expiry']) ?>" required>
+                                </div>
+
+                                <!-- DBS Expiry Date -->
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">DBS Expiry Date</label>
+                                    <input type="date" name="dbs_expiry" class="form-control"
+                                        value="<?= old('dbs_expiry', $staff['dbs_expiry']) ?>" >
+                                </div>
+
+                                <!-- Training Certificate Expiry Date -->
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Training Certificate Expiry Date</label>
+                                    <input type="date" name="training_expiry" class="form-control"
+                                        value="<?= old('training_expiry', $staff['training_expiry']) ?>" >
+                                </div>
 
                                 <div class="col-12 mt-4 text-end">
                                     <button type="submit" class="btn btn-warning">Update Staff</button>

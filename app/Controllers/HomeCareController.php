@@ -125,7 +125,13 @@ class HomeCareController extends Controller
             // Special Rates
             'special_rate_below_8hrs' => $this->request->getPost('special_rate_below_8hrs'),
             'special_rate_above_8hrs' => $this->request->getPost('special_rate_above_8hrs'),
-
+            'special_weekday_day' => $this->request->getPost('special_weekday_day'),
+            'special_weekday_night' => $this->request->getPost('special_weekday_night'),
+            'special_weekend_day' => $this->request->getPost('special_weekend_day'),
+            'special_weekend_night' => $this->request->getPost('special_weekend_night'),
+            'special_bank_holiday' => $this->request->getPost('special_bank_holiday'),
+            'special_early_shift' => $this->request->getPost('special_early_shift'),
+            'special_late_shift' => $this->request->getPost('special_late_shift'),
             // Uploaded file
             'contract_file' => $contractFileName
         ];
@@ -153,8 +159,58 @@ class HomeCareController extends Controller
         return view('homecare/edit', $data);
     }
 
-    public function update($id)
+    // public function update($id)
+    // {
+    //     $clientModel = new \App\Models\ClientModel();
+    //     $client = $clientModel->find($id);
+
+    //     if (!$client) {
+    //         return redirect()->to('/clients')->with('error', 'Client not found');
+    //     }
+
+    //     $validation = \Config\Services::validation();
+
+    //     $rules = [
+    //         'care_home_name' => 'required',
+    //         'provider_name' => 'required',
+    //         'manager_name' => 'required',
+    //         'phone_number' => 'required',
+    //         'email' => 'required|valid_email',
+    //         'post_code' => 'required',
+    //     ];
+
+    //     if (!$this->validate($rules)) {
+    //         return redirect()->back()->withInput()->with('error', $validation->listErrors());
+    //     }
+
+    //     $data = [
+    //         'care_home_name' => $this->request->getPost('care_home_name'),
+    //         'provider_name' => $this->request->getPost('provider_name'),
+    //         'manager_name' => $this->request->getPost('manager_name'),
+    //         'phone_number' => $this->request->getPost('phone_number'),
+    //         'email' => $this->request->getPost('email'),
+    //         'post_code' => $this->request->getPost('post_code'),
+    //         'accounts_email' => $this->request->getPost('accounts_email'),
+    //     ];
+
+    //     // Handle contract upload
+    //     $file = $this->request->getFile('contract_file');
+    //     if ($file && $file->isValid() && !$file->hasMoved()) {
+    //         $newName = $file->getRandomName();
+    //         $file->move(FCPATH . 'uploads/contracts', $newName);
+    //         $data['contract_file'] = $newName;
+    //     }
+
+    //     $clientModel->update($id, $data);
+
+    //     return redirect()->to('/clients')->with('success', 'Client updated successfully.');
+    // }
+    public function update($id = null)
+
     {
+
+
+
         $clientModel = new \App\Models\ClientModel();
         $client = $clientModel->find($id);
 
@@ -171,6 +227,7 @@ class HomeCareController extends Controller
             'phone_number' => 'required',
             'email' => 'required|valid_email',
             'post_code' => 'required',
+            // Add validation rules for the new fields if needed
         ];
 
         if (!$this->validate($rules)) {
@@ -185,6 +242,17 @@ class HomeCareController extends Controller
             'email' => $this->request->getPost('email'),
             'post_code' => $this->request->getPost('post_code'),
             'accounts_email' => $this->request->getPost('accounts_email'),
+
+            // Special Rates fields
+            'special_weekday_day' => $this->request->getPost('special_weekday_day'),
+            'special_weekday_night' => $this->request->getPost('special_weekday_night'),
+            'special_weekend_day' => $this->request->getPost('special_weekend_day'),
+            'special_weekend_night' => $this->request->getPost('special_weekend_night'),
+            'special_bank_holiday' => $this->request->getPost('special_bank_holiday'),
+            'special_early_shift' => $this->request->getPost('special_early_shift'),
+            'special_late_shift' => $this->request->getPost('special_late_shift'),
+            'special_rate_below_8hrs' => $this->request->getPost('special_rate_below_8hrs'),
+            'special_rate_above_8hrs' => $this->request->getPost('special_rate_above_8hrs'),
         ];
 
         // Handle contract upload
@@ -196,6 +264,7 @@ class HomeCareController extends Controller
         }
 
         $clientModel->update($id, $data);
+        return redirect()->to('/clients')->with('success', 'Client updated successfully.');
 
         return redirect()->to('/clients')->with('success', 'Client updated successfully.');
     }
@@ -248,7 +317,7 @@ class HomeCareController extends Controller
             'current_address'   => 'required',
             'permanent_address' => 'required',
             'phone_number'      => 'required',
-            'email'             => 'required|valid_email',
+            'email' => 'required|valid_email|is_unique[clients.email,id,{id}]',
             'salary'            => 'required|numeric',
         ])) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
@@ -295,6 +364,7 @@ class HomeCareController extends Controller
             'email'                     => $this->request->getPost('email'),
             'salary'                    => $this->request->getPost('salary'),
             'visa_type'                 => $this->request->getPost('visa_type'),
+            'passport_no'               => $this->request->getPost('passport_no'),
             'passport_file'             => $passportFile,
             'dbs_file'                  => $dbsFile,
             'brp_file'                  => $brpFile,
@@ -305,6 +375,9 @@ class HomeCareController extends Controller
             'reference_2_file'          => $reference2File,
             'passport_photo_file'       => $passportPhotoFile,
             'bank_statement_file'       => $bankStatementFile,
+            'passport_expiry'           => $this->request->getPost('passport_expiry'),
+            'dbs_expiry'                => $this->request->getPost('dbs_expiry'),
+            'training_expiry'           => $this->request->getPost('training_expiry'),
         ];
 
         // Save to database
@@ -348,7 +421,7 @@ class HomeCareController extends Controller
             'current_address'   => 'required',
             'permanent_address' => 'required',
             'phone_number'      => 'required',
-            'email'             => 'required|valid_email',
+            'email' => 'required|valid_email|is_unique[clients.email,id,{id}]',
             'salary'            => 'required|numeric',
         ])) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
@@ -401,8 +474,9 @@ class HomeCareController extends Controller
             'permanent_address'         => $this->request->getPost('permanent_address'),
             'phone_number'              => $this->request->getPost('phone_number'),
             'email'                     => $this->request->getPost('email'),
-            'salary'                    => $this->request->getPost('salary'),            
+            'salary'                    => $this->request->getPost('salary'),
             'visa_type'                 => $this->request->getPost('visa_type'),
+            'passport_no'               => $this->request->getPost('passport_no'),
             'passport_file'             => $passportFile,
             'dbs_file'                  => $dbsFile,
             'brp_file'                  => $brpFile,
@@ -413,6 +487,9 @@ class HomeCareController extends Controller
             'reference_2_file'          => $reference2File,
             'passport_photo_file'       => $passportPhotoFile,
             'bank_statement_file'       => $bankStatementFile,
+            'passport_expiry'           => $this->request->getPost('passport_expiry'),
+            'dbs_expiry'                => $this->request->getPost('dbs_expiry'),
+            'training_expiry'           => $this->request->getPost('training_expiry'),
         ];
 
         // Update the staff record

@@ -83,7 +83,9 @@
                                 </div>
 
                                 <!-- Normal Rates - HCA -->
-                                <div class="col-md-12 mt-4"><h5>Normal Rates – HCA</h5></div>
+                                <div class="col-md-12 mt-4">
+                                    <h5>Normal Rates – HCA</h5>
+                                </div>
 
                                 <div class="col-md-4 mb-3">
                                     <label>Weekdays Day</label>
@@ -107,7 +109,9 @@
                                 </div>
 
                                 <!-- Normal Rates - Nurses -->
-                                <div class="col-md-12 mt-4"><h5>Normal Rates – Nurses</h5></div>
+                                <div class="col-md-12 mt-4">
+                                    <h5>Normal Rates – Nurses</h5>
+                                </div>
 
                                 <div class="col-md-4 mb-3">
                                     <label>Weekdays Day</label>
@@ -131,13 +135,64 @@
                                 </div>
 
                                 <!-- Special Rates -->
-                                <div class="col-md-12 mt-4"><h5>Special Rates</h5></div>
+                                <!-- <div class="col-md-12 mt-4">
+                                    <h5>Special Rates</h5>
+                                </div>
 
                                 <div class="col-md-6 mb-3">
                                     <label>Below 8 Hours</label>
                                     <input type="number" step="0.01" name="special_rate_below_8hrs" class="form-control">
                                 </div>
                                 <div class="col-md-6 mb-3">
+                                    <label>Above 8 Hours</label>
+                                    <input type="number" step="0.01" name="special_rate_above_8hrs" class="form-control">
+                                </div> -->
+                                <!-- Special Rates -->
+                                <div class="col-md-12 mt-4">
+                                    <h5>Special Rates</h5>
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label>Weekdays Day</label>
+                                    <input type="number" step="0.01" name="special_weekday_day" class="form-control">
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label>Weekdays Night</label>
+                                    <input type="number" step="0.01" name="special_weekday_night" class="form-control">
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label>Weekends Day</label>
+                                    <input type="number" step="0.01" name="special_weekend_day" class="form-control">
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label>Weekends Night</label>
+                                    <input type="number" step="0.01" name="special_weekend_night" class="form-control">
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label>Bank Holidays</label>
+                                    <input type="number" step="0.01" name="special_bank_holiday" class="form-control">
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label>Early Shift</label>
+                                    <input type="number" step="0.01" name="special_early_shift" class="form-control">
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label>Late Shift</label>
+                                    <input type="number" step="0.01" name="special_late_shift" class="form-control">
+                                </div>
+
+                                <div class="col-md-4 mb-3">
+                                    <label>Below 8 Hours</label>
+                                    <input type="number" step="0.01" name="special_rate_below_8hrs" class="form-control">
+                                </div>
+
+                                <div class="col-md-4 mb-3">
                                     <label>Above 8 Hours</label>
                                     <input type="number" step="0.01" name="special_rate_above_8hrs" class="form-control">
                                 </div>

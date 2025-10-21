@@ -16,7 +16,7 @@ class StaffModel extends Model
         'phone_number',
         'email',
         'salary','visa_type',
-        'passport_file',
+        'passport_file','passport_no',
         'dbs_file',
         'brp_file',
         'application_form_file',
@@ -25,7 +25,7 @@ class StaffModel extends Model
         'reference_1_file',
         'reference_2_file',
         'passport_photo_file',
-        'bank_statement_file',
+        'bank_statement_file','passport_expiry','dbs_expiry','training_expiry'
     ];
 
     protected $useTimestamps = true;         // Enable automatic timestamps

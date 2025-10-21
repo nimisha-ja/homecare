@@ -1,0 +1,198 @@
+ERROR - 2025-10-21 06:50:18 --> mysqli_sql_exception: MySQL server has gone away in C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\homecare\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\homecare\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\homecare\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\homecare\app\Controllers\HomeCareController.php(43): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\homecare\system\CodeIgniter.php(933): App\Controllers\HomeCareController->index()
+#8 C:\xampp\htdocs\homecare\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+#9 C:\xampp\htdocs\homecare\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\homecare\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\homecare\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\homecare\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-10-21 06:50:18 --> CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+[Method: GET, Route: clients/]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `clients`', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\HomeCareController.php(43): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-21 06:50:18 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `clients`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `clients`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `clients`', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\HomeCareController.php(43): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-21 06:50:18 --> [Caused by] mysqli_sql_exception: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `clients`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `clients`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `clients`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `clients`', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\HomeCareController.php(43): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-10-21 07:21:32 --> mysqli_sql_exception: Duplicate entry 'nimishajamesvichattu@gmail.com' for key 'email' in C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `st...', 0)
+#1 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `st...')
+#2 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `st...')
+#3 C:\xampp\htdocs\homecare\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `st...', Array, false)
+#4 C:\xampp\htdocs\homecare\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\homecare\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\homecare\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\homecare\app\Controllers\HomeCareController.php(384): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\homecare\system\CodeIgniter.php(933): App\Controllers\HomeCareController->storeStaff()
+#9 C:\xampp\htdocs\homecare\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+#10 C:\xampp\htdocs\homecare\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\homecare\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\homecare\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\homecare\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-10-21 07:21:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'nimishajamesvichattu@gmail.com' for key 'email'
+[Method: POST, Route: staffs/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `staff` (`full_name`, `current_address`, `permanent_address`, `phone_number`, `email`, `salary`, `visa_type`, `passport_no`, `passport_file`, `dbs_file`, `brp_file`, `application_form_file`, `checklist_file`, `training_certificate_file`, `reference_1_file`, `reference_2_file`, `passport_photo_file`, `bank_statement_file`, `passport_expiry`, `dbs_expiry`, `training_expiry`, `created_at`, `updated_at`) VALUES (:full_name:, :current_address:, :permanent_address:, :phone_number:, :email:, :salary:, :visa_type:, :passport_no:, :passport_file:, :dbs_file:, :brp_file:, :application_form_file:, :checklist_file:, :training_certificate_file:, :reference_1_file:, :reference_2_file:, :passport_photo_file:, :bank_statement_file:, :passport_expiry:, :dbs_expiry:, :training_expiry:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\HomeCareController.php(384): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->storeStaff()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-21 07:21:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'nimishajamesvichattu@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `staff` (`full_name`, `current_address`, `permanent_address`, `phone_number`, `email`, `salary`, `visa_type`, `passport_no`, `passport_file`, `dbs_file`, `brp_file`, `application_form_file`, `checklist_file`, `training_certificate_file`, `reference_1_file`, `reference_2_file`, `passport_photo_file`, `bank_statement_file`, `passport_expiry`, `dbs_expiry`, `training_expiry`, `created_at`, `updated_at`) VALUES (\'Nimisha James\', \'Vichattu (H) ., Mylacompu (P.O)\', \'EE\', \'06282719879\', \'nimishajamesvichattu@gmail.com\', \'4444444444444\', \'student\', \'EEEE\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-10-24\', \'\', \'\', \'2025-10-21 07:21:32\', \'2025-10-21 07:21:32\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `staff` (`full_name`, `current_address`, `permanent_address`, `phone_number`, `email`, `salary`, `visa_type`, `passport_no`, `passport_file`, `dbs_file`, `brp_file`, `application_form_file`, `checklist_file`, `training_certificate_file`, `reference_1_file`, `reference_2_file`, `passport_photo_file`, `bank_statement_file`, `passport_expiry`, `dbs_expiry`, `training_expiry`, `created_at`, `updated_at`) VALUES (\'Nimisha James\', \'Vichattu (H) ., Mylacompu (P.O)\', \'EE\', \'06282719879\', \'nimishajamesvichattu@gmail.com\', \'4444444444444\', \'student\', \'EEEE\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-10-24\', \'\', \'\', \'2025-10-21 07:21:32\', \'2025-10-21 07:21:32\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `staff` (`full_name`, `current_address`, `permanent_address`, `phone_number`, `email`, `salary`, `visa_type`, `passport_no`, `passport_file`, `dbs_file`, `brp_file`, `application_form_file`, `checklist_file`, `training_certificate_file`, `reference_1_file`, `reference_2_file`, `passport_photo_file`, `bank_statement_file`, `passport_expiry`, `dbs_expiry`, `training_expiry`, `created_at`, `updated_at`) VALUES (:full_name:, :current_address:, :permanent_address:, :phone_number:, :email:, :salary:, :visa_type:, :passport_no:, :passport_file:, :dbs_file:, :brp_file:, :application_form_file:, :checklist_file:, :training_certificate_file:, :reference_1_file:, :reference_2_file:, :passport_photo_file:, :bank_statement_file:, :passport_expiry:, :dbs_expiry:, :training_expiry:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\HomeCareController.php(384): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->storeStaff()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-21 07:21:32 --> [Caused by] mysqli_sql_exception: Duplicate entry 'nimishajamesvichattu@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `staff` (`full_name`, `current_address`, `permanent_address`, `phone_number`, `email`, `salary`, `visa_type`, `passport_no`, `passport_file`, `dbs_file`, `brp_file`, `application_form_file`, `checklist_file`, `training_certificate_file`, `reference_1_file`, `reference_2_file`, `passport_photo_file`, `bank_statement_file`, `passport_expiry`, `dbs_expiry`, `training_expiry`, `created_at`, `updated_at`) VALUES (\'Nimisha James\', \'Vichattu (H) ., Mylacompu (P.O)\', \'EE\', \'06282719879\', \'nimishajamesvichattu@gmail.com\', \'4444444444444\', \'student\', \'EEEE\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-10-24\', \'\', \'\', \'2025-10-21 07:21:32\', \'2025-10-21 07:21:32\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `staff` (`full_name`, `current_address`, `permanent_address`, `phone_number`, `email`, `salary`, `visa_type`, `passport_no`, `passport_file`, `dbs_file`, `brp_file`, `application_form_file`, `checklist_file`, `training_certificate_file`, `reference_1_file`, `reference_2_file`, `passport_photo_file`, `bank_statement_file`, `passport_expiry`, `dbs_expiry`, `training_expiry`, `created_at`, `updated_at`) VALUES (\'Nimisha James\', \'Vichattu (H) ., Mylacompu (P.O)\', \'EE\', \'06282719879\', \'nimishajamesvichattu@gmail.com\', \'4444444444444\', \'student\', \'EEEE\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-10-24\', \'\', \'\', \'2025-10-21 07:21:32\', \'2025-10-21 07:21:32\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `staff` (`full_name`, `current_address`, `permanent_address`, `phone_number`, `email`, `salary`, `visa_type`, `passport_no`, `passport_file`, `dbs_file`, `brp_file`, `application_form_file`, `checklist_file`, `training_certificate_file`, `reference_1_file`, `reference_2_file`, `passport_photo_file`, `bank_statement_file`, `passport_expiry`, `dbs_expiry`, `training_expiry`, `created_at`, `updated_at`) VALUES (\'Nimisha James\', \'Vichattu (H) ., Mylacompu (P.O)\', \'EE\', \'06282719879\', \'nimishajamesvichattu@gmail.com\', \'4444444444444\', \'student\', \'EEEE\', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, \'2025-10-24\', \'\', \'\', \'2025-10-21 07:21:32\', \'2025-10-21 07:21:32\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `staff` (`full_name`, `current_address`, `permanent_address`, `phone_number`, `email`, `salary`, `visa_type`, `passport_no`, `passport_file`, `dbs_file`, `brp_file`, `application_form_file`, `checklist_file`, `training_certificate_file`, `reference_1_file`, `reference_2_file`, `passport_photo_file`, `bank_statement_file`, `passport_expiry`, `dbs_expiry`, `training_expiry`, `created_at`, `updated_at`) VALUES (:full_name:, :current_address:, :permanent_address:, :phone_number:, :email:, :salary:, :visa_type:, :passport_no:, :passport_file:, :dbs_file:, :brp_file:, :application_form_file:, :checklist_file:, :training_certificate_file:, :reference_1_file:, :reference_2_file:, :passport_photo_file:, :bank_statement_file:, :passport_expiry:, :dbs_expiry:, :training_expiry:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\HomeCareController.php(384): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->storeStaff()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-10-21 07:22:58 --> mysqli_sql_exception: Duplicate entry 'nimishajamesvichattu@gmail.com' for key 'email' in C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\homecare\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` ...', 0)
+#1 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` ...')
+#2 C:\xampp\htdocs\homecare\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` ...')
+#3 C:\xampp\htdocs\homecare\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` ...', Array, false)
+#4 C:\xampp\htdocs\homecare\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\homecare\system\BaseModel.php(1027): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\homecare\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\homecare\app\Controllers\HomeCareController.php(496): CodeIgniter\Model->update('12', Array)
+#8 C:\xampp\htdocs\homecare\system\CodeIgniter.php(933): App\Controllers\HomeCareController->updateStaff('12')
+#9 C:\xampp\htdocs\homecare\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+#10 C:\xampp\htdocs\homecare\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\homecare\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\homecare\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\homecare\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-10-21 07:22:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'nimishajamesvichattu@gmail.com' for key 'email'
+[Method: POST, Route: staffs/update/12]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `full_name` = :full_name:, `current_address` = :current_address:, `permanent_address` = :permanent_address:, `phone_number` = :phone_number:, `email` = :email:, `salary` = :salary:, `visa_type` = :visa_type:, `passport_no` = :passport_no:, `passport_file` = :passport_file:, `dbs_file` = :dbs_file:, `brp_file` = :brp_file:, `application_form_file` = :application_form_file:, `checklist_file` = :checklist_file:, `training_certificate_file` = :training_certificate_file:, `reference_1_file` = :reference_1_file:, `reference_2_file` = :reference_2_file:, `passport_photo_file` = :passport_photo_file:, `bank_statement_file` = :bank_statement_file:, `passport_expiry` = :passport_expiry:, `dbs_expiry` = :dbs_expiry:, `training_expiry` = :training_expiry:, `updated_at` = :updated_at:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\HomeCareController.php(496): CodeIgniter\Model->update('12', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->updateStaff('12')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-21 07:22:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry 'nimishajamesvichattu@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `full_name` = \'Nimisha James\', `current_address` = \'Vichattu (H) ., Mylacompu (P.O)\', `permanent_address` = \'EE\', `phone_number` = \'06282719879\', `email` = \'nimishajamesvichattu@gmail.com\', `salary` = \'99999999.99\', `visa_type` = \'student\', `passport_no` = \'EEEE\', `passport_file` = NULL, `dbs_file` = NULL, `brp_file` = NULL, `application_form_file` = NULL, `checklist_file` = NULL, `training_certificate_file` = NULL, `reference_1_file` = NULL, `reference_2_file` = NULL, `passport_photo_file` = NULL, `bank_statement_file` = NULL, `passport_expiry` = \'2025-10-24\', `dbs_expiry` = \'\', `training_expiry` = \'\', `updated_at` = \'2025-10-21 07:22:58\'
+WHERE `staff`.`id` IN (\'12\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `full_name` = \'Nimisha James\', `current_address` = \'Vichattu (H) ., Mylacompu (P.O)\', `permanent_address` = \'EE\', `phone_number` = \'06282719879\', `email` = \'nimishajamesvichattu@gmail.com\', `salary` = \'99999999.99\', `visa_type` = \'student\', `passport_no` = \'EEEE\', `passport_file` = NULL, `dbs_file` = NULL, `brp_file` = NULL, `application_form_file` = NULL, `checklist_file` = NULL, `training_certificate_file` = NULL, `reference_1_file` = NULL, `reference_2_file` = NULL, `passport_photo_file` = NULL, `bank_statement_file` = NULL, `passport_expiry` = \'2025-10-24\', `dbs_expiry` = \'\', `training_expiry` = \'\', `updated_at` = \'2025-10-21 07:22:58\'
+WHERE `staff`.`id` IN (\'12\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `full_name` = :full_name:, `current_address` = :current_address:, `permanent_address` = :permanent_address:, `phone_number` = :phone_number:, `email` = :email:, `salary` = :salary:, `visa_type` = :visa_type:, `passport_no` = :passport_no:, `passport_file` = :passport_file:, `dbs_file` = :dbs_file:, `brp_file` = :brp_file:, `application_form_file` = :application_form_file:, `checklist_file` = :checklist_file:, `training_certificate_file` = :training_certificate_file:, `reference_1_file` = :reference_1_file:, `reference_2_file` = :reference_2_file:, `passport_photo_file` = :passport_photo_file:, `bank_statement_file` = :bank_statement_file:, `passport_expiry` = :passport_expiry:, `dbs_expiry` = :dbs_expiry:, `training_expiry` = :training_expiry:, `updated_at` = :updated_at:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\HomeCareController.php(496): CodeIgniter\Model->update('12', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->updateStaff('12')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-21 07:22:58 --> [Caused by] mysqli_sql_exception: Duplicate entry 'nimishajamesvichattu@gmail.com' for key 'email'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `staff` SET `full_name` = \'Nimisha James\', `current_address` = \'Vichattu (H) ., Mylacompu (P.O)\', `permanent_address` = \'EE\', `phone_number` = \'06282719879\', `email` = \'nimishajamesvichattu@gmail.com\', `salary` = \'99999999.99\', `visa_type` = \'student\', `passport_no` = \'EEEE\', `passport_file` = NULL, `dbs_file` = NULL, `brp_file` = NULL, `application_form_file` = NULL, `checklist_file` = NULL, `training_certificate_file` = NULL, `reference_1_file` = NULL, `reference_2_file` = NULL, `passport_photo_file` = NULL, `bank_statement_file` = NULL, `passport_expiry` = \'2025-10-24\', `dbs_expiry` = \'\', `training_expiry` = \'\', `updated_at` = \'2025-10-21 07:22:58\'
+WHERE `staff`.`id` IN (\'12\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `staff` SET `full_name` = \'Nimisha James\', `current_address` = \'Vichattu (H) ., Mylacompu (P.O)\', `permanent_address` = \'EE\', `phone_number` = \'06282719879\', `email` = \'nimishajamesvichattu@gmail.com\', `salary` = \'99999999.99\', `visa_type` = \'student\', `passport_no` = \'EEEE\', `passport_file` = NULL, `dbs_file` = NULL, `brp_file` = NULL, `application_form_file` = NULL, `checklist_file` = NULL, `training_certificate_file` = NULL, `reference_1_file` = NULL, `reference_2_file` = NULL, `passport_photo_file` = NULL, `bank_statement_file` = NULL, `passport_expiry` = \'2025-10-24\', `dbs_expiry` = \'\', `training_expiry` = \'\', `updated_at` = \'2025-10-21 07:22:58\'
+WHERE `staff`.`id` IN (\'12\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `staff` SET `full_name` = \'Nimisha James\', `current_address` = \'Vichattu (H) ., Mylacompu (P.O)\', `permanent_address` = \'EE\', `phone_number` = \'06282719879\', `email` = \'nimishajamesvichattu@gmail.com\', `salary` = \'99999999.99\', `visa_type` = \'student\', `passport_no` = \'EEEE\', `passport_file` = NULL, `dbs_file` = NULL, `brp_file` = NULL, `application_form_file` = NULL, `checklist_file` = NULL, `training_certificate_file` = NULL, `reference_1_file` = NULL, `reference_2_file` = NULL, `passport_photo_file` = NULL, `bank_statement_file` = NULL, `passport_expiry` = \'2025-10-24\', `dbs_expiry` = \'\', `training_expiry` = \'\', `updated_at` = \'2025-10-21 07:22:58\'
+WHERE `staff`.`id` IN (\'12\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `staff` SET `full_name` = :full_name:, `current_address` = :current_address:, `permanent_address` = :permanent_address:, `phone_number` = :phone_number:, `email` = :email:, `salary` = :salary:, `visa_type` = :visa_type:, `passport_no` = :passport_no:, `passport_file` = :passport_file:, `dbs_file` = :dbs_file:, `brp_file` = :brp_file:, `application_form_file` = :application_form_file:, `checklist_file` = :checklist_file:, `training_certificate_file` = :training_certificate_file:, `reference_1_file` = :reference_1_file:, `reference_2_file` = :reference_2_file:, `passport_photo_file` = :passport_photo_file:, `bank_statement_file` = :bank_statement_file:, `passport_expiry` = :passport_expiry:, `dbs_expiry` = :dbs_expiry:, `training_expiry` = :training_expiry:, `updated_at` = :updated_at:
+WHERE `staff`.`id` IN :staff.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1027): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\HomeCareController.php(496): CodeIgniter\Model->update('12', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeCareController->updateStaff('12')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeCareController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -4,7 +4,7 @@ use CodeIgniter\Router\RouteCollection;
 
 /**
  * @var RouteCollection $routes
- */ 
+ */
 $routes->get('/', 'Home::index');
 $routes->get('test', 'Home::test');
 $routes->get('testemail', 'Home::sendEmail');
@@ -51,10 +51,15 @@ $routes->get('clients', 'HomeCareController::index');
 $routes->get('clients/create', 'HomeCareController::create');
 $routes->post('clients/store', 'HomeCareController::store');
 
-$routes->get('clients/edit/(:num)', 'HomeCareController::edit/$1');
-$routes->post('clients/update/(:num)', 'HomeCareController::update/$1');
-$routes->post('clients/delete/(:num)', 'HomeCareController::delete/$1');
+$routes->get('clients/edit/(:num)', 'HomeCareController::edit/$1');      // Show edit form
+$routes->post('clients/update/(:num)', 'HomeCareController::update/$1'); // Process update (POST only)
+$routes->post('clients/delete/(:num)', 'HomeCareController::delete/$1'); // Delete client (POST)
 
+$routes->post('clients/update/(:num)', function($id) {
+    echo "POST route hit for ID: $id";
+});
+
+//$routes->post('clients/update/(:num)', 'HomeCareController::update/$1');
 
 
 $routes->get('staffs', 'HomeCareController::stafflist');
@@ -73,9 +78,3 @@ $routes->get('assignments/edit/(:num)', 'HomeCareController::editAssignments/$1'
 $routes->post('assignments/update/(:num)', 'HomeCareController::updateAssignments/$1');
 $routes->post('assignments/delete/(:num)', 'HomeCareController::deleteAssignments/$1');
 $routes->get('getassignments', 'HomeCareController::getAssignments');
-
-
-
-
-
-
